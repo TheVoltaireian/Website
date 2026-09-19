@@ -103,6 +103,8 @@ html[page="index.html"] {
                         background-color: rgb(0 0 0 / 50%);
 
                         img {
+                            user-select: none; 
+
                             border: none;
                             border-radius: 0px;
 

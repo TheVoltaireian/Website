@@ -834,6 +834,9 @@ html[page="index.html"] .projects .projects__wikis .projects__cards .projects__c
   background-color: rgba(0, 0, 0, 0.5);
 }
 html[page="index.html"] .projects .projects__wikis .projects__cards .projects__card .projects__cardImage img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   border: none;
   border-radius: 0px;
   width: 100%;
