@@ -818,12 +818,15 @@ html[page="index.html"] .projects .projects__wikis .projects__cards .projects__c
   margin-bottom: 0;
   border-bottom: var(--border-base);
   line-height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 html[page="index.html"] .projects .projects__wikis .projects__cards .projects__card .projects__cardImage img {
   border: none;
   border-radius: 0px;
   width: 100%;
   height: auto;
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, rgba(0, 0, 0, 0.1) 100%);
+          mask-image: linear-gradient(to bottom, black 50%, rgba(0, 0, 0, 0.1) 100%);
 }
 html[page="index.html"] .projects .projects__wikis .projects__cards .projects__card .projects__cardHead {
   padding-block: var(--space-md) var(--space-sm);
