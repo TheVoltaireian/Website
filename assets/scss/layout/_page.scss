@@ -124,7 +124,7 @@ html[page="index.html"] {
 
                         transition: var(--transition-hover--fast);
 
-                        margin-top: -71.5px;
+                        margin-top: calc(var(--card-head-height, 71.5px) * -1);
                         z-index: 9999;
 
                         .projects__cardHeader {

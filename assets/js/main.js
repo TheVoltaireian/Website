@@ -16,6 +16,19 @@ const observer = new IntersectionObserver((entries, observer) => {
 const hiddenModifiers = document.querySelectorAll('.projects__card--hidden, .projects__header--hidden');
 hiddenModifiers.forEach((element) => observer.observe(element));
 
+const resizeObserver = new ResizeObserver(entries => {
+    for (const entry of entries) {
+        const card = entry.target.closest('.projects__card');
+        if (card) {
+        card.style.setProperty('--card-head-height', `${entry.target.offsetHeight}px`);
+        }
+    }
+});
+
+document.querySelectorAll('.projects__cardHead').forEach(head => {
+    resizeObserver.observe(head);
+});
+
 console.log(String.raw`
  /$$      /$$ /$$ /$$       /$$ /$$    /$$          /$$   /$$               /$$                     /$$                    
 | $$  /$ | $$|__/| $$      | $$| $$   | $$         | $$  | $$              |__/                    |__/                    
