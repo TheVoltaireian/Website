@@ -20,7 +20,7 @@ const resizeObserver = new ResizeObserver(entries => {
     for (const entry of entries) {
         const card = entry.target.closest('.projects__card');
         if (card) {
-        card.style.setProperty('--card-head-height', `${entry.target.offsetHeight}px`);
+            card.style.setProperty('--card-head-height', `${entry.target.offsetHeight}px`);
         }
     }
 });
