@@ -399,8 +399,6 @@ button img {
   border-radius: 0;
   width: 20px;
   height: auto;
-  filter: drop-shadow(0px 1000px 0 oklch(93% 0.03 262.29deg));
-  transform: translateY(-1000px);
 }
 button.social {
   overflow: hidden;
@@ -811,6 +809,11 @@ html[page="index.html"] .projects .projects__wikis .projects__cards .projects__c
   flex-direction: row;
   gap: var(--space-xs);
   padding-top: var(--space-md);
+}
+@media screen and (max-width: 389px) {
+  html[page="index.html"] .projects .projects__wikis .projects__cards .projects__card .projects__cardBody .projects__cardButtons {
+    flex-direction: column;
+  }
 }
 html[page="index.html"] .projects .projects__wikis .projects__cards .projects__card .projects__cardBody .projects__cardButtons button {
   width: 100%;

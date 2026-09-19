@@ -121,6 +121,10 @@ html[page="index.html"] {
                             gap: var(--space-xs);
                             padding-top: var(--space-md);
 
+                            @media screen and (max-width: $breakpoint-xxxs) {
+                                flex-direction: column;
+                            }
+
                             button {
                                 width: 100%;
                                 font-weight: var(--font-weight-bold);
