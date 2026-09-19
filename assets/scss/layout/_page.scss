@@ -113,7 +113,7 @@ html[page="index.html"] {
 
                             transition: --projects__cardImageAlpha var(--transition-hover--slow);
 
-                            mask-image: linear-gradient(to bottom, black 50%, rgb(0 0 0 / var(--projects__cardImageAlpha)) 100%);
+                            mask-image: linear-gradient(to bottom, black 0%, rgb(0 0 0 / var(--projects__cardImageAlpha)) 100%);
                         }
                     }
 
