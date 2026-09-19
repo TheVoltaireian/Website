@@ -824,6 +824,8 @@ html[page="index.html"] .projects .projects__wikis .projects__cards .projects__c
   border-radius: 0px;
   width: 100%;
   height: auto;
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
+          mask-image: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
 }
 html[page="index.html"] .projects .projects__wikis .projects__cards .projects__card .projects__cardHead {
   padding-block: var(--space-md) var(--space-sm);
