@@ -2,6 +2,12 @@
 @use "../abstracts/breakpoints" as *;
 @use "../abstracts/mixins" as *;
 
+@property --projects__cardImageAlpha {
+    syntax: '<percentage>';
+    inherits: true;
+    initial-value: 0%;
+}
+
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -69,8 +75,23 @@ html[page="index.html"] {
 
                     overflow: hidden;
 
+                    transition: var(--transition-hover--slow);
+
                     display: flex;
                     flex-direction: column;
+
+                    @include hover {
+                        .projects__cardHead {
+                            margin-top: 0;
+                            border-bottom: var(--border-width-base) solid var(--border-color-base);
+                        }
+                        
+                        .projects__cardImage {
+                            img {
+                                --projects__cardImageAlpha: 15%;
+                            }
+                        }
+                    }
 
                     .projects__cardImage {
                         margin: calc(var(--space-md) * -1);
@@ -88,14 +109,21 @@ html[page="index.html"] {
                             width: 100%;
                             height: auto;
 
-                            mask-image: linear-gradient(to bottom, black 50%, rgb(0 0 0 / 10%) 100%);
+                            transition: --projects__cardImageAlpha var(--transition-hover--slow);
+
+                            mask-image: linear-gradient(to bottom, black 50%, rgb(0 0 0 / var(--projects__cardImageAlpha)) 100%);
                         }
                     }
 
                     .projects__cardHead {
                         padding-block: var(--space-md) var(--space-sm);
                         margin-bottom: var(--space-sm);
-                        border-bottom: var(--border-subtle);
+                        border-bottom: var(--border-width-base) solid transparent;
+
+                        transition: var(--transition-hover--fast);
+
+                        margin-top: -71.5px;
+                        z-index: 9999;
 
                         .projects__cardHeader {
                             font-weight: var(--font-weight-bold);
