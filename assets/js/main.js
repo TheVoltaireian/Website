@@ -13,7 +13,7 @@ const observer = new IntersectionObserver((entries, observer) => {
     });
 });
 
-const hiddenModifiers = document.querySelectorAll('.projects__card--hidden, .projects__header--hidden');
+const hiddenModifiers = document.querySelectorAll('.projects__card--hidden, .projects__header--hidden, .blog__post--hidden, .blog__header--hidden');
 hiddenModifiers.forEach((element) => observer.observe(element));
 
 const resizeObserver = new ResizeObserver(entries => {

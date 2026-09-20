@@ -136,7 +136,7 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
         {% if site.posts.size > 0 %}
             <div class="blog__posts">
                 {% for post in site.posts limit:3 %}
-                    <article class="blog__post">
+                    <article class="blog__post blog__post--hidden">
                         <h3>
                             <a href="{{ post.url | relative_url }}">
                                 {{ post.title }}
