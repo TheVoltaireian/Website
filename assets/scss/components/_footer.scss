@@ -30,6 +30,7 @@ footer {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
 
             hr {
                 display: block;
@@ -105,6 +106,8 @@ footer {
 
             @media screen and (max-width: $breakpoint-xs) {
                 flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
             }
 
             .divider {

@@ -650,6 +650,7 @@ footer .footer__wrapper hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   footer .footer__wrapper hr {
     display: block;
@@ -717,6 +718,8 @@ footer .footer__wrapper .footer__links {
 @media screen and (max-width: 767px) {
   footer .footer__wrapper .footer__links {
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 }
 footer .footer__wrapper .footer__links .divider {
