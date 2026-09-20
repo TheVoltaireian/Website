@@ -133,5 +133,28 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
             <h2>Recent Blog Posts</h2>
             <p>Here are my recent blog posts! | <a href="{{ '/blog/' | relative_url }}">View all posts</a></p>
         </div>
+        {% if site.posts.size > 0 %}
+            <div class="blog__posts">
+                {% for post in site.posts limit:3 %}
+                    <article class="blog__post">
+                        <h3>
+                            <a href="{{ post.url | relative_url }}">
+                                {{ post.title }}
+                            </a>
+                        </h3>
+
+                        <time datetime="{{ post.date | date_to_xmlschema }}">
+                            {{ post.date | date: "%B %-d, %Y" }}
+                        </time>
+
+                        {% if post.excerpt %}
+                            <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+                        {% endif %}
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No posts yet.</p>
+        {% endif %}
     </div>
 </section>
