@@ -1,0 +1,17 @@
+title: "WildVoltaireian"
+description: "Portfolio, blog and more"
+url: "https://thevoltaireian.github.io"
+baseurl: "/Website"
+
+markdown: kramdown
+theme: null
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - CONTRIBUTING.md
