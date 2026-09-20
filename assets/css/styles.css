@@ -805,9 +805,6 @@ html[page="index.html"] .projects .projects__wikis .projects__cards {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
-html[page="index.html"] .projects .projects__wikis .projects__cards:hover .projects__card:not(:hover) {
-  opacity: 0.3;
-}
 html[page="index.html"] .projects .projects__wikis .projects__cards .projects__card {
   background-color: var(--color-surface-2);
   border: var(--border-base);
@@ -821,9 +818,6 @@ html[page="index.html"] .projects .projects__wikis .projects__cards .projects__c
   transition: var(--transition-hover--slow);
   display: flex;
   flex-direction: column;
-}
-html[page="index.html"] .projects .projects__wikis .projects__cards .projects__card:hover {
-  opacity: 1;
 }
 html[page="index.html"] .projects .projects__wikis .projects__cards .projects__card:hover .projects__cardHead {
   margin-top: 0;
