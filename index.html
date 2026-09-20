@@ -137,18 +137,18 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
             <div class="blog__posts">
                 {% for post in site.posts limit:3 %}
                     <article class="blog__post blog__post--hidden">
-                        <h3>
+                        <time class="blog__postTime" datetime="{{ post.date | date_to_xmlschema }}">
+                            {{ post.date | date: "%B %-d, %Y" }}
+                        </time>
+
+                        <h3 class="blog__postHeader">
                             <a href="{{ post.url | relative_url }}">
                                 {{ post.title }}
                             </a>
                         </h3>
 
-                        <time datetime="{{ post.date | date_to_xmlschema }}">
-                            {{ post.date | date: "%B %-d, %Y" }}
-                        </time>
-
                         {% if post.excerpt %}
-                            <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+                            <p class="blog__postExcerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
                         {% endif %}
                     </article>
                 {% endfor %}

@@ -1009,4 +1009,12 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post--visib
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postTime {
+  font-size: var(--font-size-small);
+}
+html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_postHeader {
+  font-weight: var(--font-weight-bold);
+  margin-block: 0 var(--space-xxs);
+  line-height: 1;
 }/*# sourceMappingURL=styles.css.map */

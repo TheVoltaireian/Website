@@ -233,6 +233,16 @@ html[data-page="home"] {
                         flex-direction: column;
 
                         @include view-on-scroll;
+
+                        .blog__postTime {
+                            font-size: var(--font-size-small);
+                        }
+
+                        .blog_postHeader {
+                            font-weight: var(--font-weight-bold);
+                            margin-block: 0 var(--space-xxs);
+                            line-height: 1;
+                        }
                     }
                 }
             }
