@@ -211,6 +211,10 @@ html[data-page="home"] {
 
                     gap: var(--space-sm);
 
+                    @media screen and (max-width: $breakpoint-sm) {
+                        grid-template-columns: repeat(1, minmax(0, 1fr));
+                    }
+
                     .blog__post {
                         background-color: var(--color-surface-2);
                         border: var(--border-base);
