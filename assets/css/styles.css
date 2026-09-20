@@ -1048,4 +1048,6 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postButton {
   align-self: flex-end;
+  border-top: var(--border-base);
+  padding-top: var(--space-md);
 }/*# sourceMappingURL=styles.css.map */

@@ -278,6 +278,9 @@ html[data-page="home"] {
 
                             .blog__postButton {
                                 align-self: flex-end;
+
+                                border-top: var(--border-base);
+                                padding-top: var(--space-md);
                             }
                         }
                     }
