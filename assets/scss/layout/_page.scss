@@ -230,18 +230,30 @@ html[data-page="home"] {
                         transition: var(--transition-hover--slow);
 
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
+                        gap: var(--space-xs);
 
                         @include view-on-scroll;
 
-                        .blog__postTime {
-                            font-size: var(--font-size-small);
+                        .blog__postImage {
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
                         }
 
-                        .blog_postHeader {
-                            font-weight: var(--font-weight-bold);
-                            margin-block: 0 var(--space-xxs);
-                            line-height: 1;
+                        .blog__postText {
+                            .blog__postTime {
+                                font-size: var(--font-size-small);
+                            }
+
+                            .blog_postHeader {
+                                h3 {
+                                    font-weight: var(--font-weight-bold);
+                                    margin-block: 0 var(--space-xxs);
+                                    line-height: 1;
+                                }
+                            }
                         }
                     }
                 }

@@ -997,7 +997,8 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post {
   overflow: hidden;
   transition: var(--transition-hover--slow);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: var(--space-xs);
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post--hidden {
   opacity: 0;
@@ -1010,10 +1011,14 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post--visib
   filter: blur(0);
   transform: translateX(0);
 }
-html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postTime {
+html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postImage img {
+  width: 100%;
+  height: auto;
+}
+html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postTime {
   font-size: var(--font-size-small);
 }
-html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_postHeader {
+html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog_postHeader h3 {
   font-weight: var(--font-weight-bold);
   margin-block: 0 var(--space-xxs);
   line-height: 1;
