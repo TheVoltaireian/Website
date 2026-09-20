@@ -102,7 +102,7 @@ footer {
             flex-direction: row;
             align-items: center;
 
-            gap: var(--space-xs);
+            gap: var(--space-xxs);
 
             @media screen and (max-width: $breakpoint-xs) {
                 flex-wrap: wrap;
@@ -111,8 +111,8 @@ footer {
             }
 
             .divider {
-                color: var(--color-disabled);
-                font-size: var(--font-size-x-small);
+                color: var(--color-base);
+                font-size: var(--font-size-small);
                 line-height: 1;
                 user-select: none;
                 flex-shrink: 0;
