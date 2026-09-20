@@ -1003,7 +1003,7 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post {
   transition: var(--transition-hover--slow);
   display: flex;
   flex-direction: row;
-  gap: var(--space-xs);
+  gap: var(--space-sm);
   align-items: flex-start;
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post--hidden {
