@@ -17,14 +17,14 @@ A work-in-progress portfolio/blog website that I'm working on
 ## 🌴 Roadmap
 - <s>Split variables.scss into multiple files</s>
   - <s>breakpoints.scss (for media queries), tokens.scss (scss variables), variables.scss (:root variables)</s> ✅
-- Add more links to footer
+- <s>Add more links to footer</s> ✅
 - <s>Set up portfolio grid</s> ✅
 - <s>Transition to self-hosting fonts</s> ✅
   - <s>Find a good-looking mono font</s> ✅
 - Add ARIA labels
 - Transition from buttons to links
-- Purchase a domain
-- Revamp the page file structure to make links more navigable
+- <s>Purchase a domain</s> ✅
+- <s>Revamp the page file structure to make links more navigable</s> ✅
 - Create a navbar component
 - Set up an issues template for future usage
 
