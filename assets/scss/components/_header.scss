@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/breakpoints" as *;
 
-html[page="index.html"] {
+html[data-page="home"] {
     body {
         &::before {
             content: "";

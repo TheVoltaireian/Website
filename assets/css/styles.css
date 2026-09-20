@@ -528,7 +528,7 @@ button.github:active {
     filter: none;
   }
 }
-html[page="index.html"] body::before {
+html[data-page=home] body::before {
   content: "";
   position: absolute;
   inset: 0 0 auto;
@@ -544,7 +544,7 @@ html[page="index.html"] body::before {
   z-index: -1;
   pointer-events: none;
 }
-html[page="index.html"] header {
+html[data-page=home] header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -557,22 +557,22 @@ html[page="index.html"] header {
   animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 @media (prefers-reduced-motion: reduce) {
-  html[page="index.html"] header {
+  html[data-page=home] header {
     animation: none;
   }
 }
 @media screen and (max-width: 992px) {
-  html[page="index.html"] header {
+  html[data-page=home] header {
     text-wrap: wrap;
   }
 }
 @media screen and (max-width: 767px) {
-  html[page="index.html"] header {
+  html[data-page=home] header {
     margin: var(--space-sm);
     padding: var(--space-md) var(--space-xs);
   }
 }
-html[page="index.html"] header h1 {
+html[data-page=home] header h1 {
   margin: auto;
   margin-block: 0;
   line-height: initial;
@@ -580,34 +580,34 @@ html[page="index.html"] header h1 {
   font-weight: var(--font-weight-bold);
 }
 @media screen and (max-width: 992px) {
-  html[page="index.html"] header h1 {
+  html[data-page=home] header h1 {
     text-wrap: wrap;
     word-break: break-word;
     overflow-wrap: anywhere;
   }
 }
 @media screen and (max-width: 767px) {
-  html[page="index.html"] header h1 {
+  html[data-page=home] header h1 {
     font-size: var(--font-size-5x-large);
   }
 }
-html[page="index.html"] header h1 a {
+html[data-page=home] header h1 a {
   cursor: text;
 }
-html[page="index.html"] header h1 a:hover {
+html[data-page=home] header h1 a:hover {
   font-weight: initial !important;
 }
-html[page="index.html"] header p {
+html[data-page=home] header p {
   margin-block: 0;
   line-height: var(--line-height-small);
   font-weight: var(--font-weight-medium);
 }
-html[page="index.html"] header p.sub {
+html[data-page=home] header p.sub {
   color: var(--color-placeholder);
   font-size: var(--font-size-small);
   line-height: var(--line-height-medium);
 }
-html[page="index.html"] header hr {
+html[data-page=home] header hr {
   margin-block: var(--space-sm);
   width: 3rem;
 }
