@@ -243,11 +243,12 @@ html[data-page="home"] {
                         }
 
                         .blog__postText {
+                            width: 50%;
                             .blog__postTime {
                                 font-size: var(--font-size-small);
                             }
 
-                            .blog_postHeader {
+                            .blog__postHeader {
                                 font-weight: var(--font-weight-bold);
                                 margin-block: 0 var(--space-xxs);
                                 line-height: 1;
