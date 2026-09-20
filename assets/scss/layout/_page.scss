@@ -248,11 +248,9 @@ html[data-page="home"] {
                             }
 
                             .blog_postHeader {
-                                h3 {
-                                    font-weight: var(--font-weight-bold);
-                                    margin-block: 0 var(--space-xxs);
-                                    line-height: 1;
-                                }
+                                font-weight: var(--font-weight-bold);
+                                margin-block: 0 var(--space-xxs);
+                                line-height: 1;
                             }
                         }
                     }

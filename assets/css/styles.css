@@ -1018,7 +1018,7 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postTime {
   font-size: var(--font-size-small);
 }
-html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog_postHeader h3 {
+html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog_postHeader {
   font-weight: var(--font-weight-bold);
   margin-block: 0 var(--space-xxs);
   line-height: 1;
