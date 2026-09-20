@@ -237,9 +237,14 @@ html[data-page="home"] {
                         flex-direction: row;
                         gap: var(--space-xs);
 
+                        align-items: flex-start;
+
                         @include view-on-scroll;
 
                         .blog__postImage {
+                            display: flex;
+                            align-items: flex-start;
+
                             img {
                                 width: 100%;
                                 height: auto;
@@ -247,7 +252,7 @@ html[data-page="home"] {
                         }
 
                         .blog__postText {
-                            width: 50%;
+                            min-width: 50%;
 
                             .blog__postTime {
                                 font-size: var(--font-size-small);
@@ -256,8 +261,14 @@ html[data-page="home"] {
 
                             .blog__postHeader {
                                 font-weight: var(--font-weight-bold);
-                                margin-block: 0 var(--space-xxs);
+                                padding: var(--space-xs);
+                                margin-block: var(--space-xxs) var(--space-xs);
+                                border-bottom: var(--border-base);
                                 line-height: 1;
+                            }
+
+                            .blog__postExcerpt {
+                                margin-block: var(--space-xxs);
                             }
                         }
                     }
