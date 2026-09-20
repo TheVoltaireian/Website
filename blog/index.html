@@ -1,22 +1,33 @@
 ---
-layout: default
+layout: blog
 title: Blog
 permalink: /blog/
 ---
 
-<h1>Blog</h1>
-
-{% if site.posts.size > 0 %}
-    <ul>
+<section class="blog-list">
+    {% if site.posts.size > 0 %}
         {% for post in site.posts %}
-            <li>
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                <time datetime="{{ post.date | date_to_xmlschema }}">
-                    — {{ post.date | date: "%B %-d, %Y" }}
-                </time>
-            </li>
+            <article class="blog-list__item">
+                <h2>
+                    <a href="{{ post.url | relative_url }}">
+                        {{ post.title }}
+                    </a>
+                </h2>
+
+                <p>
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        {{ post.date | date: "%B %-d, %Y" }}
+                    </time>
+                </p>
+
+                {% if post.excerpt %}
+                    <div>
+                        {{ post.excerpt }}
+                    </div>
+                {% endif %}
+            </article>
         {% endfor %}
-    </ul>
-{% else %}
-    <p>No posts yet.</p>
-{% endif %}
+    {% else %}
+        <p>No posts yet.</p>
+    {% endif %}
+</section>

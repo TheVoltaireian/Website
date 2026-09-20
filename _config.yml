@@ -1,11 +1,10 @@
 title: "WildVoltaireian"
 description: "Say hello to my world."
+
 url: "https://wildvoltaireian.xyz"
 baseurl: ""
 
 markdown: kramdown
-theme: null
-
 permalink: /blog/:year/:month/:day/:title/
 
 exclude:
