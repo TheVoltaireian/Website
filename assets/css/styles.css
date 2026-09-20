@@ -1021,7 +1021,11 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
   display: flex;
   align-items: flex-start;
 }
-html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postImage img {
+html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postImage a {
+  display: flex;
+  align-items: flex-start;
+}
+html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postImage a img {
   width: 100%;
   height: auto;
 }

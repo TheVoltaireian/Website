@@ -245,9 +245,14 @@ html[data-page="home"] {
                             display: flex;
                             align-items: flex-start;
 
-                            img {
-                                width: 100%;
-                                height: auto;
+                            a {
+                                display: flex;
+                                align-items: flex-start;
+                                
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
                             }
                         }
 

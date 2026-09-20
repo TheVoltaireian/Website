@@ -139,9 +139,9 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
                     <article class="blog__post blog__post--hidden">
                         <div class="blog__postImage">
                             {% if post.image %}
-                                <img src="{{ post.image | relative_url }}" alt="Image for {{ post.title }}">
+                                <a href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="Image for {{ post.title }}"></a>
                             {% else %}
-                                <img src="{{ "/assets/images/wildvoltaireian.xyz.png" | relative_url }}" alt="Default image for {{ post.title }}">
+                                <a href="{{ post.url | relative_url }}"><img src="{{ "/assets/images/wildvoltaireian.xyz.png" | relative_url }}" alt="Default image for {{ post.title }}"></a>
                             {% endif %}
                         </div>
                         <div class="blog__postText">
