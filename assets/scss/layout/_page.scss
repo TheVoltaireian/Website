@@ -259,6 +259,7 @@ html[data-page="home"] {
                         .blog__postText {
                             min-width: 50%;
                             height: 100%;
+                            align-self: stretch;
 
                             .blog__postTime {
                                 font-size: var(--font-size-small);
@@ -278,10 +279,10 @@ html[data-page="home"] {
                             }
 
                             .blog__postButton {
-                                align-self: flex-end;
+                                margin-top: auto;
 
                                 border-top: var(--border-base);
-                                padding-top: var(--space-md);
+                                padding-top: var(--space-sm);
                             }
                         }
                     }

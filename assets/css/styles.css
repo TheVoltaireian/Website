@@ -1032,6 +1032,7 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText {
   min-width: 50%;
   height: 100%;
+  align-self: stretch;
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postTime {
   font-size: var(--font-size-small);
@@ -1048,7 +1049,7 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
   margin-block: var(--space-xxs);
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postButton {
-  align-self: flex-end;
+  margin-top: auto;
   border-top: var(--border-base);
-  padding-top: var(--space-md);
+  padding-top: var(--space-sm);
 }/*# sourceMappingURL=styles.css.map */
