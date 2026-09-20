@@ -974,4 +974,49 @@ html[data-page=home] .blog .blog__container .blog__header--visible {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+html[data-page=home] .blog .blog__container .blog__posts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-sm);
+}
+@media screen and (max-width: 1280px) {
+  html[data-page=home] .blog .blog__container .blog__posts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 992px) {
+  html[data-page=home] .blog .blog__container .blog__posts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 767px) {
+  html[data-page=home] .blog .blog__container .blog__posts {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+html[data-page=home] .blog .blog__container .blog__posts .blog__post {
+  background-color: var(--color-surface-2);
+  border: var(--border-base);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--box-shadow-medium);
+  padding: var(--space-md);
+  line-height: var(--line-height-xx-small);
+  opacity: 1;
+  transform: none;
+  overflow: hidden;
+  transition: var(--transition-hover--slow);
+  display: flex;
+  flex-direction: column;
+}
+html[data-page=home] .blog .blog__container .blog__posts .blog__post--hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 750ms;
+}
+html[data-page=home] .blog .blog__container .blog__posts .blog__post--visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }/*# sourceMappingURL=styles.css.map */

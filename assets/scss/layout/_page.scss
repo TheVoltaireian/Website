@@ -199,6 +199,49 @@ html[data-page="home"] {
 
                 @include view-on-scroll;
             }
+
+            .blog__posts {
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+
+                gap: var(--space-sm);
+
+                @media screen and (max-width: $breakpoint-md) {
+                    grid-template-columns: repeat(3, minmax(0, 1fr))
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    grid-template-columns: repeat(2, minmax(0, 1fr))
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    grid-template-columns: repeat(1, minmax(0, 1fr));
+                }
+
+                .blog__post {
+                    background-color: var(--color-surface-2);
+                    border: var(--border-base);
+                    border-radius: var(--border-radius-medium);
+
+                    box-shadow: var(--box-shadow-medium);
+
+                    padding: var(--space-md);
+
+                    line-height: var(--line-height-xx-small);
+
+                    opacity: 1;
+                    transform: none;
+
+                    overflow: hidden;
+
+                    transition: var(--transition-hover--slow);
+
+                    display: flex;
+                    flex-direction: column;
+
+                    @include view-on-scroll;
+                }
+            }
         }
     }
 }
