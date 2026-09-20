@@ -1020,6 +1020,7 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postTime {
   font-size: var(--font-size-small);
+  color: var(--color-subtle);
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postHeader {
   font-weight: var(--font-weight-bold);

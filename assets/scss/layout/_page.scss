@@ -244,8 +244,10 @@ html[data-page="home"] {
 
                         .blog__postText {
                             width: 50%;
+
                             .blog__postTime {
                                 font-size: var(--font-size-small);
+                                color: var(--color-subtle);
                             }
 
                             .blog__postHeader {
