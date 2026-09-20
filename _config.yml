@@ -1,7 +1,7 @@
 title: "WildVoltaireian"
 description: "Portfolio, blog and more"
-url: "https://thevoltaireian.github.io"
-baseurl: "/Website"
+url: "https://wildvoltaireian.xyz"
+baseurl: ""
 
 markdown: kramdown
 theme: null
