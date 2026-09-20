@@ -261,6 +261,9 @@ html[data-page="home"] {
                             height: 100%;
                             align-self: stretch;
 
+                            display: flex;
+                            flex-direction: column;
+
                             .blog__postTime {
                                 font-size: var(--font-size-small);
                                 color: var(--color-subtle);
@@ -280,9 +283,6 @@ html[data-page="home"] {
 
                             .blog__postButton {
                                 margin-top: auto;
-
-                                border-top: var(--border-base);
-                                padding-top: var(--space-sm);
                             }
                         }
                     }

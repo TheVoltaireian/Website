@@ -1033,6 +1033,8 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
   min-width: 50%;
   height: 100%;
   align-self: stretch;
+  display: flex;
+  flex-direction: column;
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postTime {
   font-size: var(--font-size-small);
@@ -1050,6 +1052,4 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postButton {
   margin-top: auto;
-  border-top: var(--border-base);
-  padding-top: var(--space-sm);
 }/*# sourceMappingURL=styles.css.map */
