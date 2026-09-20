@@ -1,20 +1,30 @@
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
 
-        const hiddenModifier = Array.from(entry.target.classList)
-            .find((className) => className.endsWith('--hidden'));
+            const hiddenModifier = [...entry.target.classList]
+                .find(className => className.endsWith('--hidden'));
 
-        if (!hiddenModifier) return;
-        const visibleModifier = hiddenModifier.replace('--hidden', '--visible');
-        
-        entry.target.classList.add(visibleModifier);
-        observer.unobserve(entry.target);
+            if (!hiddenModifier) return;
+
+            entry.target.classList.add(
+                hiddenModifier.replace('--hidden', '--visible')
+            );
+
+            observer.unobserve(entry.target);
+        });
     });
-});
 
-const hiddenModifiers = document.querySelectorAll('.projects__card--hidden, .projects__header--hidden, .blog__post--hidden, .blog__header--hidden');
-hiddenModifiers.forEach((element) => observer.observe(element));
+    document
+        .querySelectorAll(
+            '.projects__card--hidden, ' +
+            '.projects__header--hidden, ' +
+            '.blog__post--hidden, ' +
+            '.blog__header--hidden'
+        )
+        .forEach(element => observer.observe(element));
+});
 
 const resizeObserver = new ResizeObserver(entries => {
     for (const entry of entries) {
