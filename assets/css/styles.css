@@ -1028,6 +1028,7 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postImage a img {
   width: 100%;
   height: auto;
+  border: none;
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText {
   min-width: 50%;
