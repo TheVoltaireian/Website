@@ -11,7 +11,7 @@ A work-in-progress portfolio/blog website that I'm working on
 - <b>Source Control</b> — Git
 - <b>CLI</b> — Bash
 - <b>Documentation</b> — Markdown
-- <b>Hosting</b> — GitHub Pages
+- <b>Hosting</b> — GitHub Pages, Jekyll
 - <b>Extensions</b> — Watch Sass, Live Server, Source Control
 
 ## 🌴 Roadmap
