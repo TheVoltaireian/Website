@@ -248,7 +248,7 @@ html[data-page="home"] {
                             a {
                                 display: flex;
                                 align-items: flex-start;
-                                
+
                                 img {
                                     width: 100%;
                                     height: auto;
@@ -266,14 +266,18 @@ html[data-page="home"] {
 
                             .blog__postHeader {
                                 font-weight: var(--font-weight-bold);
-                                padding-bottom: var(--space-xs);
-                                margin-block: var(--space-xxs) var(--space-xs);
+                                padding-bottom: var(--space-sm);
+                                margin-block: var(--space-xxs) var(--space-sm);
                                 border-bottom: var(--border-base);
                                 line-height: 1;
                             }
 
                             .blog__postExcerpt {
                                 margin-block: var(--space-xxs);
+                            }
+
+                            .blog__postButton {
+                                align-self: flex-end;
                             }
                         }
                     }

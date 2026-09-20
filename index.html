@@ -158,6 +158,12 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
                             {% if post.excerpt %}
                                 <p class="blog__postExcerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
                             {% endif %}
+
+                            <div class="blog__postButton">
+                                <button class="primary" onclick="window.open('{{ post.url | relative_url }}')">
+                                    <span>Read post</span>
+                                </button>
+                            </div>
                         </div>
                     </article>
                 {% endfor %}

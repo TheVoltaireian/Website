@@ -1038,11 +1038,14 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postHeader {
   font-weight: var(--font-weight-bold);
-  padding-bottom: var(--space-xs);
-  margin-block: var(--space-xxs) var(--space-xs);
+  padding-bottom: var(--space-sm);
+  margin-block: var(--space-xxs) var(--space-sm);
   border-bottom: var(--border-base);
   line-height: 1;
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postExcerpt {
   margin-block: var(--space-xxs);
+}
+html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postButton {
+  align-self: flex-end;
 }/*# sourceMappingURL=styles.css.map */
