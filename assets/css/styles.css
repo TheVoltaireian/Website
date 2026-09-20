@@ -638,7 +638,6 @@ footer {
 }
 footer .footer__wordmark {
   font-size: var(--font-size-xx-large);
-  font-weight: var(--font-weight-bold);
   color: var(--color-inverted);
   display: flex;
   min-width: 0;
