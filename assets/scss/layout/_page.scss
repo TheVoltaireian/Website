@@ -14,7 +14,7 @@ body {
 }
 
 /* index.html */
-html[page="index.html"] {
+html[data-page="home"] {
     .projects {
         .projects__wikis {
             display: flex;
