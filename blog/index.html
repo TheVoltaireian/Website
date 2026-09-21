@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Blog
+page_id: blog
 permalink: /blog/
 ---
 
@@ -30,4 +31,46 @@ permalink: /blog/
     {% else %}
         <p>No posts yet.</p>
     {% endif %}
+</section>
+<section class="blog">
+    <div class="blog__container">
+        {% if site.posts.size > 0 %}
+            <div class="blog__posts">
+                {% for post in site.posts %}
+                    <article class="blog__post blog__post--hidden">
+                        <div class="blog__postImage">
+                            {% if post.image %}
+                                <a href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="Image for {{ post.title }}"></a>
+                            {% else %}
+                                <a href="{{ post.url | relative_url }}"><img src="{{ "/assets/images/wildvoltaireian.xyz.png" | relative_url }}" alt="Default image for {{ post.title }}"></a>
+                            {% endif %}
+                        </div>
+                        <div class="blog__postText">
+                            <time class="blog__postTime" datetime="{{ post.date | date_to_xmlschema }}">
+                                {{ post.date | date: "%B %-d, %Y" }}
+                            </time>
+
+                            <h3 class="blog__postHeader">
+                                <a href="{{ post.url | relative_url }}">
+                                    {{ post.title }}
+                                </a>
+                            </h3>
+
+                            {% if post.excerpt %}
+                                <p class="blog__postExcerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+                            {% endif %}
+
+                            <div class="blog__postButton">
+                                <button class="secondary-2" onclick="window.open('{{ post.url | relative_url }}')">
+                                    <span>Read post</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No posts yet.</p>
+        {% endif %}
+    </div>
 </section>
