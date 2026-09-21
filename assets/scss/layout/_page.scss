@@ -272,10 +272,6 @@ html[data-page="home"] {
 
                             @media screen and (max-width: $breakpoint-xs) {
                                 min-width: 100%;
-
-                                .blog__postButton {
-                                    margin-top: var(--space-sm);
-                                }
                             }
 
                             .blog__postTime {
@@ -297,6 +293,10 @@ html[data-page="home"] {
 
                             .blog__postButton {
                                 margin-top: auto;
+
+                                @media screen and (max-width: $breakpoint-xs) {
+                                    margin-top: var(--space-sm);
+                                }
                             }
                         }
                     }
