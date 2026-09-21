@@ -288,15 +288,11 @@ html[data-page="home"] {
                             }
 
                             .blog__postExcerpt {
-                                margin-block: 0;
+                                margin-block: 0 var(--space-sm);
                             }
 
                             .blog__postButton {
                                 margin-top: auto;
-
-                                @media screen and (max-width: $breakpoint-xs) {
-                                    margin-top: var(--space-sm);
-                                }
                             }
                         }
                     }

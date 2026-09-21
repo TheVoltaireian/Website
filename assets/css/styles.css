@@ -1059,13 +1059,8 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
   line-height: 1;
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postExcerpt {
-  margin-block: 0;
+  margin-block: 0 var(--space-sm);
 }
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postButton {
   margin-top: auto;
-}
-@media screen and (max-width: 767px) {
-  html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postButton {
-    margin-top: var(--space-sm);
-  }
 }/*# sourceMappingURL=styles.css.map */
