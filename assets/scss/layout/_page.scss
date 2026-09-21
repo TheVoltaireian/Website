@@ -272,6 +272,10 @@ html[data-page="home"] {
 
                             @media screen and (max-width: $breakpoint-xs) {
                                 min-width: 100%;
+
+                                .blog__postButton {
+                                    margin-top: var(--space-sm);
+                                }
                             }
 
                             .blog__postTime {
