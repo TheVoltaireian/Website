@@ -612,6 +612,90 @@ html[data-page=home] header hr {
   width: 3rem;
 }
 
+html[data-page=blog] body::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  width: 100%;
+  height: var(--header-height);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/backgrounds/alien_red/2.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: var(--backdrop-filter-blur);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+          mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+  z-index: -1;
+  pointer-events: none;
+}
+html[data-page=blog] header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: calc(var(--header-height) - var(--space-lg) * 2 - var(--space-md) * 2);
+  margin: var(--space-lg);
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-page=blog] header {
+    animation: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  html[data-page=blog] header {
+    text-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767px) {
+  html[data-page=blog] header {
+    margin: var(--space-sm);
+    padding: var(--space-md) var(--space-xs);
+  }
+}
+html[data-page=blog] header h1 {
+  margin: auto;
+  margin-block: 0;
+  line-height: initial;
+  font-size: var(--font-size-6x-large);
+  font-weight: var(--font-weight-bold);
+}
+@media screen and (max-width: 992px) {
+  html[data-page=blog] header h1 {
+    text-wrap: wrap;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+}
+@media screen and (max-width: 767px) {
+  html[data-page=blog] header h1 {
+    font-size: var(--font-size-5x-large);
+  }
+}
+html[data-page=blog] header h1 a {
+  cursor: text;
+}
+html[data-page=blog] header h1 a:hover {
+  font-weight: initial !important;
+}
+html[data-page=blog] header p {
+  margin-block: 0;
+  line-height: var(--line-height-small);
+  font-weight: var(--font-weight-medium);
+}
+html[data-page=blog] header p.sub {
+  color: var(--color-placeholder);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-medium);
+}
+html[data-page=blog] header hr {
+  margin-block: var(--space-sm);
+  width: 3rem;
+}
+
 main {
   margin: var(--space-lg);
   padding: var(--space-xl) var(--space-md);
