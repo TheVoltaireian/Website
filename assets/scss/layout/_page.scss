@@ -241,6 +241,10 @@ html[data-page="home"] {
 
                         @include view-on-scroll;
 
+                        @media screen and (max-width: $breakpoint-xs) {
+                            flex-direction: column;
+                        }
+
                         .blog__postImage {
                             display: flex;
                             align-items: flex-start;
@@ -265,6 +269,10 @@ html[data-page="home"] {
 
                             display: flex;
                             flex-direction: column;
+
+                            @media screen and (max-width: $breakpoint-xs) {
+                                min-width: 100%;
+                            }
 
                             .blog__postTime {
                                 font-size: var(--font-size-small);
