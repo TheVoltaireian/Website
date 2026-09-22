@@ -872,6 +872,28 @@ footer .footer__subtitle .footer__subtitle-socials .divider {
   flex-shrink: 0;
 }
 
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-xxs) var(--space-xs);
+  border: var(--border-subtle);
+  border-radius: var(--border-radius-base);
+  background-color: var(--color-surface-1);
+  color: var(--color-emphasized);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+  -moz-column-gap: var(--space-xxs);
+       column-gap: var(--space-xxs);
+  white-space: nowrap;
+  text-decoration: none;
+}
+.tag--progressive {
+  border: var(--border-progressive);
+  color: var(--color-progressive);
+  background: var(--background-color-progressive-subtle);
+}
+
 @property --projects__cardImageAlpha {
   syntax: "<percentage>";
   inherits: true;
