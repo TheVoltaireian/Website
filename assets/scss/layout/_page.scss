@@ -465,13 +465,6 @@ html[data-page="post"] {
             margin-top: 0;
             padding-top: 0;
 
-            @media screen and (max-width: $breakpoint-xs) {
-                margin: var(--space-sm);
-                padding: var(--space-md) var(--space-xs);
-                margin-block: 0;
-                padding-block: 0;
-            }
-
             gap: var(--space-xs);
 
             text-align: left;
@@ -511,10 +504,24 @@ html[data-page="post"] {
                     gap: var(--space-xxs);
                 }
             }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                margin: var(--space-sm);
+                padding: var(--space-md) var(--space-xs);
+                margin-block: 0;
+                padding-block: 0;
+
+                h1 {
+                    font-size: var(--font-size-4x-large);
+                }
+            }
         }
 
         main.post__main {
             height: 100%;
+
+            margin-top: var(--space-sm);
+            padding-top: var(--space-md);
 
             .post__mainContent {
                 p:first-of-type {
