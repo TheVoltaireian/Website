@@ -464,7 +464,7 @@ html[data-page="post"] {
             margin-top: 0;
             padding-top: 0;
 
-            gap: var(--space-xs);
+            gap: var(--space-sm);
 
             text-align: left;
 
@@ -480,7 +480,7 @@ html[data-page="post"] {
                 line-height: var(--line-height-small);
                 font-weight: var(--font-weight-medium);
                 color: var(--color-placeholder);
-                font-size: var(--font-size-medium);
+                font-size: var(--font-size-large);
                 line-height: var(--line-height-medium);
             }
         }

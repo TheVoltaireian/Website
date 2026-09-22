@@ -1298,7 +1298,7 @@ html[data-page=post] body header.post__header {
   padding: var(--space-lg) var(--space-md);
   margin-top: 0;
   padding-top: 0;
-  gap: var(--space-xs);
+  gap: var(--space-sm);
   text-align: left;
 }
 html[data-page=post] body header.post__header h1 {
@@ -1312,7 +1312,7 @@ html[data-page=post] body header.post__header p {
   line-height: var(--line-height-small);
   font-weight: var(--font-weight-medium);
   color: var(--color-placeholder);
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-large);
   line-height: var(--line-height-medium);
 }
 html[data-page=post] body main.post__main {
