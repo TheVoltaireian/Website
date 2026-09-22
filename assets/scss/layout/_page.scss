@@ -303,6 +303,8 @@ html[data-page="home"] {
 }
 
 html[data-page="blog"] {
+    --color-progressive-oklch__h: 22.77;
+    
     main {
         .blog {
             .blog__container {

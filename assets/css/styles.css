@@ -1149,6 +1149,9 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
   margin-top: auto;
 }
 
+html[data-page=blog] {
+  --color-progressive-oklch__h: 22.77;
+}
 html[data-page=blog] main .blog .blog__container {
   display: flex;
   flex-direction: column;
