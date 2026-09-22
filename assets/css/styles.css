@@ -1268,8 +1268,10 @@ html[data-page=blog] main .blog .blog__container .blog__posts .blog__post .blog_
   margin-top: auto;
 }
 
-/* Blogpost */
-nav.post__breadcrumbs {
+html[data-page=blog] body {
+  grid-template-rows: auto auto 1fr auto;
+}
+html[data-page=blog] body nav.post__breadcrumbs {
   width: 100%;
   border-bottom: var(--border-base);
   margin: var(--space-lg);
@@ -1282,8 +1284,7 @@ nav.post__breadcrumbs {
   flex-wrap: wrap;
   color: var(--color-subtle);
 }
-
-header.post__header {
+html[data-page=blog] body header.post__header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1296,21 +1297,20 @@ header.post__header {
   padding: var(--space-lg) var(--space-md);
   text-align: left;
 }
-header.post__header h1 {
+html[data-page=blog] body header.post__header h1 {
   margin-block: 0;
   line-height: initial;
   font-size: var(--font-size-6x-large);
   font-weight: var(--font-weight-bold);
 }
-header.post__header p {
+html[data-page=blog] body header.post__header p {
   margin-block: 0;
   line-height: var(--line-height-small);
   font-weight: var(--font-weight-medium);
   color: var(--color-placeholder);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-medium);
   line-height: var(--line-height-medium);
 }
-
-main.post__main {
+html[data-page=blog] body main.post__main {
   height: 100%;
 }/*# sourceMappingURL=styles.css.map */
