@@ -1295,6 +1295,8 @@ html[data-page=blog] body header.post__header {
   height: max-content;
   margin: var(--space-lg);
   padding: var(--space-lg) var(--space-md);
+  margin-top: 0;
+  padding-top: 0;
   text-align: left;
 }
 html[data-page=blog] body header.post__header h1 {
