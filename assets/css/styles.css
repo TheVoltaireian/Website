@@ -1294,7 +1294,7 @@ html[data-page=post] body header.post__header {
   padding: var(--space-lg) var(--space-md);
   margin-block: 0;
   padding-block: 0;
-  gap: var(--space-sm);
+  gap: var(--space-xs);
   text-align: left;
 }
 html[data-page=post] body header.post__header hr {
