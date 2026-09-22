@@ -445,10 +445,6 @@ html[data-page="post"] {
             gap: var(--space-xs);
             flex-wrap: wrap;
             color: var(--color-subtle);
-
-            hr {
-                margin-block: var(--space-xs);
-            }
         }
 
         header.post__header {
@@ -467,6 +463,11 @@ html[data-page="post"] {
             gap: var(--space-sm);
 
             text-align: left;
+
+            hr {
+                margin-block: var(--space-xs);
+                display: block;
+            }
 
             h1 {
                 margin-block: 0;

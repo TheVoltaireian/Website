@@ -1283,9 +1283,6 @@ html[data-page=post] body nav.post__breadcrumbs {
   flex-wrap: wrap;
   color: var(--color-subtle);
 }
-html[data-page=post] body nav.post__breadcrumbs hr {
-  margin-block: var(--space-xs);
-}
 html[data-page=post] body header.post__header {
   display: flex;
   flex-direction: column;
@@ -1300,6 +1297,10 @@ html[data-page=post] body header.post__header {
   padding-top: 0;
   gap: var(--space-sm);
   text-align: left;
+}
+html[data-page=post] body header.post__header hr {
+  margin-block: var(--space-xs);
+  display: block;
 }
 html[data-page=post] body header.post__header h1 {
   margin-block: 0;
