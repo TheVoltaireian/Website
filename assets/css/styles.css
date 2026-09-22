@@ -1268,10 +1268,10 @@ html[data-page=blog] main .blog .blog__container .blog__posts .blog__post .blog_
   margin-top: auto;
 }
 
-html[data-page=blog] body {
+html[data-page=post] body {
   grid-template-rows: auto auto 1fr auto;
 }
-html[data-page=blog] body nav.post__breadcrumbs {
+html[data-page=post] body nav.post__breadcrumbs {
   width: 100%;
   border-bottom: var(--border-base);
   margin: var(--space-lg);
@@ -1284,7 +1284,7 @@ html[data-page=blog] body nav.post__breadcrumbs {
   flex-wrap: wrap;
   color: var(--color-subtle);
 }
-html[data-page=blog] body header.post__header {
+html[data-page=post] body header.post__header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1299,13 +1299,13 @@ html[data-page=blog] body header.post__header {
   padding-top: 0;
   text-align: left;
 }
-html[data-page=blog] body header.post__header h1 {
+html[data-page=post] body header.post__header h1 {
   margin-block: 0;
   line-height: initial;
   font-size: var(--font-size-6x-large);
   font-weight: var(--font-weight-bold);
 }
-html[data-page=blog] body header.post__header p {
+html[data-page=post] body header.post__header p {
   margin-block: 0;
   line-height: var(--line-height-small);
   font-weight: var(--font-weight-medium);
@@ -1313,6 +1313,6 @@ html[data-page=blog] body header.post__header p {
   font-size: var(--font-size-medium);
   line-height: var(--line-height-medium);
 }
-html[data-page=blog] body main.post__main {
+html[data-page=post] body main.post__main {
   height: 100%;
 }/*# sourceMappingURL=styles.css.map */
