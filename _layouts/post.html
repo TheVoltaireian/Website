@@ -9,10 +9,11 @@ layout: base
 <header class="post__header">
     <hr>
     <h1>{{ page.title }}</h1>
-    <p>
+    <div class="post__meta">
         <time datetime="{{ page.date | date_to_xmlschema }}">
             {{ page.date | date: "%B %-d, %Y" }}
         </time>
+
         {% if page.tags %}
             <div class="post__tags">
                 {% for tag in page.tags %}
@@ -29,7 +30,7 @@ layout: base
                 {% endfor %}
             </div>
         {% endif %}
-    </p>
+    </div>
 </header>
 
 <main class="post__main">

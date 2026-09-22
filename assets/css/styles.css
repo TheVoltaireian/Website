@@ -1351,7 +1351,12 @@ html[data-page=post] body header.post__header h1 {
   font-size: var(--font-size-6x-large);
   font-weight: var(--font-weight-bold);
 }
-html[data-page=post] body header.post__header p {
+html[data-page=post] body header.post__header .post__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+html[data-page=post] body header.post__header .post__meta time {
   margin-block: 0;
   line-height: var(--line-height-small);
   font-weight: var(--font-weight-medium);
@@ -1359,7 +1364,7 @@ html[data-page=post] body header.post__header p {
   font-size: var(--font-size-large);
   line-height: var(--line-height-medium);
 }
-html[data-page=post] body header.post__header p .post__tags {
+html[data-page=post] body header.post__header .post__meta .post__tags {
   margin-left: var(--space-sm);
   display: flex;
   gap: var(--space-xs);

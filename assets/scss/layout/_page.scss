@@ -489,13 +489,19 @@ html[data-page="post"] {
                 font-weight: var(--font-weight-bold);
             }
 
-            p {
-                margin-block: 0;
-                line-height: var(--line-height-small);
-                font-weight: var(--font-weight-medium);
-                color: var(--color-placeholder);
-                font-size: var(--font-size-large);
-                line-height: var(--line-height-medium);
+            .post__meta {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                time {
+                    margin-block: 0;
+                    line-height: var(--line-height-small);
+                    font-weight: var(--font-weight-medium);
+                    color: var(--color-placeholder);
+                    font-size: var(--font-size-large);
+                    line-height: var(--line-height-medium);
+                }
 
                 .post__tags {
                     margin-left: var(--space-sm);
