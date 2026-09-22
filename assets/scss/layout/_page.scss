@@ -429,3 +429,47 @@ html[data-page="blog"] {
         }
     }
 }
+
+/* Blogpost */
+nav.post__breadcrumbs {
+    width: 100%;
+    border-bottom: var(--border-base);
+    padding-bottom: var(--space-xs);
+    margin-bottom: var(--space-xs);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+    color: var(--color-subtle);
+}
+
+header.post__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+    min-height: 20vh;
+    margin: var(--space-lg);
+    padding: var(--space-lg) var(--space-md);
+
+    text-align: left;
+
+    h1 {
+        margin: auto;
+        margin-block: 0;
+        line-height: initial;
+        font-size: var(--font-size-6x-large);
+        font-weight: var(--font-weight-bold);
+    }
+
+    p {
+        margin-block: 0;
+        line-height: var(--line-height-small);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-placeholder);
+        font-size: var(--font-size-small);
+        line-height: var(--line-height-medium);
+    }
+}
