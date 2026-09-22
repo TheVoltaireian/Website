@@ -1317,4 +1317,7 @@ html[data-page=post] body header.post__header p {
 }
 html[data-page=post] body main.post__main {
   height: 100%;
+}
+html[data-page=post] body main.post__main .post__mainContent p:first-of-type {
+  margin-top: 0 !important;
 }/*# sourceMappingURL=styles.css.map */

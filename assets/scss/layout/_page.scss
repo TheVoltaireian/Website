@@ -487,6 +487,12 @@ html[data-page="post"] {
 
         main.post__main {
             height: 100%;
+
+            .post__mainContent {
+                p:first-of-type {
+                    margin-top: 0 !important;
+                }
+            }
         }
     }
 }
