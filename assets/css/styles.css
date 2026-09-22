@@ -1293,7 +1293,6 @@ html[data-page=post] body header.post__header {
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
-  min-height: 20vh;
   height: -moz-max-content;
   height: max-content;
   margin: var(--space-lg);
