@@ -437,6 +437,12 @@ html[data-page="post"] {
         nav.post__breadcrumbs {
             margin: var(--space-lg);
             padding: var(--space-lg) var(--space-md);
+            @media screen and (max-width: $breakpoint-xs) {
+                margin: var(--space-sm);
+                padding: var(--space-md) var(--space-xs);
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
             padding-bottom: 0;
             margin-bottom: 0;
             display: flex;
@@ -456,8 +462,13 @@ html[data-page="post"] {
             height: max-content;
             margin: var(--space-lg);
             padding: var(--space-lg) var(--space-md);
-            margin-block: 0;
-            padding-block: 0;
+
+            @media screen and (max-width: $breakpoint-xs) {
+                margin: var(--space-sm);
+                padding: var(--space-md) var(--space-xs);
+                margin-block: 0;
+                padding-block: 0;
+            }
 
             gap: var(--space-xs);
 
