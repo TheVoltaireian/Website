@@ -462,6 +462,8 @@ html[data-page="post"] {
             height: max-content;
             margin: var(--space-lg);
             padding: var(--space-lg) var(--space-md);
+            margin-top: 0;
+            padding-top: 0;
 
             @media screen and (max-width: $breakpoint-xs) {
                 margin: var(--space-sm);
@@ -494,6 +496,12 @@ html[data-page="post"] {
                 color: var(--color-placeholder);
                 font-size: var(--font-size-large);
                 line-height: var(--line-height-medium);
+
+                .post__tags {
+                    margin-left: var(--space-sm);
+                    display: flex;
+                    gap: var(--space-xs);
+                }
             }
         }
 

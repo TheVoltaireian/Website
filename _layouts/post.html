@@ -13,6 +13,22 @@ layout: base
         <time datetime="{{ page.date | date_to_xmlschema }}">
             {{ page.date | date: "%B %-d, %Y" }}
         </time>
+        {% if page.tags %}
+            <div class="post__tags">
+                {% for tag in page.tags %}
+                    {% assign tag_label = tag %}
+
+                    {% case tag %}
+                        {% when "web-development" %}
+                            {% assign tag_label = "Web Development" %}
+                        {% when "personal" %}
+                            {% assign tag_label = "Personal" %}
+                    {% endcase %}
+
+                    <span class="tag">{{ tag_label }}</span>
+                {% endfor %}
+            </div>
+        {% endif %}
     </p>
 </header>
 

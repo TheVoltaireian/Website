@@ -1303,6 +1303,8 @@ html[data-page=post] body header.post__header {
   height: max-content;
   margin: var(--space-lg);
   padding: var(--space-lg) var(--space-md);
+  margin-top: 0;
+  padding-top: 0;
 }
 @media screen and (max-width: 767px) {
   html[data-page=post] body header.post__header {
@@ -1334,6 +1336,11 @@ html[data-page=post] body header.post__header p {
   color: var(--color-placeholder);
   font-size: var(--font-size-large);
   line-height: var(--line-height-medium);
+}
+html[data-page=post] body header.post__header p .post__tags {
+  margin-left: var(--space-sm);
+  display: flex;
+  gap: var(--space-xs);
 }
 html[data-page=post] body main.post__main {
   height: 100%;

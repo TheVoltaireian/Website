@@ -2,6 +2,9 @@
 layout: post
 title: "That Time I Got Reincarnated as a Web Developer"
 page_id: post
+tags:
+  - web-development
+  - personal
 ---
 **Note: This blog post is still unfinished.**
 
