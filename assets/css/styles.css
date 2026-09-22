@@ -1365,9 +1365,11 @@ html[data-page=post] body header.post__header .post__meta time {
   line-height: var(--line-height-medium);
 }
 html[data-page=post] body header.post__header .post__meta .post__tags {
+  border-left: var(--border-subtle);
+  padding-left: var(--space-sm);
   margin-left: var(--space-sm);
   display: flex;
-  gap: var(--space-xs);
+  gap: var(--space-xxs);
 }
 html[data-page=post] body main.post__main {
   height: 100%;

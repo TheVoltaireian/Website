@@ -504,9 +504,11 @@ html[data-page="post"] {
                 }
 
                 .post__tags {
+                    border-left: var(--border-subtle);
+                    padding-left: var(--space-sm);
                     margin-left: var(--space-sm);
                     display: flex;
-                    gap: var(--space-xs);
+                    gap: var(--space-xxs);
                 }
             }
         }
