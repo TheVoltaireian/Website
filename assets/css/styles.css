@@ -1272,6 +1272,8 @@ html[data-page=blog] main .blog .blog__container .blog__posts .blog__post .blog_
 nav.post__breadcrumbs {
   width: 100%;
   border-bottom: var(--border-base);
+  margin: var(--space-lg);
+  padding: var(--space-lg) var(--space-md);
   padding-bottom: var(--space-xs);
   margin-bottom: var(--space-xs);
   display: flex;
@@ -1285,15 +1287,16 @@ header.post__header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   min-height: 20vh;
+  height: -moz-max-content;
+  height: max-content;
   margin: var(--space-lg);
   padding: var(--space-lg) var(--space-md);
   text-align: left;
 }
 header.post__header h1 {
-  margin: auto;
   margin-block: 0;
   line-height: initial;
   font-size: var(--font-size-6x-large);
@@ -1306,4 +1309,8 @@ header.post__header p {
   color: var(--color-placeholder);
   font-size: var(--font-size-small);
   line-height: var(--line-height-medium);
+}
+
+main.post__main {
+  height: 100%;
 }/*# sourceMappingURL=styles.css.map */
