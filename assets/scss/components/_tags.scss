@@ -12,5 +12,12 @@
     column-gap: var(--space-xxs);
     white-space: nowrap;
     text-decoration: none;
+
+    &--progressive {
+        border: var(--border-progressive);
+        color: var(--color-progressive);
+        
+    }
 }
+
 

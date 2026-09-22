@@ -130,6 +130,7 @@
     --background-color-progressive: var( --color-progressive );
 	--background-color-progressive--hover: var( --color-progressive--hover );
 	--background-color-progressive--active: var( --color-progressive--active );
+	--background-color-progressive-subtle: oklch( var( --color-surface-1-oklch__l ), var( --color-progressive-oklch__c ), var( --color-progressive-oklch__h ) );
 
     /* Text color */
     --color-emphasized-oklch__l: 93%;
