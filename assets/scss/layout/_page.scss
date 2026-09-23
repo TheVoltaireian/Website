@@ -436,7 +436,7 @@ html[data-page="post"] {
 
         nav.post__breadcrumbs {
             margin: var(--space-lg);
-            padding: var(--space-lg) var(--space-xxl);
+            padding: var(--space-lg) var(--space-xxxl);
 
             @media screen and (max-width: $breakpoint-xs) {
                 margin: var(--space-sm);
@@ -481,7 +481,7 @@ html[data-page="post"] {
 
             height: max-content;
             margin: var(--space-lg);
-            padding: var(--space-lg) var(--space-xxl);
+            padding: var(--space-lg) var(--space-xxxl);
             margin-top: 0;
             padding-top: 0;
             margin-bottom: var(--space-sm);
@@ -563,7 +563,7 @@ html[data-page="post"] {
             margin-top: var(--space-xs);
             padding-top: var(--space-sm);
 
-            padding-inline: var(--space-xxl);
+            padding-inline: var(--space-xxxl);
 
             .post__mainContent {
                 p:first-of-type {
