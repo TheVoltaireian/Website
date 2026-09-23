@@ -456,6 +456,8 @@ html[data-page="post"] {
             border-radius: var(--border-radius-large);
             margin-inline: var(--space-4xl);
             margin-block: var(--space-xl);
+
+            padding: var(--space-4xl);
         }
 
         nav.post__breadcrumbs {

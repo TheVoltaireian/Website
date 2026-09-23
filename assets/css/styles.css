@@ -1343,6 +1343,7 @@ html[data-page=post] body .post__wrapper {
   border-radius: var(--border-radius-large);
   margin-inline: var(--space-4xl);
   margin-block: var(--space-xl);
+  padding: var(--space-4xl);
 }
 html[data-page=post] body nav.post__breadcrumbs {
   margin: 0;
