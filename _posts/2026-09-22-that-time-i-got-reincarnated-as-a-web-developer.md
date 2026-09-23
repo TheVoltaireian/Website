@@ -21,7 +21,8 @@ Until I got banned.
 Now, I'm not gonna delve too deep into why I got banned (mainly because it's super embarassing), but here's a bit of CSS:
 
 ````css
-// sometimes I wonder what would've happened if I didn't get banned...
+/* sometimes I wonder what would've happened if I didn't get banned... */
+
 #wildvoltaireian {
   --ban-formula: calc(var(--10-years-old) + var(--didnt-read-the-rules));
 }
