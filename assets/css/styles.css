@@ -1354,7 +1354,7 @@ html[data-page=post] body header.post__header hr {
 html[data-page=post] body header.post__header h1 {
   margin-block: 0;
   line-height: initial;
-  font-size: var(--font-size-6x-large);
+  font-size: var(--font-size-5x-large);
   font-weight: var(--font-weight-bold);
 }
 html[data-page=post] body header.post__header .post__meta {
