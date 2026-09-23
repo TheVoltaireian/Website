@@ -48,7 +48,7 @@ samp {
 
 pre,
 code {
-	background-color: var(--color-surface-1);
+	background-color: var(--color-surface-2);
 	border: var(--border-base);
 }
 
@@ -64,6 +64,7 @@ pre {
 
     code {
         border: none;
+        border-radius: 0;
         background-color: transparent;
     }
 }
