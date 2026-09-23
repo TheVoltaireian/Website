@@ -48,7 +48,6 @@ samp {
 
 pre,
 code {
-	color: var(--color-emphasized);
 	background-color: var(--color-surface-1);
 	border: var(--border-base);
 }
@@ -62,4 +61,9 @@ pre {
 	padding: var(--space-md);
 	overflow: auto;
 	border-radius: var(--border-radius-medium);
+
+    code {
+        border: none;
+        background-color: transparent;
+    }
 }
