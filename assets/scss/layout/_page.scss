@@ -436,7 +436,7 @@ html[data-page="post"] {
 
         nav.post__breadcrumbs {
             margin: var(--space-lg);
-            padding: var(--space-lg) var(--space-md);
+            padding: var(--space-lg) var(--space-xxl);
 
             @media screen and (max-width: $breakpoint-xs) {
                 margin: var(--space-sm);
@@ -481,7 +481,7 @@ html[data-page="post"] {
 
             height: max-content;
             margin: var(--space-lg);
-            padding: var(--space-lg) var(--space-md);
+            padding: var(--space-lg) var(--space-xxl);
             margin-top: 0;
             padding-top: 0;
             margin-bottom: var(--space-sm);
@@ -494,7 +494,7 @@ html[data-page="post"] {
             hr {
                 flex-basis: 100%;
                 width: 100%;
-                margin-block: var(--space-xs);
+                margin-block: var(--space-sm) var(--space-xs);
             }
 
             h1 {
@@ -555,6 +555,8 @@ html[data-page="post"] {
 
             margin-top: var(--space-sm);
             padding-top: var(--space-md);
+
+            padding-inline: var(--space-xxl);
 
             .post__mainContent {
                 p:first-of-type {
