@@ -1378,6 +1378,17 @@ html[data-page=post] body header.post__header .post__meta .post__tags {
   gap: var(--space-xxs);
 }
 @media screen and (max-width: 767px) {
+  html[data-page=post] body header.post__header .post__meta {
+    flex-direction: column;
+  }
+  html[data-page=post] body header.post__header .post__meta .post__tags {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
   html[data-page=post] body header.post__header {
     margin: var(--space-sm);
     padding: var(--space-md) var(--space-xs);

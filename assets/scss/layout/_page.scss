@@ -525,6 +525,17 @@ html[data-page="post"] {
                     display: flex;
                     gap: var(--space-xxs);
                 }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    flex-direction: column;
+
+                    .post__tags {
+                        border-left: none;
+                        padding-left: 0;
+                        margin-left: 0;
+                        flex-direction: column;
+                    }
+                }
             }
 
             @media screen and (max-width: $breakpoint-xs) {
