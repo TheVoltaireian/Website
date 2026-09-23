@@ -1388,6 +1388,9 @@ html[data-page=post] body .post__wrapper header.post__header nav.post__breadcrum
 html[data-page=post] body .post__wrapper header.post__header nav.post__breadcrumbs a:active {
   color: var(--color-subtle);
 }
+html[data-page=post] body .post__wrapper header.post__header nav.post__breadcrumbs .divider {
+  font-size: var(--font-size-x-small);
+}
 html[data-page=post] body .post__wrapper header.post__header nav.post__breadcrumbs .post__name {
   font-weight: var(--font-weight-bold);
   color: var(--color-base);

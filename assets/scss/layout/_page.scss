@@ -511,6 +511,10 @@ html[data-page="post"] {
                         }
                     }
 
+                    .divider {
+                        font-size: var(--font-size-x-small);
+                    }
+
                     .post__name {
                         font-weight: var(--font-weight-bold);
                         color: var(--color-base);
