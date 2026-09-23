@@ -396,16 +396,10 @@ a:active {
   border-radius: 0;
 }
 .highlight {
-  /* Whitespace */
+  /* Generic whitespace */
 }
 .highlight .w {
   color: #f8f8f2;
-}
-.highlight {
-  /* Errors */
-}
-.highlight .err {
-  color: #ff5555;
 }
 .highlight {
   /* Comments */
@@ -420,28 +414,10 @@ a:active {
   color: #6272a4;
 }
 .highlight {
-  /* Generic output and headings */
+  /* Errors */
 }
-.highlight .go,
-.highlight .gh,
-.highlight .gu {
-  color: #8be9fd;
-}
-.highlight .gd,
-.highlight .gt {
+.highlight .err {
   color: #ff5555;
-}
-.highlight .gi {
-  color: #50fa7b;
-}
-.highlight .gp {
-  color: #ff79c6;
-}
-.highlight .ge {
-  font-style: italic;
-}
-.highlight .gs {
-  font-weight: var(--font-weight-bold);
 }
 .highlight {
   /* Keywords */
@@ -456,17 +432,40 @@ a:active {
   color: #ff79c6;
 }
 .highlight {
-  /* Operators */
+  /* Operators / punctuation */
 }
 .highlight .o,
-.highlight .ow {
-  color: #ff79c6;
-}
-.highlight {
-  /* Punctuation */
-}
+.highlight .ow,
 .highlight .p {
   color: #f8f8f2;
+}
+.highlight {
+  /* Names / identifiers */
+}
+.highlight .n,
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .nd,
+.highlight .ne,
+.highlight .nf,
+.highlight .ni,
+.highlight .nl,
+.highlight .nn,
+.highlight .no,
+.highlight .nt,
+.highlight .nv,
+.highlight .nx {
+  color: #50fa7b;
+}
+.highlight {
+  /* Variables */
+}
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .vm {
+  color: #8be9fd;
 }
 .highlight {
   /* Numbers */
@@ -487,9 +486,7 @@ a:active {
 .highlight .sa,
 .highlight .sb,
 .highlight .sc,
-.highlight .dl,
 .highlight .sd,
-.highlight .s2,
 .highlight .se,
 .highlight .sh,
 .highlight .si,
@@ -500,59 +497,38 @@ a:active {
   color: #f1fa8c;
 }
 .highlight {
-  /* Built-ins, functions, classes, tags, and attributes */
+  /* Special built-ins / classes / functions / tags */
 }
-.highlight .na,
-.highlight .nb,
 .highlight .bp,
-.highlight .nc,
-.highlight .nd,
-.highlight .ne,
-.highlight .nf,
 .highlight .fm,
-.highlight .nl,
-.highlight .nn,
-.highlight .nt,
-.highlight .py {
+.highlight .py,
+.highlight .gi,
+.highlight .gd,
+.highlight .gt,
+.highlight .gu,
+.highlight .gh {
   color: #50fa7b;
 }
-.highlight {
-  /* Variables */
+.highlight .ge {
+  font-style: italic;
 }
-.highlight .nv,
-.highlight .vc,
-.highlight .vg,
-.highlight .vi,
-.highlight .vm {
-  color: #8be9fd;
+.highlight .gs {
+  font-weight: var(--font-weight-bold);
 }
 .highlight {
-  /* Constants and special names */
-}
-.highlight .no,
-.highlight .ni {
-  color: #bd93f9;
-}
-.highlight {
-  /* Language literals */
-}
-.highlight .kc,
-.highlight .l,
-.highlight .ld,
-.highlight .nx {
-  color: #ff79c6;
-}
-.highlight {
-  /* CSS selectors and HTML/XML tags */
+  /* CSS-style selectors / HTML tags */
 }
 .highlight .nt {
   color: #ff79c6;
 }
-.highlight {
-  /* CSS properties and HTML attributes */
-}
 .highlight .na {
   color: #50fa7b;
+}
+.highlight {
+  /* CSS property names */
+}
+.highlight .nc {
+  color: #8be9fd;
 }
 
 button {

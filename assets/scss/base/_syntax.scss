@@ -24,14 +24,9 @@
         border-radius: 0;
     }
 
-    /* Whitespace */
+    /* Generic whitespace */
     .w {
         color: #f8f8f2;
-    }
-
-    /* Errors */
-    .err {
-        color: #ff5555;
     }
 
     /* Comments */
@@ -45,32 +40,9 @@
         color: #6272a4;
     }
 
-    /* Generic output and headings */
-    .go,
-    .gh,
-    .gu {
-        color: #8be9fd;
-    }
-
-    .gd,
-    .gt {
+    /* Errors */
+    .err {
         color: #ff5555;
-    }
-
-    .gi {
-        color: #50fa7b;
-    }
-
-    .gp {
-        color: #ff79c6;
-    }
-
-    .ge {
-        font-style: italic;
-    }
-
-    .gs {
-        font-weight: var(--font-weight-bold);
     }
 
     /* Keywords */
@@ -84,15 +56,37 @@
         color: #ff79c6;
     }
 
-    /* Operators */
+    /* Operators / punctuation */
     .o,
-    .ow {
-        color: #ff79c6;
-    }
-
-    /* Punctuation */
+    .ow,
     .p {
         color: #f8f8f2;
+    }
+
+    /* Names / identifiers */
+    .n,
+    .na,
+    .nb,
+    .nc,
+    .nd,
+    .ne,
+    .nf,
+    .ni,
+    .nl,
+    .nn,
+    .no,
+    .nt,
+    .nv,
+    .nx {
+        color: #50fa7b;
+    }
+
+    /* Variables */
+    .vc,
+    .vg,
+    .vi,
+    .vm {
+        color: #8be9fd;
     }
 
     /* Numbers */
@@ -111,9 +105,7 @@
     .sa,
     .sb,
     .sc,
-    .dl,
     .sd,
-    .s2,
     .se,
     .sh,
     .si,
@@ -124,52 +116,37 @@
         color: #f1fa8c;
     }
 
-    /* Built-ins, functions, classes, tags, and attributes */
-    .na,
-    .nb,
+    /* Special built-ins / classes / functions / tags */
     .bp,
-    .nc,
-    .nd,
-    .ne,
-    .nf,
     .fm,
-    .nl,
-    .nn,
-    .nt,
-    .py {
+    .py,
+    .gi,
+    .gd,
+    .gt,
+    .gu,
+    .gh {
         color: #50fa7b;
     }
 
-    /* Variables */
-    .nv,
-    .vc,
-    .vg,
-    .vi,
-    .vm {
-        color: #8be9fd;
+    .ge {
+        font-style: italic;
     }
 
-    /* Constants and special names */
-    .no,
-    .ni {
-        color: #bd93f9;
+    .gs {
+        font-weight: var(--font-weight-bold);
     }
 
-    /* Language literals */
-    .kc,
-    .l,
-    .ld,
-    .nx {
-        color: #ff79c6;
-    }
-
-    /* CSS selectors and HTML/XML tags */
+    /* CSS-style selectors / HTML tags */
     .nt {
         color: #ff79c6;
     }
 
-    /* CSS properties and HTML attributes */
     .na {
         color: #50fa7b;
+    }
+
+    /* CSS property names */
+    .nc {
+        color: #8be9fd;
     }
 }
