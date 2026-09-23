@@ -256,28 +256,6 @@ samp {
   font-family: var(--font-family-monospace);
 }
 
-pre,
-code {
-  background-color: var(--color-surface-2);
-  border: var(--border-base);
-}
-
-code {
-  padding: var(--space-xxxs) var(--space-xxs);
-  border-radius: var(--border-radius-base);
-}
-
-pre {
-  padding: var(--space-md);
-  overflow: auto;
-  border-radius: var(--border-radius-medium);
-}
-pre code {
-  border: none;
-  border-radius: 0;
-  background-color: transparent;
-}
-
 b, strong {
   font-weight: var(--font-weight-semi-bold);
 }
@@ -373,70 +351,6 @@ a:active {
   color: var(--color-link--active);
 }
 
-/* Comments */
-.highlight .c,
-.highlight .ch,
-.highlight .cm,
-.highlight .cp,
-.highlight .cpf,
-.highlight .c1,
-.highlight .cs {
-  color: #6272a4;
-}
-
-/* Keywords */
-.highlight .k,
-.highlight .kc,
-.highlight .kd,
-.highlight .kn,
-.highlight .kp,
-.highlight .kr,
-.highlight .kt {
-  color: #ff79c6;
-}
-
-/* Strings */
-.highlight .s,
-.highlight .sa,
-.highlight .sb,
-.highlight .sc,
-.highlight .dl,
-.highlight .sd,
-.highlight .s2,
-.highlight .se,
-.highlight .sh,
-.highlight .si,
-.highlight .sx,
-.highlight .sr,
-.highlight .s1,
-.highlight .ss {
-  color: #f1fa8c;
-}
-
-/* Numbers and constants */
-.highlight .m,
-.highlight .mb,
-.highlight .mf,
-.highlight .mh,
-.highlight .mi,
-.highlight .mo,
-.highlight .il,
-.highlight .no {
-  color: #bd93f9;
-}
-
-/* Function names and classes */
-.highlight .nf,
-.highlight .nc {
-  color: #50fa7b;
-}
-
-/* HTML/XML tags and attributes */
-.highlight .nt,
-.highlight .na {
-  color: #ff79c6;
-}
-
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   :root {
@@ -458,6 +372,145 @@ a:active {
     animation: none;
   }
 }
+.highlight {
+  margin-block: var(--space-md);
+  padding: var(--space-md);
+  overflow-x: auto;
+  color: var(--color-base);
+  background: var(--color-surface-2);
+  border: var(--border-base);
+  border-radius: var(--border-radius-medium);
+}
+.highlight pre {
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+}
+.highlight code {
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+.highlight {
+  /* Comments */
+}
+.highlight .c,
+.highlight .ch,
+.highlight .cm,
+.highlight .cp,
+.highlight .cpf,
+.highlight .c1,
+.highlight .cs {
+  color: #6272a4;
+}
+.highlight {
+  /* Errors */
+}
+.highlight .err {
+  color: #ff5555;
+}
+.highlight {
+  /* Keywords */
+}
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+  color: #ff79c6;
+}
+.highlight {
+  /* Operators and punctuation */
+}
+.highlight .o,
+.highlight .ow {
+  color: #ff79c6;
+}
+.highlight .p {
+  color: #f8f8f2;
+}
+.highlight {
+  /* Names */
+}
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .nd,
+.highlight .ne,
+.highlight .nf,
+.highlight .nl,
+.highlight .nn,
+.highlight .nt,
+.highlight .nv {
+  color: #50fa7b;
+}
+.highlight {
+  /* Variables and constants */
+}
+.highlight .no,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+  color: #8be9fd;
+}
+.highlight {
+  /* Numbers */
+}
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il {
+  color: #bd93f9;
+}
+.highlight {
+  /* Strings */
+}
+.highlight .s,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss {
+  color: #f1fa8c;
+}
+.highlight {
+  /* Generic emphasis, headings, and deleted/inserted text */
+}
+.highlight .gd {
+  color: #ff5555;
+}
+.highlight .gi {
+  color: #50fa7b;
+}
+.highlight .gh,
+.highlight .gu {
+  color: #8be9fd;
+  font-weight: var(--font-weight-bold);
+}
+.highlight .ge {
+  font-style: italic;
+}
+.highlight .gs {
+  font-weight: var(--font-weight-bold);
+}
+
 button {
   border-radius: var(--border-radius-base) !important;
   display: flex;

@@ -1,0 +1,137 @@
+.highlight {
+    margin-block: var(--space-md);
+    padding: var(--space-md);
+    overflow-x: auto;
+
+    color: var(--color-base);
+    background: var(--color-surface-2);;
+    border: var(--border-base);
+    border-radius: var(--border-radius-medium);
+
+    pre {
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        background: transparent;
+        border: 0;
+    }
+
+    code {
+        padding: 0;
+        color: inherit;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+    }
+
+    /* Comments */
+    .c,
+    .ch,
+    .cm,
+    .cp,
+    .cpf,
+    .c1,
+    .cs {
+        color: #6272a4;
+    }
+
+    /* Errors */
+    .err {
+        color: #ff5555;
+    }
+
+    /* Keywords */
+    .k,
+    .kc,
+    .kd,
+    .kn,
+    .kp,
+    .kr,
+    .kt {
+        color: #ff79c6;
+    }
+
+    /* Operators and punctuation */
+    .o,
+    .ow {
+        color: #ff79c6;
+    }
+
+    .p {
+        color: #f8f8f2;
+    }
+
+    /* Names */
+    .na,
+    .nb,
+    .nc,
+    .nd,
+    .ne,
+    .nf,
+    .nl,
+    .nn,
+    .nt,
+    .nv {
+        color: #50fa7b;
+    }
+
+    /* Variables and constants */
+    .no,
+    .vc,
+    .vg,
+    .vi {
+        color: #8be9fd;
+    }
+
+    /* Numbers */
+    .m,
+    .mb,
+    .mf,
+    .mh,
+    .mi,
+    .mo,
+    .il {
+        color: #bd93f9;
+    }
+
+    /* Strings */
+    .s,
+    .sa,
+    .sb,
+    .sc,
+    .dl,
+    .sd,
+    .s2,
+    .se,
+    .sh,
+    .si,
+    .sx,
+    .sr,
+    .s1,
+    .ss {
+        color: #f1fa8c;
+    }
+
+    /* Generic emphasis, headings, and deleted/inserted text */
+    .gd {
+        color: #ff5555;
+    }
+
+    .gi {
+        color: #50fa7b;
+    }
+
+    .gh,
+    .gu {
+        color: #8be9fd;
+        font-weight: var(--font-weight-bold);
+    }
+
+    .ge {
+        font-style: italic;
+    }
+
+    .gs {
+        font-weight: var(--font-weight-bold);
+    }
+}
