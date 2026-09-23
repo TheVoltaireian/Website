@@ -565,6 +565,10 @@ html[data-page="post"] {
 
             padding-inline: var(--space-xxxl);
 
+            @media screen and (max-width: $breakpoint-xs) {
+                padding-inline: var(--space-xs);
+            }
+
             .post__mainContent {
                 p:first-of-type {
                     margin-top: 0 !important;
