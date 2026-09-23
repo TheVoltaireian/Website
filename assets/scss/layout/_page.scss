@@ -306,6 +306,10 @@ html[data-page="home"] {
 
                             .blog__postButton {
                                 margin-top: auto;
+
+                                a.button {
+                                    max-width: max-content;
+                                }
                             }
                         }
                     }

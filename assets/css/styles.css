@@ -1350,6 +1350,10 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
 html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postButton {
   margin-top: auto;
 }
+html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postButton a.button {
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
 
 html[data-page=blog] {
   --color-progressive-oklch__h: 22.77;
