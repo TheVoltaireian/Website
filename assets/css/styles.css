@@ -642,6 +642,9 @@ a.button--social:hover span {
     display: none;
   }
 }
+a.button--social {
+  max-height: 30px;
+}
 a.button--x {
   background: oklch(0% 0 0deg);
   color: var(--color-emphasized);
@@ -1472,6 +1475,10 @@ html[data-page=blog] main .blog .blog__container .blog__posts .blog__post .blog_
 }
 html[data-page=blog] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postButton {
   margin-top: auto;
+}
+html[data-page=blog] main .blog .blog__container .blog__posts .blog__post .blog__postText .blog__postButton a.button {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 html[data-page=post] body {

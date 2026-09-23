@@ -438,6 +438,10 @@ html[data-page="blog"] {
 
                             .blog__postButton {
                                 margin-top: auto;
+
+                                a.button {
+                                    max-width: max-content;
+                                }
                             }
                         }
                     }
