@@ -37,3 +37,29 @@ img {
     border: var(--border-subtle);
     border-radius: var(--border-radius-base);
 }
+
+pre,
+code,
+tt,
+kbd,
+samp {
+	font-family: var(--font-family-monospace);
+}
+
+pre,
+code {
+	color: var(--color-emphasized);
+	background-color: var(--color-surface-1);
+	border: var(--border-base);
+}
+
+code {
+	padding: var(--space-xxxs) var(--space-xxs);
+	border-radius: var(--border-radius-base);
+}
+
+pre {
+	padding: var(--space-md);
+	overflow: auto;
+	border-radius: var(--border-radius-medium);
+}
