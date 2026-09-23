@@ -24,6 +24,16 @@
         border-radius: 0;
     }
 
+    /* Whitespace */
+    .w {
+        color: #f8f8f2;
+    }
+
+    /* Errors */
+    .err {
+        color: #ff5555;
+    }
+
     /* Comments */
     .c,
     .ch,
@@ -35,9 +45,32 @@
         color: #6272a4;
     }
 
-    /* Errors */
-    .err {
+    /* Generic output and headings */
+    .go,
+    .gh,
+    .gu {
+        color: #8be9fd;
+    }
+
+    .gd,
+    .gt {
         color: #ff5555;
+    }
+
+    .gi {
+        color: #50fa7b;
+    }
+
+    .gp {
+        color: #ff79c6;
+    }
+
+    .ge {
+        font-style: italic;
+    }
+
+    .gs {
+        font-weight: var(--font-weight-bold);
     }
 
     /* Keywords */
@@ -51,36 +84,15 @@
         color: #ff79c6;
     }
 
-    /* Operators and punctuation */
+    /* Operators */
     .o,
     .ow {
         color: #ff79c6;
     }
 
+    /* Punctuation */
     .p {
         color: #f8f8f2;
-    }
-
-    /* Names */
-    .na,
-    .nb,
-    .nc,
-    .nd,
-    .ne,
-    .nf,
-    .nl,
-    .nn,
-    .nt,
-    .nv {
-        color: #50fa7b;
-    }
-
-    /* Variables and constants */
-    .no,
-    .vc,
-    .vg,
-    .vi {
-        color: #8be9fd;
     }
 
     /* Numbers */
@@ -112,26 +124,52 @@
         color: #f1fa8c;
     }
 
-    /* Generic emphasis, headings, and deleted/inserted text */
-    .gd {
-        color: #ff5555;
-    }
-
-    .gi {
+    /* Built-ins, functions, classes, tags, and attributes */
+    .na,
+    .nb,
+    .bp,
+    .nc,
+    .nd,
+    .ne,
+    .nf,
+    .fm,
+    .nl,
+    .nn,
+    .nt,
+    .py {
         color: #50fa7b;
     }
 
-    .gh,
-    .gu {
+    /* Variables */
+    .nv,
+    .vc,
+    .vg,
+    .vi,
+    .vm {
         color: #8be9fd;
-        font-weight: var(--font-weight-bold);
     }
 
-    .ge {
-        font-style: italic;
+    /* Constants and special names */
+    .no,
+    .ni {
+        color: #bd93f9;
     }
 
-    .gs {
-        font-weight: var(--font-weight-bold);
+    /* Language literals */
+    .kc,
+    .l,
+    .ld,
+    .nx {
+        color: #ff79c6;
+    }
+
+    /* CSS selectors and HTML/XML tags */
+    .nt {
+        color: #ff79c6;
+    }
+
+    /* CSS properties and HTML attributes */
+    .na {
+        color: #50fa7b;
     }
 }

@@ -396,6 +396,18 @@ a:active {
   border-radius: 0;
 }
 .highlight {
+  /* Whitespace */
+}
+.highlight .w {
+  color: #f8f8f2;
+}
+.highlight {
+  /* Errors */
+}
+.highlight .err {
+  color: #ff5555;
+}
+.highlight {
   /* Comments */
 }
 .highlight .c,
@@ -408,10 +420,28 @@ a:active {
   color: #6272a4;
 }
 .highlight {
-  /* Errors */
+  /* Generic output and headings */
 }
-.highlight .err {
+.highlight .go,
+.highlight .gh,
+.highlight .gu {
+  color: #8be9fd;
+}
+.highlight .gd,
+.highlight .gt {
   color: #ff5555;
+}
+.highlight .gi {
+  color: #50fa7b;
+}
+.highlight .gp {
+  color: #ff79c6;
+}
+.highlight .ge {
+  font-style: italic;
+}
+.highlight .gs {
+  font-weight: var(--font-weight-bold);
 }
 .highlight {
   /* Keywords */
@@ -426,38 +456,17 @@ a:active {
   color: #ff79c6;
 }
 .highlight {
-  /* Operators and punctuation */
+  /* Operators */
 }
 .highlight .o,
 .highlight .ow {
   color: #ff79c6;
 }
+.highlight {
+  /* Punctuation */
+}
 .highlight .p {
   color: #f8f8f2;
-}
-.highlight {
-  /* Names */
-}
-.highlight .na,
-.highlight .nb,
-.highlight .nc,
-.highlight .nd,
-.highlight .ne,
-.highlight .nf,
-.highlight .nl,
-.highlight .nn,
-.highlight .nt,
-.highlight .nv {
-  color: #50fa7b;
-}
-.highlight {
-  /* Variables and constants */
-}
-.highlight .no,
-.highlight .vc,
-.highlight .vg,
-.highlight .vi {
-  color: #8be9fd;
 }
 .highlight {
   /* Numbers */
@@ -491,24 +500,59 @@ a:active {
   color: #f1fa8c;
 }
 .highlight {
-  /* Generic emphasis, headings, and deleted/inserted text */
+  /* Built-ins, functions, classes, tags, and attributes */
 }
-.highlight .gd {
-  color: #ff5555;
-}
-.highlight .gi {
+.highlight .na,
+.highlight .nb,
+.highlight .bp,
+.highlight .nc,
+.highlight .nd,
+.highlight .ne,
+.highlight .nf,
+.highlight .fm,
+.highlight .nl,
+.highlight .nn,
+.highlight .nt,
+.highlight .py {
   color: #50fa7b;
 }
-.highlight .gh,
-.highlight .gu {
+.highlight {
+  /* Variables */
+}
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .vm {
   color: #8be9fd;
-  font-weight: var(--font-weight-bold);
 }
-.highlight .ge {
-  font-style: italic;
+.highlight {
+  /* Constants and special names */
 }
-.highlight .gs {
-  font-weight: var(--font-weight-bold);
+.highlight .no,
+.highlight .ni {
+  color: #bd93f9;
+}
+.highlight {
+  /* Language literals */
+}
+.highlight .kc,
+.highlight .l,
+.highlight .ld,
+.highlight .nx {
+  color: #ff79c6;
+}
+.highlight {
+  /* CSS selectors and HTML/XML tags */
+}
+.highlight .nt {
+  color: #ff79c6;
+}
+.highlight {
+  /* CSS properties and HTML attributes */
+}
+.highlight .na {
+  color: #50fa7b;
 }
 
 button {

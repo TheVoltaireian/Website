@@ -23,7 +23,7 @@ Now, I'm not gonna delve too deep into why I got banned (mainly because it's sup
 ````css
 // sometimes I wonder what would've happened if I didn't get banned...
 #wildvoltaireian {
-  --ban-formula: calc(var(--10-years-old) + (--didnt-read-the-rules));
+  --ban-formula: calc(var(--10-years-old) + var(--didnt-read-the-rules));
 }
 ````
 
