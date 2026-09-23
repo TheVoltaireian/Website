@@ -1315,6 +1315,20 @@ html[data-page=post] body nav.post__breadcrumbs {
   flex-wrap: wrap;
   color: var(--color-subtle);
 }
+html[data-page=post] body nav.post__breadcrumbs a {
+  color: var(--color-subtle);
+}
+html[data-page=post] body nav.post__breadcrumbs a:hover {
+  color: var(--color-subtle);
+  font-weight: var(--font-weight-medium);
+}
+html[data-page=post] body nav.post__breadcrumbs a:active {
+  color: var(--color-subtle);
+}
+html[data-page=post] body nav.post__breadcrumbs .post__name {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-emphasized);
+}
 html[data-page=post] body header.post__header {
   display: flex;
   flex-direction: column;

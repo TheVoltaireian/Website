@@ -437,12 +437,14 @@ html[data-page="post"] {
         nav.post__breadcrumbs {
             margin: var(--space-lg);
             padding: var(--space-lg) var(--space-md);
+
             @media screen and (max-width: $breakpoint-xs) {
                 margin: var(--space-sm);
                 padding: var(--space-md) var(--space-xs);
                 margin-bottom: 0;
                 padding-bottom: 0;
             }
+
             padding-bottom: 0;
             margin-bottom: 0;
             display: flex;
@@ -450,6 +452,24 @@ html[data-page="post"] {
             gap: var(--space-xs);
             flex-wrap: wrap;
             color: var(--color-subtle);
+
+            a {
+                color: var(--color-subtle);
+
+                @include hover {
+                    color: var(--color-subtle);
+                    font-weight: var(--font-weight-medium);
+                }
+
+                @include active {
+                    color: var(--color-subtle);
+                }
+            }
+
+            .post__name {
+                font-weight: var(--font-weight-bold);
+                color: var(--color-emphasized);
+            }
         }
 
         header.post__header {
