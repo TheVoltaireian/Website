@@ -1327,7 +1327,7 @@ html[data-page=post] body nav.post__breadcrumbs a:active {
 }
 html[data-page=post] body nav.post__breadcrumbs .post__name {
   font-weight: var(--font-weight-bold);
-  color: var(--color-emphasized);
+  color: var(--color-base);
 }
 html[data-page=post] body header.post__header {
   display: flex;
@@ -1380,12 +1380,18 @@ html[data-page=post] body header.post__header .post__meta .post__tags {
 @media screen and (max-width: 767px) {
   html[data-page=post] body header.post__header .post__meta {
     flex-direction: column;
+    gap: var(--space-sm);
   }
   html[data-page=post] body header.post__header .post__meta .post__tags {
     border-left: none;
     padding-left: 0;
     margin-left: 0;
     flex-direction: column;
+    align-items: flex-start;
+  }
+  html[data-page=post] body header.post__header .post__meta .post__tags tag {
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1396,13 +1402,13 @@ html[data-page=post] body header.post__header .post__meta .post__tags {
     padding-block: 0;
   }
   html[data-page=post] body header.post__header h1 {
-    font-size: var(--font-size-4x-large);
+    font-size: var(--font-size-xxx-large);
   }
 }
 html[data-page=post] body main.post__main {
   height: 100%;
-  margin-top: var(--space-sm);
-  padding-top: var(--space-md);
+  margin-top: var(--space-xs);
+  padding-top: var(--space-sm);
   padding-inline: var(--space-xxl);
 }
 html[data-page=post] body main.post__main .post__mainContent p:first-of-type {

@@ -468,7 +468,7 @@ html[data-page="post"] {
 
             .post__name {
                 font-weight: var(--font-weight-bold);
-                color: var(--color-emphasized);
+                color: var(--color-base);
             }
         }
 
@@ -529,11 +529,18 @@ html[data-page="post"] {
                 @media screen and (max-width: $breakpoint-xs) {
                     flex-direction: column;
 
+                    gap: var(--space-sm);
+
                     .post__tags {
                         border-left: none;
                         padding-left: 0;
                         margin-left: 0;
                         flex-direction: column;
+                        align-items: flex-start;
+
+                        tag {
+                            width: max-content;
+                        }
                     }
                 }
             }
@@ -545,7 +552,7 @@ html[data-page="post"] {
                 padding-block: 0;
 
                 h1 {
-                    font-size: var(--font-size-4x-large);
+                    font-size: var(--font-size-xxx-large);
                 }
             }
         }
@@ -553,8 +560,8 @@ html[data-page="post"] {
         main.post__main {
             height: 100%;
 
-            margin-top: var(--space-sm);
-            padding-top: var(--space-md);
+            margin-top: var(--space-xs);
+            padding-top: var(--space-sm);
 
             padding-inline: var(--space-xxl);
 
