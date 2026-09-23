@@ -1543,7 +1543,7 @@ html[data-page=post] body .post__wrapper header.post__header nav.post__breadcrum
   color: var(--color-subtle);
 }
 html[data-page=post] body .post__wrapper header.post__header nav.post__breadcrumbs .divider {
-  font-size: var(--font-size-x-small);
+  font-size: var(--font-size-xx-small);
 }
 html[data-page=post] body .post__wrapper header.post__header nav.post__breadcrumbs .post__name {
   font-weight: var(--font-weight-bold);
