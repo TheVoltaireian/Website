@@ -1446,6 +1446,8 @@ html[data-page=post] body header.post__header .post__meta .post__tags {
   }
   html[data-page=post] body header.post__header h1 {
     font-size: var(--font-size-xxx-large);
+    text-wrap: wrap;
+    overflow-wrap: wrap;
   }
 }
 html[data-page=post] body main.post__main {

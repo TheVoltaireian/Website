@@ -568,6 +568,8 @@ html[data-page="post"] {
 
                 h1 {
                     font-size: var(--font-size-xxx-large);
+                    text-wrap: wrap;
+                    overflow-wrap: wrap;
                 }
             }
         }
