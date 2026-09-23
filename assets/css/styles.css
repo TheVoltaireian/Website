@@ -531,7 +531,7 @@ a:active {
   color: #8be9fd;
 }
 
-button {
+a.button {
   border-radius: var(--border-radius-base) !important;
   display: flex;
   min-width: 0;
@@ -544,143 +544,143 @@ button {
   cursor: pointer;
   transition: var(--transition-hover--slow);
 }
-button:focus-visible {
+a.button:focus-visible {
   outline: 2px solid var(--color-progressive);
   outline-offset: 2px;
   border-radius: var(--border-radius-base);
 }
-button.primary {
+a.button--primary {
   background: var(--background-color-progressive);
   color: var(--color-inverted);
   border: var(--border-interactive);
 }
-button.primary:hover {
+a.button--primary:hover {
   background: var(--background-color-progressive--hover);
   color: var(--color-inverted);
   border: var(--border-interactive--hover);
 }
-button.primary:active {
+a.button--primary:active {
   background: var(--background-color-progressive--active);
   border: var(--border-interactive--active);
 }
-button.secondary-1 {
+a.button.secondary-1 {
   border: var(--border-progressive) !important;
   background: transparent;
   color: var(--color-progressive);
   border: var(--border-interactive);
 }
-button.secondary-1:hover {
+a.button.secondary-1:hover {
   background: transparent;
   color: var(--color-inverted);
   border: var(--border-interactive--hover);
 }
-button.secondary-1:active {
+a.button.secondary-1:active {
   background: transparent;
   border: var(--border-interactive--active);
 }
-button.secondary-1:hover {
+a.button.secondary-1:hover {
   color: var(--color-progressive--hover) !important;
   border: var(--border-progressive--hover) !important;
 }
-button.secondary-1:active {
+a.button.secondary-1:active {
   color: var(--color-progressive--active) !important;
   border: var(--border-progressive--active) !important;
 }
-button.secondary-2 {
+a.button--secondary-2 {
   background: var(--color-surface-2);
   color: var(--color-emphasized);
   border: var(--border-interactive);
 }
-button.secondary-2:hover {
+a.button--secondary-2:hover {
   background: var(--color-surface-2--hover);
   color: var(--color-inverted);
   border: var(--border-interactive--hover);
 }
-button.secondary-2:active {
+a.button--secondary-2:active {
   background: var(--color-surface-2--active);
   border: var(--border-interactive--active);
 }
-button.secondary-2:hover {
+a.button--secondary-2:hover {
   border: var(--border-interactive--hover) !important;
   color: var(--color-inverted) !important;
 }
-button.secondary-2:active {
+a.button--secondary-2:active {
   border: var(--border-interactive--active) !important;
 }
-button img {
+a.button img {
   border: none;
   border-radius: 0;
   width: 20px;
   height: auto;
 }
-button.social {
+a.button--social {
   overflow: hidden;
   gap: 0;
   padding: var(--space-xxs);
 }
-button.social span {
+a.button--social span {
   max-width: 0;
   opacity: 0;
   white-space: nowrap;
   transition: max-width var(--transition-hover--slow), opacity var(--transition-hover--slow);
 }
-button.social:hover {
+a.button--social:hover {
   gap: var(--space-xxs);
   padding: var(--space-xxs) var(--space-xs);
 }
-button.social:hover span {
+a.button--social:hover span {
   opacity: 1;
   max-width: var(--social-label-width, 20ch);
 }
 @media screen and (max-width: 389px) {
-  button.social:hover {
+  a.button--social:hover {
     gap: 0;
     padding: var(--space-xxs);
   }
-  button.social:hover span {
+  a.button--social:hover span {
     opacity: 0;
     display: none;
   }
 }
-button.x {
+a.button--x {
   background: oklch(0% 0 0deg);
   color: var(--color-emphasized);
   border: var(--border-interactive);
 }
-button.x:hover {
+a.button--x:hover {
   background: oklch(calc(0% + var(--delta-lightness-hover-state)) 0 0);
   color: var(--color-inverted);
   border: var(--border-interactive--hover);
 }
-button.x:active {
+a.button--x:active {
   background: oklch(0% 0 0deg);
   border: var(--border-interactive--active);
 }
-button.discord {
+a.button--discord {
   background: oklch(57.74% 0.2091 273.85deg);
   color: var(--color-emphasized);
   border: var(--border-interactive);
 }
-button.discord:hover {
+a.button--discord:hover {
   background: oklch(calc(57.74% + var(--delta-lightness-hover-state)) 0.2091 273.85);
   color: var(--color-inverted);
   border: var(--border-interactive--hover);
 }
-button.discord:active {
+a.button--discord:active {
   background: oklch(calc(57.74% + var(--delta-lightness-active-state)) 0.2091 273.85);
   border: var(--border-interactive--active);
 }
-button.github {
+a.button--github {
   background: oklch(70.1% 0.2127 145.72deg);
   color: var(--color-emphasized);
   border: var(--border-interactive);
 }
-button.github:hover {
+a.button--github:hover {
   background: oklch(calc(70.1% + var(--delta-lightness-hover-state)) 0.2127 145.72);
   color: var(--color-inverted);
   border: var(--border-interactive--hover);
 }
-button.github:active {
+a.button--github:active {
   background: oklch(calc(70.1% + var(--delta-lightness-active-state)) 0.2127 145.72);
   border: var(--border-interactive--active);
 }
@@ -1198,7 +1198,7 @@ html[data-page=home] main .projects .projects__wikis .projects__cards .projects_
     flex-direction: column;
   }
 }
-html[data-page=home] main .projects .projects__wikis .projects__cards .projects__card .projects__cardBody .projects__cardButtons button {
+html[data-page=home] main .projects .projects__wikis .projects__cards .projects__card .projects__cardBody .projects__cardButtons a.button {
   width: 100%;
   font-weight: var(--font-weight-bold);
   text-align: center;

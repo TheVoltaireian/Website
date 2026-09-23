@@ -1,10 +1,10 @@
 @use "../abstracts/mixins" as mixins;
 
-button {
+a.button {
     @include mixins.button-base;
     @include mixins.focus-ring;
 
-    &.primary {
+    &--primary {
 		@include mixins.button-variant (
 			var(--background-color-progressive),
             var(--background-color-progressive--hover),
@@ -34,7 +34,7 @@ button {
         }
     }
 
-    &.secondary-2 {
+    &--secondary-2 {
 		@include mixins.button-variant (
 			var(--color-surface-2),
             var(--color-surface-2--hover),
@@ -60,11 +60,11 @@ button {
         height: auto;
     }
 
-	&.social {
+	&--social {
 		@include mixins.button-text-on-hover;
 	}
 
-	&.x {
+	&--x {
 		@include mixins.button-variant (
 			oklch(0% 0 0),
             oklch(calc(0% + var(--delta-lightness-hover-state)) 0 0),
@@ -73,7 +73,7 @@ button {
 		);
 	}
 
-	&.discord {
+	&--discord {
         @include mixins.button-variant(
             oklch(57.74% 0.2091 273.85),
             oklch(calc(57.74% + var(--delta-lightness-hover-state)) 0.2091 273.85),
@@ -82,7 +82,7 @@ button {
         );
 	}
 
-    &.github {
+    &--github {
 		@include mixins.button-variant(
             oklch(70.1% 0.2127 145.72),
             oklch(calc(70.1% + var(--delta-lightness-hover-state)) 0.2127 145.72),

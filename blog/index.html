@@ -34,9 +34,9 @@ permalink: /blog/
                             {% endif %}
 
                             <div class="blog__postButton">
-                                <button class="secondary-2" onclick="window.open('{{ post.url | relative_url }}')">
+                                <a class="button button--secondary-2" href="{{ post.url | relative_url }}">
                                     <span>Read post</span>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </article>

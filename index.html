@@ -32,12 +32,12 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
                         This wiki became official and replaced the Fandom wiki on August 7th, 2026.
                     </div>
                     <div class="projects__cardButtons">
-                        <button class="primary" onclick="window.open('https://zombies-vs-humans.wiki')">
+                        <a class="button button--primary" href="https://zombies-vs-humans.wiki">
                             <span>Visit wiki</span>
-                        </button>
-                        <button class="secondary-2">
+                        </a>
+                        <a class="button button--secondary-2">
                             <span>WIP</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -63,12 +63,12 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
                         I worked with many members of the community to ensure this could be the best resource available for 10 Player Flee.<br><br>The wiki launched in beta on May 24th, 2026. A full release is planned for December 2026.
                     </div>
                     <div class="projects__cardButtons">
-                        <button class="primary" onclick="window.open('https://10playerflee.wiki')">
+                        <a class="button button--primary" href="https://10playerflee.wiki">
                             <span>Visit wiki</span>
-                        </button>
-                        <button class="secondary-2">
+                        </a>
+                        <a class="button button--secondary-2">
                             <span>WIP</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -93,12 +93,12 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
                         Working on the Forsaken Wiki was a fun and creative experience, as it was my second time working on a non-Citizen wiki. I departed from the wiki team in February of 2026 to focus on my own mental health.
                     </div>
                     <div class="projects__cardButtons">
-                        <button class="primary" onclick="window.open('https://forsaken.wiki')">
+                        <a class="button button--primary" href="https://forsaken.wiki">
                             <span>Visit wiki</span>
-                        </button>
-                        <button class="secondary-2">
+                        </a>
+                        <a class="button button--secondary-2">
                             <span>WIP</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -115,12 +115,12 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
                         The official Guts & Blackpowder Wiki was the second Miraheze wiki I worked on after returning from my year-long break.<br><br>I was brought onto the team as a CSS Specialist in March of 2025, and I have helped out with refactoring some of the CSS on the site, and offering help whenever it is needed.
                     </div>
                     <div class="projects__cardButtons">
-                        <button class="primary" onclick="window.open('https://gbp.miraheze.org')">
+                        <a class="button button--primary" href="https://gbp.miraheze.org">
                             <span>Visit wiki</span>
-                        </button>
-                        <button class="secondary-2">
+                        </a>
+                        <a class="button button--secondary-2">
                             <span>WIP</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -160,9 +160,9 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
                             {% endif %}
 
                             <div class="blog__postButton">
-                                <button class="secondary-2" onclick="window.open('{{ post.url | relative_url }}')">
+                                <a class="button button--secondary-2" href="{{ post.url | relative_url }}">
                                     <span>Read post</span>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </article>
