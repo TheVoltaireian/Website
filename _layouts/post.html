@@ -2,41 +2,43 @@
 layout: base
 ---
 
-<nav class="post__breadcrumbs">
-    <a href="{{ '/' | relative_url }}">Home</a> <span aria-hidden="true" class="divider">></span> <a href="{{ '/blog/' | relative_url }}">Blog</a> <span aria-hidden="true" class="divider">></span> <span class="post__name" style="font-weight: var(--font-weight-bold)">{{ page.title }}</span>
-</nav>
+<div class="post__wrapper">
+    <nav class="post__breadcrumbs">
+        <a href="{{ '/' | relative_url }}">Home</a> <span aria-hidden="true" class="divider">></span> <a href="{{ '/blog/' | relative_url }}">Blog</a> <span aria-hidden="true" class="divider">></span> <span class="post__name" style="font-weight: var(--font-weight-bold)">{{ page.title }}</span>
+    </nav>
 
-<header class="post__header">
-    <hr>
-    <h1>{{ page.title }}</h1>
-    <div class="post__meta">
-        <time datetime="{{ page.date | date_to_xmlschema }}">
-            {{ page.date | date: "%B %-d, %Y" }}
-        </time>
+    <header class="post__header">
+        <hr>
+        <h1>{{ page.title }}</h1>
+        <div class="post__meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+                {{ page.date | date: "%B %-d, %Y" }}
+            </time>
 
-        {% if page.tags %}
-            <div class="post__tags">
-                {% for tag in page.tags %}
-                    {% assign tag_label = tag %}
+            {% if page.tags %}
+                <div class="post__tags">
+                    {% for tag in page.tags %}
+                        {% assign tag_label = tag %}
 
-                    {% case tag %}
-                        {% when "web-development" %}
-                            {% assign tag_label = "Web Development" %}
-                        {% when "personal" %}
-                            {% assign tag_label = "Personal" %}
-                    {% endcase %}
+                        {% case tag %}
+                            {% when "web-development" %}
+                                {% assign tag_label = "Web Development" %}
+                            {% when "personal" %}
+                                {% assign tag_label = "Personal" %}
+                        {% endcase %}
 
-                    <span class="tag">{{ tag_label }}</span>
-                {% endfor %}
-            </div>
-        {% endif %}
-    </div>
-</header>
+                        <span class="tag">{{ tag_label }}</span>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </header>
 
-<main class="post__main">
-    <article class="post__mainContent">
-        {{ content }}
-    </article>
-</main>
+    <main class="post__main">
+        <article class="post__mainContent">
+            {{ content }}
+        </article>
+    </main>
+</div>
 
 {% include footer.html %}

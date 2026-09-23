@@ -445,21 +445,22 @@ html[data-page="blog"] {
 
 html[data-page="post"] {
     body {
-        grid-template-rows: auto auto 1fr auto;
+        grid-template-rows: 1fr auto;
+
+        .post__wrapper {
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+
+            background: var(--color-surface-1);
+            border: var(--border-base);
+            border-radius: var(--border-radius-large);
+            margin-inline: var(--space-4xl);
+            margin-block: var(--space-xl);
+        }
 
         nav.post__breadcrumbs {
-            margin: var(--space-lg);
-            padding: var(--space-lg) var(--space-4xl);
-
-            @media screen and (max-width: $breakpoint-xs) {
-                margin: var(--space-sm);
-                padding: var(--space-md) var(--space-xs);
-                margin-bottom: 0;
-                padding-bottom: 0;
-            }
-
-            padding-bottom: 0;
-            margin-bottom: 0;
+            margin: 0;
+            padding: 0;
             display: flex;
             align-items: center;
             gap: var(--space-xs);
@@ -493,12 +494,8 @@ html[data-page="post"] {
             position: relative;
 
             height: max-content;
-            margin: var(--space-lg);
-            padding: var(--space-lg) var(--space-4xl);
-            margin-top: 0;
-            padding-top: 0;
-            margin-bottom: var(--space-sm);
-            padding-bottom: var(--space-md);
+            margin: 0;
+            padding: 0;
 
             gap: var(--space-xs);
 
@@ -577,14 +574,8 @@ html[data-page="post"] {
         main.post__main {
             height: 100%;
 
-            margin-top: var(--space-xs);
-            padding-top: var(--space-sm);
-
-            padding-inline: var(--space-4xl);
-
-            @media screen and (max-width: $breakpoint-xs) {
-                padding-inline: var(--space-xs);
-            }
+            margin: 0;
+            padding: 0;
 
             .post__mainContent {
                 p:first-of-type {
