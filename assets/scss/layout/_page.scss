@@ -483,7 +483,7 @@ html[data-page="post"] {
                 padding-inline: var(--space-4xl);
                 padding-bottom: var(--space-4xl);
                 border-bottom: var(--border-base);
-                background: var(--color-surface-2);
+                background: linear-gradient(45deg, var(--color-surface-0), var(--color-surface-2));
 
                 nav.post__breadcrumbs {
                     margin: 0;
@@ -568,11 +568,6 @@ html[data-page="post"] {
                 }
 
                 @media screen and (max-width: $breakpoint-xs) {
-                    margin: var(--space-sm);
-                    padding: var(--space-md) var(--space-xs);
-                    margin-block: 0;
-                    padding-block: 0;
-
                     h1 {
                         font-size: var(--font-size-xxx-large);
                         text-wrap: wrap;
@@ -588,6 +583,19 @@ html[data-page="post"] {
                 padding: 0;
 
                 .post__mainContent {
+                    min-width: 0;
+                    max-width: 100%;
+
+                    pre {
+                        max-width: 100%;
+                        min-width: 0;
+                        overflow-x: auto;
+                    }
+
+                    img {
+                        max-width: 100%;
+                    }
+
                     p:first-of-type {
                         margin-top: 0 !important;
                     }
