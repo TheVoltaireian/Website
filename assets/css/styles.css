@@ -91,6 +91,7 @@
   --space-xl: calc( 1.5 * var( --space-unit ) );
   --space-xxl: calc( 2 * var( --space-unit ) );
   --space-xxxl: calc( 3 * var( --space-unit ) );
+  --space-4xl: calc( 4 * var( --space-unit ) );
   /* Border / Border radius */
   --border-width-base: 1px;
   --border-width-thick: 2px;
@@ -1333,7 +1334,7 @@ html[data-page=post] body {
 }
 html[data-page=post] body nav.post__breadcrumbs {
   margin: var(--space-lg);
-  padding: var(--space-lg) var(--space-xxxl);
+  padding: var(--space-lg) var(--space-4xl);
 }
 @media screen and (max-width: 767px) {
   html[data-page=post] body nav.post__breadcrumbs {
@@ -1375,7 +1376,7 @@ html[data-page=post] body header.post__header {
   height: -moz-max-content;
   height: max-content;
   margin: var(--space-lg);
-  padding: var(--space-lg) var(--space-xxxl);
+  padding: var(--space-lg) var(--space-4xl);
   margin-top: 0;
   padding-top: 0;
   margin-bottom: var(--space-sm);
@@ -1447,7 +1448,7 @@ html[data-page=post] body main.post__main {
   height: 100%;
   margin-top: var(--space-xs);
   padding-top: var(--space-sm);
-  padding-inline: var(--space-xxxl);
+  padding-inline: var(--space-4xl);
 }
 @media screen and (max-width: 767px) {
   html[data-page=post] body main.post__main {
