@@ -458,9 +458,15 @@ html[data-page="post"] {
             background: var(--color-surface-1);
             border: var(--border-base);
             border-radius: var(--border-radius-large);
-            margin: var(--space-4xl);
 
+            margin: var(--space-4xl);
             padding: var(--space-4xl);
+
+            @media screen and (max-width: $breakpoint-xs) {
+                margin: var(--space-xxl);
+                padding: var(--space-xxl);
+                gap: var(--space-xl);
+            }
 
             header.post__header {
                 display: flex;
@@ -484,6 +490,14 @@ html[data-page="post"] {
                 padding-bottom: var(--space-4xl);
                 border-bottom: var(--border-base);
                 background: linear-gradient(45deg, var(--color-surface-0), var(--color-surface-2));
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    margin-top: calc(var(--space-xxl) * -1);
+                    padding-top: var(--space-xxl);
+                    margin-inline: calc(var(--space-xxl) * -1);
+                    padding-inline: var(--space-xxl);
+                    padding-bottom: var(--space-xxl);
+                }
 
                 nav.post__breadcrumbs {
                     margin: 0;

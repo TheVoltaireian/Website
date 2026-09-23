@@ -1484,6 +1484,13 @@ html[data-page=post] body .post__wrapper {
   margin: var(--space-4xl);
   padding: var(--space-4xl);
 }
+@media screen and (max-width: 767px) {
+  html[data-page=post] body .post__wrapper {
+    margin: var(--space-xxl);
+    padding: var(--space-xxl);
+    gap: var(--space-xl);
+  }
+}
 html[data-page=post] body .post__wrapper header.post__header {
   display: flex;
   flex-direction: column;
@@ -1503,6 +1510,15 @@ html[data-page=post] body .post__wrapper header.post__header {
   padding-bottom: var(--space-4xl);
   border-bottom: var(--border-base);
   background: linear-gradient(45deg, var(--color-surface-0), var(--color-surface-2));
+}
+@media screen and (max-width: 767px) {
+  html[data-page=post] body .post__wrapper header.post__header {
+    margin-top: calc(var(--space-xxl) * -1);
+    padding-top: var(--space-xxl);
+    margin-inline: calc(var(--space-xxl) * -1);
+    padding-inline: var(--space-xxl);
+    padding-bottom: var(--space-xxl);
+  }
 }
 html[data-page=post] body .post__wrapper header.post__header nav.post__breadcrumbs {
   margin: 0;
