@@ -85,19 +85,6 @@ html[data-page="home"] {
                         display: flex;
                         flex-direction: column;
 
-                        @include hover {
-                            .projects__cardHead {
-                                margin-top: 0;
-                                border-bottom: var(--border-width-base) solid var(--border-color-base);
-                            }
-                            
-                            .projects__cardImage {
-                                img {
-                                    --projects__cardImageAlpha: 15%;
-                                }
-                            }
-                        }
-
                         .projects__cardImage {
                             margin: calc(var(--space-md) * -1);
                             margin-bottom: 0;
@@ -170,6 +157,32 @@ html[data-page="home"] {
                                     text-align: center;
                                     justify-content: center;
                                 }
+                            }
+                        }
+
+                        @media (hover: hover) and (pointer: fine) {
+                            @include hover {
+                                .projects__cardHead {
+                                    margin-top: 0;
+                                    border-bottom: var(--border-width-base) solid var(--border-color-base);
+                                }
+                                
+                                .projects__cardImage {
+                                    img {
+                                        --projects__cardImageAlpha: 15%;
+                                    }
+                                }
+                            }
+                        }
+
+                        @media (hover: none), (pointer: coarse) {
+                            .projects__cardHead {
+                                margin-top: 0 !important;
+                                border-bottom: var(--border-width-base) solid var(--border-color-base) !important;
+                            }
+
+                            .projects__cardImage img {
+                                --projects__cardImageAlpha: 15% !important;
                             }
                         }
 

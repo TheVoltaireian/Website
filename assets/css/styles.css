@@ -974,13 +974,6 @@ html[data-page=home] main .projects .projects__wikis .projects__cards .projects_
   display: flex;
   flex-direction: column;
 }
-html[data-page=home] main .projects .projects__wikis .projects__cards .projects__card:hover .projects__cardHead {
-  margin-top: 0;
-  border-bottom: var(--border-width-base) solid var(--border-color-base);
-}
-html[data-page=home] main .projects .projects__wikis .projects__cards .projects__card:hover .projects__cardImage img {
-  --projects__cardImageAlpha: 15%;
-}
 html[data-page=home] main .projects .projects__wikis .projects__cards .projects__card .projects__cardImage {
   margin: calc(var(--space-md) * -1);
   margin-bottom: 0;
@@ -1042,6 +1035,24 @@ html[data-page=home] main .projects .projects__wikis .projects__cards .projects_
   font-weight: var(--font-weight-bold);
   text-align: center;
   justify-content: center;
+}
+@media (hover: hover) and (pointer: fine) {
+  html[data-page=home] main .projects .projects__wikis .projects__cards .projects__card:hover .projects__cardHead {
+    margin-top: 0;
+    border-bottom: var(--border-width-base) solid var(--border-color-base);
+  }
+  html[data-page=home] main .projects .projects__wikis .projects__cards .projects__card:hover .projects__cardImage img {
+    --projects__cardImageAlpha: 15%;
+  }
+}
+@media (hover: none), (pointer: coarse) {
+  html[data-page=home] main .projects .projects__wikis .projects__cards .projects__card .projects__cardHead {
+    margin-top: 0 !important;
+    border-bottom: var(--border-width-base) solid var(--border-color-base) !important;
+  }
+  html[data-page=home] main .projects .projects__wikis .projects__cards .projects__card .projects__cardImage img {
+    --projects__cardImageAlpha: 15% !important;
+  }
 }
 html[data-page=home] main .projects .projects__wikis .projects__cards .projects__card--hidden {
   opacity: 0;
