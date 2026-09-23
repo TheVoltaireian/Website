@@ -2,6 +2,7 @@
 layout: post
 title: "That Time I Got Reincarnated as a Web Developer"
 page_id: post
+body_class: toc-enabled
 tags:
   - web-development
   - personal

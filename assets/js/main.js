@@ -1,3 +1,4 @@
+// card animations
 document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .forEach(element => observer.observe(element));
 });
 
+// card height calculator
 const resizeObserver = new ResizeObserver(entries => {
     for (const entry of entries) {
         const card = entry.target.closest('.projects__card');
@@ -39,6 +41,7 @@ document.querySelectorAll('.projects__cardHead').forEach(head => {
     resizeObserver.observe(head);
 });
 
+// mouse anim (via: https://github.com/whoscripting/whoscripting.github.io/blob/master/landing/landing.js)
 let mouseX = 0;
 let mouseY = 0;
 
