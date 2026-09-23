@@ -594,6 +594,12 @@ html[data-page="post"] {
                         max-width: 100%;
                         min-width: 0;
                         overflow-x: auto;
+
+                        font-size: var(--font-size-small);
+
+                        code {
+                            text-wrap: wrap;
+                        }
                     }
 
                     img {

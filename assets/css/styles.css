@@ -1460,6 +1460,10 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent pre 
   max-width: 100%;
   min-width: 0;
   overflow-x: auto;
+  font-size: var(--font-size-small);
+}
+html[data-page=post] body .post__wrapper main.post__main .post__mainContent pre code {
+  text-wrap: wrap;
 }
 html[data-page=post] body .post__wrapper main.post__main .post__mainContent img {
   max-width: 100%;
