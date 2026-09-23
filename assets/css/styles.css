@@ -1390,6 +1390,7 @@ html[data-page=post] body header.post__header .post__meta .post__tags {
 }
 @media screen and (max-width: 767px) {
   html[data-page=post] body header.post__header .post__meta {
+    align-items: flex-start;
     flex-direction: column;
     gap: var(--space-sm);
   }
