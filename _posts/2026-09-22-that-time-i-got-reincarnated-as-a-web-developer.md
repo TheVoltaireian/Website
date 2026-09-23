@@ -18,4 +18,20 @@ If you took a computer science class in elementary/middle school, you may have h
 Until I got banned.
 
 ## The dark ages
+Now, I'm not gonna delve too deep into why I got banned (mainly because it's super embarassing), but here's a bit of CSS:
+
+````css
+// sometimes I wonder what would've happened if I didn't get banned...
+#wildvoltaireian {
+  --ban-formula: calc(var(--10-years-old) + (--didnt-read-the-rules));
+}
+````
+
+I never went back to Scratch either that, mainly because it was an IP ban which meant I couldn't access it at home. (insert 99+ sob and skull emojis here for the TikTokers.) Since I couldn't access Scratch, I didn't really code from early 2021 to ~late 2022. 
+
+What did I do during this time? Absolutely nothing. Like genuinely, I can't remember a single meaningful thing I did during this time. Kind of embarassing, actually. Eventually this would all change. My dad noticed that I hadn't been coding or doing anything interesting in computer science, even though I had stated multiple times by then that I "wanted to go into computer science to make some MOOLAH 🤑🤑🤑🤑🤑🤑".
+
+What he did next would define the next 4 years of my life and set me on a course of wonder, misery, pain, excitement, and hurs of debugging CSS: he bought me a Udemy course on web development.
+
+## Reincarnation
 WIP
