@@ -1397,6 +1397,7 @@ html[data-page=post] body header.post__header h1 {
   line-height: initial;
   font-size: var(--font-size-5x-large);
   font-weight: var(--font-weight-bold);
+  text-wrap: wrap;
 }
 html[data-page=post] body header.post__header .post__meta {
   display: flex;

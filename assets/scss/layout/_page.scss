@@ -515,6 +515,7 @@ html[data-page="post"] {
                 line-height: initial;
                 font-size: var(--font-size-5x-large);
                 font-weight: var(--font-weight-bold);
+                text-wrap: wrap;
             }
 
             .post__meta {
