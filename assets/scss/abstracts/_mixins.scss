@@ -45,6 +45,8 @@
     cursor: pointer;
 
     transition: var(--transition-hover--slow);
+
+    text-decoration: none !important;
 }
 
 @mixin button-variant($bg, $hover, $active, $text) {

@@ -543,6 +543,7 @@ a.button {
   font-size: var(--font-size-medium);
   cursor: pointer;
   transition: var(--transition-hover--slow);
+  text-decoration: none !important;
 }
 a.button:focus-visible {
   outline: 2px solid var(--color-progressive);
