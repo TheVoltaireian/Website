@@ -3,12 +3,10 @@ layout: base
 ---
 
 <div class="post__wrapper">
-    <nav class="post__breadcrumbs">
-        <a href="{{ '/' | relative_url }}">Home</a> <span aria-hidden="true" class="divider">></span> <a href="{{ '/blog/' | relative_url }}">Blog</a> <span aria-hidden="true" class="divider">></span> <span class="post__name" style="font-weight: var(--font-weight-bold)">{{ page.title }}</span>
-    </nav>
-
     <header class="post__header">
-        <hr>
+        <nav class="post__breadcrumbs">
+            <a href="{{ '/' | relative_url }}">Home</a> <span aria-hidden="true" class="divider">></span> <a href="{{ '/blog/' | relative_url }}">Blog</a> <span aria-hidden="true" class="divider">></span> <span class="post__name" style="font-weight: var(--font-weight-bold)">{{ page.title }}</span>
+        </nav>
         <h1>{{ page.title }}</h1>
         <div class="post__meta">
             <time datetime="{{ page.date | date_to_xmlschema }}">
