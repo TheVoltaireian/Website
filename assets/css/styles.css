@@ -1105,7 +1105,6 @@ html[data-page=home] main .projects .projects__wikis .projects__header {
   display: flex;
   flex-direction: column;
   gap: 0;
-  border-bottom: var(--border-base);
   padding-block: var(--space-sm);
   line-height: 1;
   gap: var(--space-xxs);
@@ -1267,7 +1266,6 @@ html[data-page=home] main .blog .blog__container .blog__header {
   display: flex;
   flex-direction: column;
   gap: 0;
-  border-bottom: var(--border-base);
   padding-block: var(--space-sm);
   line-height: 1;
   gap: var(--space-xxs);
@@ -1393,7 +1391,6 @@ html[data-page=blog] main .blog .blog__container .blog__header {
   display: flex;
   flex-direction: column;
   gap: 0;
-  border-bottom: var(--border-base);
   padding-block: var(--space-sm);
   line-height: 1;
   gap: var(--space-xxs);
