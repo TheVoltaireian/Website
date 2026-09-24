@@ -871,12 +871,18 @@ html[data-page=blog] header hr {
 
 main {
   margin: var(--space-lg);
-  padding: var(--space-xl) var(--space-md);
+  padding: var(--space-xxxl) var(--space-xxxl);
+}
+@media screen and (max-width: 992px) {
+  main {
+    margin: var(--space-md);
+    padding: var(--space-xl) var(--space-xl);
+  }
 }
 @media screen and (max-width: 767px) {
   main {
     margin: var(--space-sm);
-    padding: var(--space-md) var(--space-xs);
+    padding: var(--space-md) var(--space-md);
   }
 }
 
