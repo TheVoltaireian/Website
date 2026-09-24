@@ -1696,7 +1696,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent pre 
 html[data-page=post] body .post__wrapper main.post__main .post__mainContent img {
   max-width: 100%;
 }
-@media screen and (min-width: 1119px) {
+@media screen and (min-width: 992px) {
   html[data-page=post] body .post__wrapper main.post__main .post__mainContent .post__mainInner body.toc-enabled .post__mainInner {
     display: grid;
     gap: 1rem;

@@ -689,7 +689,7 @@ html[data-page="post"] {
                     }
 
                     .post__mainInner {
-                        @media screen and (min-width: 1119px) {
+                        @media screen and (min-width: $breakpoint-sm) {
                             body.toc-enabled .post__mainInner {
                                 display: grid;
                                 gap: 1rem;
