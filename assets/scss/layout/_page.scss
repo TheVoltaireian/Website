@@ -18,7 +18,7 @@ html[data-page="home"] {
     main {
         display: flex;
         flex-direction: column;
-        gap: var(--space-md);
+        gap: var(--space-xl);
 
         .projects {
             .projects__wikis {
@@ -36,11 +36,17 @@ html[data-page="home"] {
 
                     line-height: 1;
 
+                    gap: var(--space-xxs);
+
+                    font-family: var(--font-family-alternate);
+
                     h2 {
                         margin-block: 0;
+                        font-size: var(--font-size-xxx-large);
                     }
                     p {
                         margin-block: 0;
+                        font-size: var(--font-size-large);
                     }
 
                     @include view-on-scroll;
@@ -192,6 +198,7 @@ html[data-page="home"] {
                 }
             }
         }
+
         .blog {
             .blog__container {
                 display: flex;
@@ -208,11 +215,17 @@ html[data-page="home"] {
 
                     line-height: 1;
 
+                    gap: var(--space-xxs);
+
+                    font-family: var(--font-family-alternate);
+
                     h2 {
                         margin-block: 0;
+                        font-size: var(--font-size-xxx-large);
                     }
                     p {
                         margin-block: 0;
+                        font-size: var(--font-size-large);
                     }
 
                     @include view-on-scroll;
@@ -339,11 +352,17 @@ html[data-page="blog"] {
 
                     line-height: 1;
 
+                    gap: var(--space-xxs);
+
+                    font-family: var(--font-family-alternate);
+
                     h2 {
                         margin-block: 0;
+                        font-size: var(--font-size-xxx-large);
                     }
                     p {
                         margin-block: 0;
+                        font-size: var(--font-size-large);
                     }
 
                     @include view-on-scroll;
@@ -490,6 +509,8 @@ html[data-page="post"] {
                 gap: var(--space-xs);
 
                 text-align: left;
+
+                font-family: var(--font-family-alternate);
 
                 margin-top: calc(var(--space-4xl) * -1);
                 padding-top: var(--space-4xl);

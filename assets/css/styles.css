@@ -14,6 +14,13 @@
   src: url("../fonts/Figtree-Italic-VariableFont_wght.woff2") format("woff2");
 }
 @font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("..fonts/SpaceGrotesk-VariableFont_wwght.woff2") format("woff2");
+}
+@font-face {
   font-family: "Geist Mono";
   font-style: normal;
   font-weight: 300 900;
@@ -48,6 +55,7 @@
   /* My theme site is largely based on the MediaWiki skin "Citizen", hence why a lot of the variables are from that skin. */
   /* Fonts */
   --font-family-primary: 'Figtree', sans-serif;
+  --font-family-alternate: 'Space Grotesk', sans-serif;
   --font-family-serif: 'Playfair Display', serif;
   --font-family-monospace: 'Geist Mono', monospace;
   /* Font weights */
@@ -137,7 +145,7 @@
   --color-progressive-oklch__c: 0.1679;
   --color-progressive-oklch__h: 262.29;
   /* Surface color */
-  --color-surface-0-oklch__l: 12%;
+  --color-surface-0-oklch__l: 10%;
   --color-surface-0-oklch__c: 0.01;
   --color-surface-1-oklch__l: calc( var( --color-surface-0-oklch__l ) + var( --delta-lightness-surface-base ) );
   --color-surface-1-oklch__c: 0.015;
@@ -1086,7 +1094,7 @@ body {
 html[data-page=home] main {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: var(--space-xl);
 }
 html[data-page=home] main .projects .projects__wikis {
   display: flex;
@@ -1100,12 +1108,16 @@ html[data-page=home] main .projects .projects__wikis .projects__header {
   border-bottom: var(--border-base);
   padding-block: var(--space-sm);
   line-height: 1;
+  gap: var(--space-xxs);
+  font-family: var(--font-family-alternate);
 }
 html[data-page=home] main .projects .projects__wikis .projects__header h2 {
   margin-block: 0;
+  font-size: var(--font-size-xxx-large);
 }
 html[data-page=home] main .projects .projects__wikis .projects__header p {
   margin-block: 0;
+  font-size: var(--font-size-large);
 }
 html[data-page=home] main .projects .projects__wikis .projects__header--hidden {
   opacity: 0;
@@ -1258,12 +1270,16 @@ html[data-page=home] main .blog .blog__container .blog__header {
   border-bottom: var(--border-base);
   padding-block: var(--space-sm);
   line-height: 1;
+  gap: var(--space-xxs);
+  font-family: var(--font-family-alternate);
 }
 html[data-page=home] main .blog .blog__container .blog__header h2 {
   margin-block: 0;
+  font-size: var(--font-size-xxx-large);
 }
 html[data-page=home] main .blog .blog__container .blog__header p {
   margin-block: 0;
+  font-size: var(--font-size-large);
 }
 html[data-page=home] main .blog .blog__container .blog__header--hidden {
   opacity: 0;
@@ -1380,12 +1396,16 @@ html[data-page=blog] main .blog .blog__container .blog__header {
   border-bottom: var(--border-base);
   padding-block: var(--space-sm);
   line-height: 1;
+  gap: var(--space-xxs);
+  font-family: var(--font-family-alternate);
 }
 html[data-page=blog] main .blog .blog__container .blog__header h2 {
   margin-block: 0;
+  font-size: var(--font-size-xxx-large);
 }
 html[data-page=blog] main .blog .blog__container .blog__header p {
   margin-block: 0;
+  font-size: var(--font-size-large);
 }
 html[data-page=blog] main .blog .blog__container .blog__header--hidden {
   opacity: 0;
@@ -1521,6 +1541,7 @@ html[data-page=post] body .post__wrapper header.post__header {
   padding: 0;
   gap: var(--space-xs);
   text-align: left;
+  font-family: var(--font-family-alternate);
   margin-top: calc(var(--space-4xl) * -1);
   padding-top: var(--space-4xl);
   margin-inline: calc(var(--space-4xl) * -1);

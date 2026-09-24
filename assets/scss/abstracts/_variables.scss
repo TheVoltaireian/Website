@@ -6,6 +6,7 @@
 
     /* Fonts */
     --font-family-primary: 'Figtree', sans-serif;
+	--font-family-alternate: 'Space Grotesk', sans-serif;
 	--font-family-serif: 'Playfair Display', serif;
 	--font-family-monospace: 'Geist Mono', monospace;
 
@@ -107,7 +108,7 @@
 	--color-progressive-oklch__h: 262.29;
 
 	/* Surface color */
-	--color-surface-0-oklch__l: 12%;
+	--color-surface-0-oklch__l: 10%;
 	--color-surface-0-oklch__c: 0.01;
 	--color-surface-1-oklch__l: calc( var( --color-surface-0-oklch__l ) + var( --delta-lightness-surface-base ) );
 	--color-surface-1-oklch__c: 0.015;
