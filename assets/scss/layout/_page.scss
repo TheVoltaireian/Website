@@ -688,6 +688,17 @@ html[data-page="post"] {
                         max-width: 100%;
                     }
 
+                    .post__mainInner {
+                        @media screen and (min-width: 1119px) {
+                            body.toc-enabled .post__mainInner {
+                                display: grid;
+                                gap: 1rem;
+                                grid-template-areas: "content toc";
+                                grid-template-columns: minmax(0, 1300px) 300px;
+                            }
+                        }
+                    }
+
                     p:first-of-type {
                         margin-top: 0 !important;
                     }
