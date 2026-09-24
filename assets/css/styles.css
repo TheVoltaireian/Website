@@ -1562,10 +1562,10 @@ html[data-page=post] body .post__wrapper header.post__header::after {
   inset: 0 0 auto;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, var(--border-color-base) 1px, transparent 1px), linear-gradient(to bottom, var(--border-color-base) 1px, transparent 1px);
+  background-image: linear-gradient(to right, var(--border-color-subtle) 1px, transparent 1px), linear-gradient(to bottom, var(--border-color-subtle) 1px, transparent 1px);
   background-size: 40px 40px;
-  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
-          mask-image: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+          mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
   z-index: 1;
 }
 html[data-page=post] body .post__wrapper header.post__header nav.post__breadcrumbs {
