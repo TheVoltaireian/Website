@@ -500,6 +500,12 @@ html[data-page="post"] {
                 gap: var(--space-xl);
             }
 
+            @media screen and (max-width: $breakpoint-xxs) {
+                margin: var(--space-xl);
+                padding: var(--space-xl);
+                gap: var(--space-lg);
+            }
+
             header.post__header {
                 display: flex;
                 flex-direction: column;
@@ -531,6 +537,14 @@ html[data-page="post"] {
                     margin-inline: calc(var(--space-xxl) * -1);
                     padding-inline: var(--space-xxl);
                     padding-bottom: var(--space-xxl);
+                }
+
+                @media screen and (max-width: $breakpoint-xxs) {
+                    margin-top: calc(var(--space-xl) * -1);
+                    padding-top: var(--space-xl);
+                    margin-inline: calc(var(--space-xl) * -1);
+                    padding-inline: var(--space-xl);
+                    padding-bottom: var(--space-xl);
                 }
 
                 &::after {

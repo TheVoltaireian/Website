@@ -1532,6 +1532,13 @@ html[data-page=post] body .post__wrapper {
     gap: var(--space-xl);
   }
 }
+@media screen and (max-width: 479px) {
+  html[data-page=post] body .post__wrapper {
+    margin: var(--space-xl);
+    padding: var(--space-xl);
+    gap: var(--space-lg);
+  }
+}
 html[data-page=post] body .post__wrapper header.post__header {
   display: flex;
   flex-direction: column;
@@ -1560,6 +1567,15 @@ html[data-page=post] body .post__wrapper header.post__header {
     margin-inline: calc(var(--space-xxl) * -1);
     padding-inline: var(--space-xxl);
     padding-bottom: var(--space-xxl);
+  }
+}
+@media screen and (max-width: 479px) {
+  html[data-page=post] body .post__wrapper header.post__header {
+    margin-top: calc(var(--space-xl) * -1);
+    padding-top: var(--space-xl);
+    margin-inline: calc(var(--space-xl) * -1);
+    padding-inline: var(--space-xl);
+    padding-bottom: var(--space-xl);
   }
 }
 html[data-page=post] body .post__wrapper header.post__header::after {
