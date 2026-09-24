@@ -224,6 +224,10 @@ html[data-page="home"] {
                     p {
                         margin-block: 0;
                         font-size: var(--font-size-large);
+
+                        tag {
+                            font-size: var(--font-size-large);
+                        }
                     }
 
                     @include view-on-scroll;
