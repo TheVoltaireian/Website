@@ -1094,7 +1094,7 @@ body {
 html[data-page=home] main {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xl);
+  gap: var(--space-xxxl);
 }
 html[data-page=home] main .projects .projects__wikis {
   display: flex;

@@ -18,7 +18,7 @@ html[data-page="home"] {
     main {
         display: flex;
         flex-direction: column;
-        gap: var(--space-xl);
+        gap: var(--space-xxxl);
 
         .projects {
             .projects__wikis {
@@ -581,7 +581,7 @@ html[data-page="post"] {
                     font-size: var(--font-size-5x-large);
                     font-weight: var(--font-weight-bold);
                     text-wrap: wrap;
-                    
+
                     z-index: 2;
                 }
 
