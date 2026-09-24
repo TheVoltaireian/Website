@@ -1280,7 +1280,10 @@ html[data-page=home] main .blog .blog__container .blog__header p {
   font-size: var(--font-size-large);
 }
 html[data-page=home] main .blog .blog__container .blog__header p .tag {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-large) !important;
+}
+html[data-page=home] main .blog .blog__container .blog__header p .tag a {
+  font-size: var(--font-size-large) !important;
 }
 html[data-page=home] main .blog .blog__container .blog__header--hidden {
   opacity: 0;

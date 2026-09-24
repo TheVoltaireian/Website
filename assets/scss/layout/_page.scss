@@ -226,7 +226,11 @@ html[data-page="home"] {
                         font-size: var(--font-size-large);
 
                         .tag {
-                            font-size: var(--font-size-large);
+                            font-size: var(--font-size-large) !important;
+
+                            a {
+                                font-size: var(--font-size-large) !important;
+                            }
                         }
                     }
 
