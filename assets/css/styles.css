@@ -1582,6 +1582,7 @@ html[data-page=post] body .post__wrapper header.post__header nav.post__breadcrum
   gap: var(--space-xs);
   flex-wrap: wrap;
   color: var(--color-subtle);
+  text-transform: uppercase;
   padding-bottom: var(--space-sm);
   border-bottom: var(--border-subtle);
   margin-bottom: var(--space-sm);

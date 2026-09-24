@@ -553,6 +553,8 @@ html[data-page="post"] {
                     gap: var(--space-xs);
                     flex-wrap: wrap;
                     color: var(--color-subtle);
+
+                    text-transform: uppercase;
                     
                     padding-bottom: var(--space-sm);
                     border-bottom: var(--border-subtle);
