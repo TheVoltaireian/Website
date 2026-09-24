@@ -523,7 +523,7 @@ html[data-page="post"] {
                 padding-inline: var(--space-4xl);
                 padding-bottom: var(--space-4xl);
                 border-bottom: var(--border-base);
-                background: linear-gradient(45deg, var(--color-surface-0), var(--color-surface-2));
+                background: linear-gradient(45deg, var(--color-surface-0), var(--color-surface-3));
 
                 @media screen and (max-width: $breakpoint-xs) {
                     margin-top: calc(var(--space-xxl) * -1);
