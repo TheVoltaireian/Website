@@ -1745,9 +1745,9 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
 
 .toc-title {
   margin: 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-color, #ffffff);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-emphasized);
 }
 
 /* TOC Toggle Button */
@@ -1760,8 +1760,8 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 1.2rem;
+  color: var(--color-emphasized);
+  font-size: var(--font-size-large);
   transition: opacity 0.2s ease;
   flex-shrink: 0;
 }
@@ -1808,7 +1808,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
 .toc-nav a {
   display: block;
   padding: 0.35rem 0.65rem;
-  color: var(--link-color, #66b3ff);
+  color: var(--color-link);
   text-decoration: none;
   border-left: 3px solid transparent;
   transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
@@ -1818,15 +1818,15 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
 }
 
 .toc-nav a:hover {
-  background-color: var(--link-hover-bg, #333333);
-  border-left-color: var(--link-color, #66b3ff);
+  background-color: var(--color-surface-2--hover);
+  border-left-color: var(--color-link);
 }
 
 .toc-nav a.is-active {
-  color: white;
-  border-left-color: white;
-  background-color: var(--link-hover-bg, #333333);
-  font-weight: 600;
+  color: var(--color-emphasized);
+  border-left-color: var(--color-emphasized);
+  background-color: var(--color-surface-2--active);
+  font-weight: var(--font-weight-semi-bold);
 }
 
 /* Closed State (Mobile/Collapsed) */
@@ -1835,7 +1835,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
 }
 
 /* Responsive Design */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 766px) {
   .toc-wrapper {
     position: fixed;
     top: auto;
