@@ -1825,7 +1825,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
 }
 
 /* Responsive Design */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 767px) {
   body.toc-enabled .post__mainContent {
     display: grid;
     gap: 1rem;

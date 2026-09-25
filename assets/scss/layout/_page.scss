@@ -823,7 +823,7 @@ html[data-page="post"] {
 }
 
 /* Responsive Design */
-@media screen and (min-width: $breakpoint-sm) {
+@media screen and (min-width: $breakpoint-xs) {
     body.toc-enabled .post__mainContent {
         display: grid;
         gap: 1rem;
