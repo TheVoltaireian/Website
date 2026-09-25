@@ -113,14 +113,6 @@ function initializeTOC() {
     }
 }
 
-// Initialize when DOM is ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initializeTOC);
-} else {
-    // DOM is already loaded
-    initializeTOC();
-}
-
 // TOC Sticky: Handles sticky positioning and mobile toggle functionality
 class TOCSticky {
 	constructor(tocElement) {
@@ -469,6 +461,14 @@ class TOCWrapper {
 
 		return toc;
 	}
+}
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeTOC);
+} else {
+    // DOM is already loaded
+    initializeTOC();
 }
 
 // easter egg xD
