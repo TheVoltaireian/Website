@@ -851,6 +851,10 @@ html[data-page="post"] {
         background: oklch(from var(--color-surface-2) l c h / 0.9);
     }
 
+    .toc-header {
+        padding: 1rem 1rem 0 1rem;
+    }
+
     .toc-wrapper::before {
         content: "";
         position: absolute;
