@@ -1825,7 +1825,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
 }
 
 /* Responsive Design */
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 992px) {
   body.toc-enabled .post__mainContent {
     display: grid;
     gap: 1rem;
@@ -1843,16 +1843,27 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
     border-radius: var(--border-radius-medium);
   }
   body.toc-enabled .toc-wrapper .toc-header {
-    padding: var(--space-md);
+    font-family: var(--font-family-alternate);
+    padding: var(--space-sm) var(--space-md);
   }
   body.toc-enabled .toc-wrapper:not(.is-closed) .toc-header {
     border-bottom: var(--border-base);
+    background: var(--color-surface-1);
   }
   body.toc-enabled .toc-wrapper .toc-nav {
     padding: var(--space-md);
   }
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 991px) {
+  body.toc-enabled .post__mainContent {
+    display: flex;
+    flex-direction: column;
+  }
+  body.toc-enabled .toc-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
   .toc-wrapper {
     position: fixed;
     top: auto;

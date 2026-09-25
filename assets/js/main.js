@@ -391,7 +391,7 @@ class TOCWrapper {
 
 		const title = document.createElement("h3");
 		title.className = "toc-title";
-		title.textContent = "Contents";
+		title.textContent = "Table of Contents";
 		header.appendChild(title);
 
 		const toggleBtn = document.createElement("button");
