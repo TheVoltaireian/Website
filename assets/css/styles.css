@@ -1702,16 +1702,16 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
 
 @media screen and (min-width: 992px) {
   body.toc-enabled .post__mainContent {
-    display: grid;
+    display: flex;
     gap: 1rem;
-    grid-template-areas: "content toc";
-    grid-template-columns: minmax(0, 1300px) 300px;
   }
   body.toc-enabled .post__mainInner {
-    grid-area: content;
+    flex: 1 1 auto;
   }
   body.toc-enabled .toc-wrapper {
-    grid-area: toc;
+    position: sticky;
+    top: 60px;
+    flex: 0 0 300px;
     align-self: start;
   }
 }
