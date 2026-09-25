@@ -1846,7 +1846,6 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
   }
   body.toc-enabled .toc-wrapper .toc-header {
     font-family: var(--font-family-alternate);
-    text-transform: uppercase;
     padding: var(--space-sm) var(--space-md);
   }
   body.toc-enabled .toc-wrapper:not(.is-closed) .toc-header {
@@ -1864,6 +1863,20 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
   }
   body.toc-enabled .toc-wrapper {
     width: 100%;
+    background: var(--color-surface-2);
+    border: var(--border-base);
+    border-radius: var(--border-radius-medium);
+  }
+  body.toc-enabled .toc-wrapper .toc-header {
+    font-family: var(--font-family-alternate);
+    padding: var(--space-sm) var(--space-md);
+  }
+  body.toc-enabled .toc-wrapper:not(.is-closed) .toc-header {
+    border-bottom: var(--border-base);
+    background: var(--color-surface-1);
+  }
+  body.toc-enabled .toc-wrapper .toc-nav {
+    padding: var(--space-md);
   }
 }
 @media screen and (max-width: 767px) {
