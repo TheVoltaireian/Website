@@ -1518,7 +1518,7 @@ html[data-page=post] body .post__wrapper {
   display: grid;
   grid-template-rows: auto 1fr;
   gap: var(--space-xxl);
-  overflow: hidden;
+  overflow: visible;
   background: var(--color-surface-1);
   border: var(--border-base);
   border-radius: var(--border-radius-large);
@@ -1559,6 +1559,7 @@ html[data-page=post] body .post__wrapper header.post__header {
   padding-bottom: var(--space-4xl);
   border-bottom: var(--border-base);
   background: linear-gradient(45deg, var(--color-surface-0), var(--color-surface-3));
+  border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
 }
 @media screen and (max-width: 767px) {
   html[data-page=post] body .post__wrapper header.post__header {
@@ -1589,6 +1590,7 @@ html[data-page=post] body .post__wrapper header.post__header::after {
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
           mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
   z-index: 1;
+  border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
 }
 html[data-page=post] body .post__wrapper header.post__header nav.post__breadcrumbs {
   margin: 0;
