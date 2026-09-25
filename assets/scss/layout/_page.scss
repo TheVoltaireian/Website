@@ -700,18 +700,18 @@ html[data-page="post"] {
 
 @media screen and (min-width: $breakpoint-sm) {
     body.toc-enabled .post__mainContent {
-        display: flex;
+        display: grid;
         gap: 1rem;
-    }
+        grid-template-areas: "content toc";
+        grid-template-columns: minmax(0, 1300px) 300px;
+    } 
 
     body.toc-enabled .post__mainInner {
-        flex: 1 1 auto;
+        grid-area: content;
     }
 
     body.toc-enabled .toc-wrapper {
-        position: sticky;
-        top: 60px;
-        flex: 0 0 300px;
+        grid-area: toc;
         align-self: start;
     }
 }
