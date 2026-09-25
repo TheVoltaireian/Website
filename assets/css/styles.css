@@ -1706,7 +1706,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 20px;
+  top: var(--space-xxl);
   max-height: calc(100vh - 80px);
   padding: 0;
   overflow: hidden;
@@ -1840,10 +1840,13 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
     align-self: start;
     background: var(--color-surface-2);
     border: var(--border-base);
-    border-radius: var(--border-radius-medium);
+    border-right: none;
+    border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
+    margin-right: calc(var(--space-4xl) * -1);
   }
   body.toc-enabled .toc-wrapper .toc-header {
     font-family: var(--font-family-alternate);
+    text-transform: uppercase;
     padding: var(--space-sm) var(--space-md);
   }
   body.toc-enabled .toc-wrapper:not(.is-closed) .toc-header {
