@@ -705,11 +705,14 @@ html[data-page="post"] {
         grid-template-areas: "content toc";
         grid-template-columns: minmax(0, 1300px) 300px;
     }
+
     body.toc-enabled .post__mainInner {
         grid-area: content;
     }
+
     body.toc-enabled .toc-wrapper {
         grid-area: toc;
+        align-self: start;
     }
 }
 

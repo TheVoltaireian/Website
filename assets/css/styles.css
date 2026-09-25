@@ -1712,6 +1712,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
   }
   body.toc-enabled .toc-wrapper {
     grid-area: toc;
+    align-self: start;
   }
 }
 .toc-wrapper {
