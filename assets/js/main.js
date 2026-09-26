@@ -48,9 +48,18 @@ let mouseY = 0;
 let lerpedX = 0;
 let lerpedY = 0;
 
+const h1Element = document.querySelector("#WildVoltaireian");
+const h1Rect = h1Element.getBoundingClientRect();
+
 document.addEventListener("mousemove", e => {
-    mouseX = e.clientX / window.innerWidth * 20 - 10;
-    mouseY = e.clientY / window.innerHeight * 20 - 10;
+    const elementCenterX = h1Rect.left + h1Rect.width / 2;
+    const elementCenterY = h1Rect.top + h1Rect.height / 2;
+    
+    const distX = (e.clientX - elementCenterX) / h1Rect.width * 20;
+    const distY = (e.clientY - elementCenterY) / h1Rect.height * 20;
+    
+    mouseX = Math.max(-10, Math.min(10, distX));
+    mouseY = Math.max(-10, Math.min(10, distY));
 });
 
 const tweets = document.querySelectorAll("#WildVoltaireian");
