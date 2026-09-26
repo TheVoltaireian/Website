@@ -60,16 +60,16 @@ if (h1Element) {
         const relativeX = (event.clientX - elementCenterX) / rect.width;
         const relativeY = (event.clientY - elementCenterY) / rect.height;
 
-        mouseX = Math.max(-5, Math.min(5, relativeX * 5));
-        mouseY = Math.max(-5, Math.min(5, relativeY * 5));
+        mouseX = Math.max(-4, Math.min(4, relativeX * 4));
+        mouseY = Math.max(-4, Math.min(4, relativeY * 4));
     });
 
     function update() {
-        lerpedX += (mouseX - lerpedX) * 0.04;
-        lerpedY += (mouseY - lerpedY) * 0.04;
+        lerpedX += (mouseX - lerpedX) * 0.03;
+        lerpedY += (mouseY - lerpedY) * 0.03;
 
         h1Element.style.transform =
-            `translate(${lerpedX}px, ${lerpedY}px) rotate(${lerpedX * 0.075}deg)`;
+            `translate(${lerpedX}px, ${lerpedY}px) rotate(${lerpedX * 0.05}deg)`;
 
         requestAnimationFrame(update);
     }
