@@ -65,12 +65,8 @@ html[data-page="home"] {
                 font-size: var(--font-size-5x-large)
             }
 
-            @media screen and (max-width: $breakpoint-xxs) {
-                font-size: var(--font-size-4x-large)
-            }
-
             @media screen and (max-width: $breakpoint-xxxs) {
-                font-size: var(--font-size-3x-large)
+                font-size: var(--font-size-4x-large)
             }
 
             a {
@@ -161,12 +157,8 @@ html[data-page="blog"] {
                 font-size: var(--font-size-5x-large)
             }
 
-            @media screen and (max-width: $breakpoint-xxs) {
-                font-size: var(--font-size-4x-large)
-            }
-
             @media screen and (max-width: $breakpoint-xxxs) {
-                font-size: var(--font-size-3x-large)
+                font-size: var(--font-size-4x-large)
             }
 
             a {

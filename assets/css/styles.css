@@ -769,14 +769,9 @@ html[data-page=home] header h1 {
     font-size: var(--font-size-5x-large);
   }
 }
-@media screen and (max-width: 479px) {
-  html[data-page=home] header h1 {
-    font-size: var(--font-size-4x-large);
-  }
-}
 @media screen and (max-width: 389px) {
   html[data-page=home] header h1 {
-    font-size: var(--font-size-3x-large);
+    font-size: var(--font-size-4x-large);
   }
 }
 html[data-page=home] header h1 a {
@@ -856,14 +851,9 @@ html[data-page=blog] header h1 {
     font-size: var(--font-size-5x-large);
   }
 }
-@media screen and (max-width: 479px) {
-  html[data-page=blog] header h1 {
-    font-size: var(--font-size-4x-large);
-  }
-}
 @media screen and (max-width: 389px) {
   html[data-page=blog] header h1 {
-    font-size: var(--font-size-3x-large);
+    font-size: var(--font-size-4x-large);
   }
 }
 html[data-page=blog] header h1 a {
