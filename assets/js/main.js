@@ -60,8 +60,8 @@ if (h1Element) {
         const relativeX = (event.clientX - elementCenterX) / rect.width;
         const relativeY = (event.clientY - elementCenterY) / rect.height;
 
-        mouseX = Math.max(-10, Math.min(10, relativeX * 10));
-        mouseY = Math.max(-10, Math.min(10, relativeY * 10));
+        mouseX = Math.max(-10, Math.min(10, relativeX * 5));
+        mouseY = Math.max(-10, Math.min(10, relativeY * 5));
     });
 
     function update() {
