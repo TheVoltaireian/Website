@@ -110,7 +110,11 @@ footer {
                 &[aria-current="page"] {
                     color: var(--color-emphasized);
                     text-decoration: underline var(--color-emphasized);
-                    font-weight: var(--font-weight-medium);
+                    font-weight: var(--font-weight-bold);
+
+                    @include hover {
+                        color: var(--color-emphasized);
+                    }
 
                     @include active {
                         color: var(--color-emphasized);
@@ -119,10 +123,13 @@ footer {
 
                 @include hover {
                     color: var(--color-emphasized);
+                    text-decoration: none;
+                    font-weight: var(--font-weight-regular);
                 }
 
                 @include active {
-                    color: var(--color-subtle);
+                    color: var(--color-emphasized);
+                    text-decoration: none;
                 }
             }
 
