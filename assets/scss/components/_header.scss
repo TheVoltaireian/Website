@@ -42,11 +42,11 @@ html[data-page="home"] {
         }
 
         @media screen and (max-width: $breakpoint-sm) {
-            text-wrap: wrap;
+            padding: var(--space-xl);
         }
 
         @media screen and (max-width: $breakpoint-xs) {
-            padding: var(--space-md) var(--space-xs);
+            padding: var(--space-md);
         }
 
         h1 {
@@ -67,6 +67,10 @@ html[data-page="home"] {
 
             @media screen and (max-width: $breakpoint-xxs) {
                 font-size: var(--font-size-4x-large)
+            }
+
+            @media screen and (max-width: $breakpoint-xxxs) {
+                font-size: var(--font-size-3x-large)
             }
 
             a {
@@ -133,16 +137,12 @@ html[data-page="blog"] {
 
         animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 
-        @media (prefers-reduced-motion: reduce) {
-            animation: none;
-        }
-
         @media screen and (max-width: $breakpoint-sm) {
-            text-wrap: wrap;
+            padding: var(--space-xl);
         }
 
         @media screen and (max-width: $breakpoint-xs) {
-            padding: var(--space-md) var(--space-xs);
+            padding: var(--space-md);
         }
 
         h1 {
@@ -159,6 +159,14 @@ html[data-page="blog"] {
 
             @media screen and (max-width: $breakpoint-xs) {
                 font-size: var(--font-size-5x-large)
+            }
+
+            @media screen and (max-width: $breakpoint-xxs) {
+                font-size: var(--font-size-4x-large)
+            }
+
+            @media screen and (max-width: $breakpoint-xxxs) {
+                font-size: var(--font-size-3x-large)
             }
 
             a {

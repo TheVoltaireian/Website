@@ -743,12 +743,12 @@ html[data-page=home] header {
 }
 @media screen and (max-width: 992px) {
   html[data-page=home] header {
-    text-wrap: wrap;
+    padding: var(--space-xl);
   }
 }
 @media screen and (max-width: 767px) {
   html[data-page=home] header {
-    padding: var(--space-md) var(--space-xs);
+    padding: var(--space-md);
   }
 }
 html[data-page=home] header h1 {
@@ -772,6 +772,11 @@ html[data-page=home] header h1 {
 @media screen and (max-width: 479px) {
   html[data-page=home] header h1 {
     font-size: var(--font-size-4x-large);
+  }
+}
+@media screen and (max-width: 389px) {
+  html[data-page=home] header h1 {
+    font-size: var(--font-size-3x-large);
   }
 }
 html[data-page=home] header h1 a {
@@ -823,19 +828,14 @@ html[data-page=blog] header {
   text-align: left;
   animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
-@media (prefers-reduced-motion: reduce) {
-  html[data-page=blog] header {
-    animation: none;
-  }
-}
 @media screen and (max-width: 992px) {
   html[data-page=blog] header {
-    text-wrap: wrap;
+    padding: var(--space-xl);
   }
 }
 @media screen and (max-width: 767px) {
   html[data-page=blog] header {
-    padding: var(--space-md) var(--space-xs);
+    padding: var(--space-md);
   }
 }
 html[data-page=blog] header h1 {
@@ -854,6 +854,16 @@ html[data-page=blog] header h1 {
 @media screen and (max-width: 767px) {
   html[data-page=blog] header h1 {
     font-size: var(--font-size-5x-large);
+  }
+}
+@media screen and (max-width: 479px) {
+  html[data-page=blog] header h1 {
+    font-size: var(--font-size-4x-large);
+  }
+}
+@media screen and (max-width: 389px) {
+  html[data-page=blog] header h1 {
+    font-size: var(--font-size-3x-large);
   }
 }
 html[data-page=blog] header h1 a {
