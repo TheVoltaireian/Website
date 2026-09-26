@@ -1151,6 +1151,7 @@ html[data-page=home] main .projects .projects__wikis .projects__header p {
   margin-block: 0;
   font-size: var(--font-size-medium);
   font-family: var(--font-family-primary);
+  color: var(--color-subtle);
 }
 html[data-page=home] main .projects .projects__wikis .projects__header--hidden {
   opacity: 0;
@@ -1313,15 +1314,12 @@ html[data-page=home] main .blog .blog__container .blog__header p {
   margin-block: 0;
   font-size: var(--font-size-medium);
   font-family: var(--font-family-primary);
+  color: var(--color-subtle);
 }
 html[data-page=home] main .blog .blog__container .blog__header p .divider {
   color: var(--color-placeholder);
 }
-html[data-page=home] main .blog .blog__container .blog__header p .tag {
-  font-size: var(--font-size-medium) !important;
-}
-html[data-page=home] main .blog .blog__container .blog__header p .tag a {
-  font-size: var(--font-size-medium) !important;
+html[data-page=home] main .blog .blog__container .blog__header p a {
   color: var(--color-base);
 }
 html[data-page=home] main .blog .blog__container .blog__header--hidden {

@@ -45,6 +45,7 @@ html[data-page="home"] {
                         margin-block: 0;
                         font-size: var(--font-size-medium);
                         font-family: var(--font-family-primary);
+                        color: var(--color-subtle);
                     }
 
                     @include view-on-scroll;
@@ -224,18 +225,14 @@ html[data-page="home"] {
                         margin-block: 0;
                         font-size: var(--font-size-medium);
                         font-family: var(--font-family-primary);
+                        color: var(--color-subtle);
 
                         .divider {
                             color: var(--color-placeholder);
                         }
 
-                        .tag {
-                            font-size: var(--font-size-medium) !important;
-
-                            a {
-                                font-size: var(--font-size-medium) !important;
-                                color: var(--color-base);
-                            }
+                        a {
+                            color: var(--color-base);
                         }
                     }
 
