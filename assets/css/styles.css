@@ -338,7 +338,7 @@ a {
   color: var(--color-link);
   -webkit-text-decoration: underline transparent;
           text-decoration: underline transparent;
-  text-underline-offset: var(--space-xxs);
+  text-underline-offset: var(--space-xs);
   transition: var(--transition-hover--fast);
 }
 a:focus-visible {
@@ -988,6 +988,15 @@ footer .footer__wrapper .footer__links {
 }
 footer .footer__wrapper .footer__links a {
   color: var(--color-base);
+}
+footer .footer__wrapper .footer__links a[aria-current=page] {
+  color: var(--color-emphasized);
+  -webkit-text-decoration: underline var(--color-emphasized);
+          text-decoration: underline var(--color-emphasized);
+  font-weight: var(--font-weight-medium);
+}
+footer .footer__wrapper .footer__links a[aria-current=page]:active {
+  color: var(--color-emphasized);
 }
 footer .footer__wrapper .footer__links a:hover {
   color: var(--color-emphasized);

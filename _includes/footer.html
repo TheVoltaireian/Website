@@ -13,11 +13,11 @@
         </div>
         <hr>
         <div class="footer__links">
-            <a href="{{ '/' | relative_url }}">Home</a>
-            <a href="{{ '/' | relative_url }}">Projects</a>
-            <a href="{{ '/blog/' | relative_url }}">Blog</a>
-            <a href="{{ '/' | relative_url }}">About</a>
-            <a href="{{ '/' | relative_url }}">Contact</a>
+            <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+            <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Projects</a>
+            <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Blog</a>
+            <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>About</a>
+            <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Contact</a>
         </div>
     </div>
     <hr>
