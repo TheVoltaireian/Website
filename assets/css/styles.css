@@ -729,12 +729,12 @@ html[data-page=home] header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   min-height: calc(var(--header-height) - var(--space-lg) * 2 - var(--space-md) * 2);
   margin: var(--space-lg);
-  padding: var(--space-lg) var(--space-md);
-  text-align: center;
+  padding: var(--space-xxxl) var(--space-xxxl);
+  text-align: left;
   animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -754,7 +754,6 @@ html[data-page=home] header {
   }
 }
 html[data-page=home] header h1 {
-  margin: auto;
   margin-block: 0;
   line-height: initial;
   font-size: var(--font-size-6x-large);
@@ -790,6 +789,7 @@ html[data-page=home] header p.sub {
 }
 html[data-page=home] header hr {
   margin-block: var(--space-sm);
+  margin-left: 0;
   width: 3rem;
 }
 
