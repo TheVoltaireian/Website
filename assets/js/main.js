@@ -162,24 +162,19 @@ class TOCSticky {
     updateProgressBar() {
 		if (!this.progressBar) return;
 
-		const contentEntry = document.querySelector(".post__mainEntry");
-		if (!contentEntry) return;
+		// Current scroll position from the top of the page
+		const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-		const rect = contentEntry.getBoundingClientRect();
-		const windowHeight = window.innerHeight;
+		// Total scrollable height of the whole document
+		const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-		// How far down the page the top of content has scrolled past the top of the screen
-		const scrolled = -rect.top;
-		
-		// Total scrollable height inside the article before reaching the bottom
-		const maxScroll = rect.height - windowHeight;
-
-		if (maxScroll <= 0) {
+		if (scrollHeight <= 0) {
 			this.progressBar.style.width = "100%";
 			return;
 		}
 
-		let progress = (scrolled / maxScroll) * 100;
+		// Calculate overall page percentage
+		let progress = (scrollTop / scrollHeight) * 100;
 		progress = Math.max(0, Math.min(100, progress)); // Clamp between 0% and 100%
 
 		this.progressBar.style.width = `${progress}%`;
