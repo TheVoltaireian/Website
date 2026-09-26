@@ -8,13 +8,14 @@
     initial-value: 0%;
 }
 
-body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
 /* index.html */
 html[data-page="home"] {
+    .home__wrapper {
+        display: flex;
+        flex-direction: column;
+        background: var(--color-surface-0);
+        
+    }
     main {
         display: flex;
         flex-direction: column;

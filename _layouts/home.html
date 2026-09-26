@@ -1,15 +1,17 @@
 ---
 layout: base
 ---
-<header>
-    <h1 id="WildVoltaireian"><a id="top">WildVoltaireian</a></h1>
-    <p>Web developer, web designer, and wiki enthusiast. Say hello to my world.</p>
-    <hr>
-    <p class="sub">Check back later for more!</p>
-</header>
+<div class="home__wrapper">
+    <header>
+        <h1 id="WildVoltaireian"><a id="top">WildVoltaireian</a></h1>
+        <p>Web developer, web designer, and wiki enthusiast. Say hello to my world.</p>
+        <hr>
+        <p class="sub">Check back later for more!</p>
+    </header>
 
-<main>
-    {{ content }}
-</main>
+    <main>
+        {{ content }}
+    </main>
 
-{% include footer.html %}
+    {% include footer.html %}
+</div>
