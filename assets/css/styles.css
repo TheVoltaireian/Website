@@ -236,6 +236,7 @@ html {
   color: var(--color-base);
   scroll-behavior: smooth;
   margin: -8px;
+  overflow-x: hidden;
 }
 
 body {
