@@ -30,7 +30,7 @@ html[data-page="home"] {
         align-items: flex-start;
         position: relative;
 
-        min-height: calc(var(--header-height) - (var(--space-lg) * 2) - (var(--space-md) * 2));
+        min-height: var(--heaader-height);
         margin: var(--space-lg);
         padding: var(--space-xxxl) var(--space-xxxl);
 
@@ -65,6 +65,10 @@ html[data-page="home"] {
 
             @media screen and (max-width: $breakpoint-xs) {
                 font-size: var(--font-size-5x-large)
+            }
+
+            @media screen and (max-width: $breakpoint-xxs) {
+                font-size: var(--font-size-4x-large)
             }
 
             a {
