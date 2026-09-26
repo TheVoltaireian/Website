@@ -15,10 +15,14 @@ html {
     color: var(--color-base);
 
     scroll-behavior: smooth;
+
+    margin: -8px;
 }
 
 body {
     padding: 0;
+
+    background: var(--color-surface-0);
 
     overflow-x: hidden;
     position: relative;

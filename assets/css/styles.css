@@ -235,10 +235,12 @@ html {
   line-height: var(--line-height-medium);
   color: var(--color-base);
   scroll-behavior: smooth;
+  margin: -8px;
 }
 
 body {
   padding: 0;
+  background: var(--color-surface-0);
   overflow-x: hidden;
   position: relative;
   isolation: isolate;
@@ -1109,10 +1111,9 @@ footer .footer__subtitle .footer__subtitle-socials .divider {
   initial-value: 0%;
 }
 /* index.html */
-html[data-page=home] .home__wrapper {
-  display: flex;
-  flex-direction: column;
-  background: var(--color-surface-0);
+html[data-page=home] {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 html[data-page=home] main {
   display: flex;
