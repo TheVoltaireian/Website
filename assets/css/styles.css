@@ -227,6 +227,11 @@
   text-rendering: optimizeLegibility;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   direction: ltr;
   font-weight: var(--font-weight-regular);
@@ -235,17 +240,14 @@ html {
   line-height: var(--line-height-medium);
   color: var(--color-base);
   scroll-behavior: smooth;
-  margin: -8px;
   overflow-x: hidden;
 }
 
 body {
-  padding: 8px;
   background: var(--color-surface-0);
   overflow-x: hidden;
   position: relative;
   isolation: isolate;
-  margin-bottom: 0px;
 }
 
 img {
