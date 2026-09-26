@@ -225,11 +225,17 @@ html[data-page="home"] {
                         margin-block: 0;
                         font-size: var(--font-size-large);
 
+                        .divider {
+                            color: var(--color-subtle);
+                            font-size: var(--font-size-small);
+                        }
+
                         .tag {
-                            font-size: var(--font-size-large) !important;
+                            font-size: var(--font-size-medium) !important;
 
                             a {
-                                font-size: var(--font-size-large) !important;
+                                font-size: var(--font-size-medium) !important;
+                                color: var(--color-base);
                             }
                         }
                     }

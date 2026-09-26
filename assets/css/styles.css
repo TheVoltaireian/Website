@@ -1297,11 +1297,16 @@ html[data-page=home] main .blog .blog__container .blog__header p {
   margin-block: 0;
   font-size: var(--font-size-large);
 }
+html[data-page=home] main .blog .blog__container .blog__header p .divider {
+  color: var(--color-subtle);
+  font-size: var(--font-size-small);
+}
 html[data-page=home] main .blog .blog__container .blog__header p .tag {
-  font-size: var(--font-size-large) !important;
+  font-size: var(--font-size-medium) !important;
 }
 html[data-page=home] main .blog .blog__container .blog__header p .tag a {
-  font-size: var(--font-size-large) !important;
+  font-size: var(--font-size-medium) !important;
+  color: var(--color-base);
 }
 html[data-page=home] main .blog .blog__container .blog__header--hidden {
   opacity: 0;
