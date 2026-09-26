@@ -984,7 +984,16 @@ footer .footer__wrapper .footer__links {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--space-xxs);
+  gap: var(--space-sm);
+}
+footer .footer__wrapper .footer__links a {
+  color: var(--color-base);
+}
+footer .footer__wrapper .footer__links a:hover {
+  color: var(--color-emphasized);
+}
+footer .footer__wrapper .footer__links a:active {
+  color: var(--color-subtle);
 }
 @media screen and (max-width: 767px) {
   footer .footer__wrapper .footer__links {

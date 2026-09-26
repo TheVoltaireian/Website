@@ -102,7 +102,19 @@ footer {
             flex-direction: row;
             align-items: center;
 
-            gap: var(--space-xxs);
+            gap: var(--space-sm);
+
+            a {
+                color: var(--color-base);
+
+                @include hover {
+                    color: var(--color-emphasized);
+                }
+
+                @include active {
+                    color: var(--color-subtle);
+                }
+            }
 
             @media screen and (max-width: $breakpoint-xs) {
                 flex-wrap: wrap;
