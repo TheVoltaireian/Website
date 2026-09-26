@@ -1,5 +1,6 @@
 @use "../abstracts/breakpoints" as *;
 main {
+    background: var(--color-surface-0);
     padding: var(--space-xxxl);
 
     @media screen and (max-width: $breakpoint-sm) {
