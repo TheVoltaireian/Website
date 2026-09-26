@@ -1829,7 +1829,8 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
   padding: var(--space-xxs) var(--space-xs);
   color: var(--color-base);
   text-decoration: none;
-  border-left: 2px solid var(--border-color-interactive);
+  border: 1px solid transparent;
+  border-left: 2px solid var(--border-color-subtle);
   transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
   line-height: 1.4;
   overflow-wrap: anywhere;
@@ -1840,13 +1841,15 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
 .toc-nav a:hover {
   background-color: var(--color-surface-2--hover);
   color: var(--color-base--hover);
+  border-color: var(--border-color-interactive--hover);
   border-left-color: var(--border-color-interactive--hover);
   font-weight: var(--font-weight-regular);
 }
 
 .toc-nav a.is-active {
   color: var(--color-emphasized);
-  border-left-color: var(--border-color-interactive--active);
+  border-color: var(--border-color-base);
+  border-left-color: var(--border-color-base);
   background-color: var(--color-surface-2--active);
   font-weight: var(--font-weight-bold);
 }
@@ -1886,7 +1889,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
     grid-area: toc;
     align-self: start;
     background: var(--color-surface-2);
-    border: var(--border-base);
+    border: var(--border-subtle);
     border-right: none;
     border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
     margin-right: calc(var(--space-4xl) * -1);
@@ -1896,7 +1899,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
     padding: var(--space-sm) var(--space-md);
   }
   body.toc-enabled .toc-wrapper:not(.is-closed) .toc-header {
-    border-bottom: var(--border-base);
+    border-bottom: var(--border-subtle);
     background: var(--color-surface-1);
   }
   body.toc-enabled .toc-wrapper .toc-nav {
@@ -1913,7 +1916,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
     width: 100%;
     background: oklch(from var(--color-surface-2) l c h/0.75);
     backdrop-filter: var(--backdrop-filter-frosted-glass);
-    border: var(--border-base);
+    border: var(--border-subtle);
     border-radius: var(--border-radius-medium);
   }
   body.toc-enabled .toc-wrapper .toc-header {
@@ -1921,7 +1924,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
     padding: var(--space-sm) var(--space-md);
   }
   body.toc-enabled .toc-wrapper:not(.is-closed) .toc-header {
-    border-bottom: var(--border-base);
+    border-bottom: var(--border-subtle);
     background: var(--color-surface-1);
   }
   body.toc-enabled .toc-wrapper .toc-nav {
