@@ -988,6 +988,16 @@ footer .footer__wrapper .footer__links {
 }
 footer .footer__wrapper .footer__links a {
   color: var(--color-base);
+  text-decoration: none;
+}
+footer .footer__wrapper .footer__links a:hover {
+  color: var(--color-emphasized);
+  text-decoration: none;
+  font-weight: var(--font-weight-regular);
+}
+footer .footer__wrapper .footer__links a:active {
+  color: var(--color-emphasized);
+  text-decoration: none;
 }
 footer .footer__wrapper .footer__links a[aria-current=page] {
   color: var(--color-emphasized);
@@ -1000,15 +1010,6 @@ footer .footer__wrapper .footer__links a[aria-current=page]:hover {
 }
 footer .footer__wrapper .footer__links a[aria-current=page]:active {
   color: var(--color-emphasized);
-}
-footer .footer__wrapper .footer__links a:hover {
-  color: var(--color-emphasized);
-  text-decoration: none;
-  font-weight: var(--font-weight-regular);
-}
-footer .footer__wrapper .footer__links a:active {
-  color: var(--color-emphasized);
-  text-decoration: none;
 }
 @media screen and (max-width: 767px) {
   footer .footer__wrapper .footer__links {

@@ -106,6 +106,18 @@ footer {
 
             a {
                 color: var(--color-base);
+                text-decoration: none;
+
+                @include hover {
+                    color: var(--color-emphasized);
+                    text-decoration: none;
+                    font-weight: var(--font-weight-regular);
+                }
+
+                @include active {
+                    color: var(--color-emphasized);
+                    text-decoration: none;
+                }
 
                 &[aria-current="page"] {
                     color: var(--color-emphasized);
@@ -119,17 +131,6 @@ footer {
                     @include active {
                         color: var(--color-emphasized);
                     }
-                }
-
-                @include hover {
-                    color: var(--color-emphasized);
-                    text-decoration: none;
-                    font-weight: var(--font-weight-regular);
-                }
-
-                @include active {
-                    color: var(--color-emphasized);
-                    text-decoration: none;
                 }
             }
 
