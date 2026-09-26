@@ -1896,7 +1896,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
   }
   body.toc-enabled .toc-wrapper {
     width: 100%;
-    background: oklch(from var(--color-surface-2) l c h/0.9);
+    background: oklch(from var(--color-surface-2) l c h/0.75);
     backdrop-filter: var(--backdrop-filter-frosted-glass);
     border: var(--border-base);
     border-radius: var(--border-radius-medium);
