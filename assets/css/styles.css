@@ -244,6 +244,7 @@ body {
   overflow-x: hidden;
   position: relative;
   isolation: isolate;
+  margin-bottom: 0px;
 }
 
 img {
@@ -1412,6 +1413,8 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
 }
 
 html[data-page=blog] {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   --color-progressive-oklch__h: 22.77;
 }
 html[data-page=blog] main .blog .blog__container {
