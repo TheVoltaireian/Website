@@ -121,14 +121,14 @@ html[data-page="blog"] {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         position: relative;
 
         min-height: calc(var(--header-height) - (var(--space-lg) * 2) - (var(--space-md) * 2));
         margin: var(--space-lg);
-        padding: var(--space-lg) var(--space-md);
+        padding: var(--space-xxxl) var(--space-xxxl);
 
-        text-align: center;
+        text-align: left;
 
         animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 
@@ -146,7 +146,6 @@ html[data-page="blog"] {
         }
 
         h1 {
-            margin: auto;
             margin-block: 0;
             line-height: initial;
             font-size: var(--font-size-6x-large);
@@ -185,6 +184,7 @@ html[data-page="blog"] {
 
         hr {
             margin-block: var(--space-sm);
+            margin-left: 0;
             width: 3rem;
         }
     }
