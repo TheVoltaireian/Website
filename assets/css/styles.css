@@ -1298,8 +1298,7 @@ html[data-page=home] main .blog .blog__container .blog__header p {
   font-size: var(--font-size-large);
 }
 html[data-page=home] main .blog .blog__container .blog__header p .divider {
-  color: var(--color-subtle);
-  font-size: var(--font-size-small);
+  color: var(--color-placeholder);
 }
 html[data-page=home] main .blog .blog__container .blog__header p .tag {
   font-size: var(--font-size-medium) !important;
