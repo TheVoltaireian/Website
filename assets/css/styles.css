@@ -1918,7 +1918,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent h2, 
   body.toc-enabled .post__mainContent {
     display: flex;
     flex-direction: column;
-    gap: var(--space-md);
+    gap: var(--space-xxl);
   }
   body.toc-enabled .toc-wrapper {
     width: 100%;
