@@ -1851,6 +1851,20 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
   font-weight: var(--font-weight-bold);
 }
 
+.toc-progress-container {
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-surface-3);
+  border-top: var(--border-subtle);
+}
+
+.toc-progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: var(--background-color-progressive);
+  transition: width 0.1s ease-out;
+}
+
 /* Closed State (Mobile/Collapsed) */
 .toc-wrapper.is-closed .toc-nav {
   display: none;

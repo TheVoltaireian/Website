@@ -127,6 +127,7 @@ class TOCSticky {
 		this.tocElement = tocElement;
 		this.toggleBtn = tocElement.querySelector(".toc-toggle");
 		this.tocNav = tocElement.querySelector(".toc-nav");
+		this.progressBar = tocElement.querySelector(".toc-progress-bar");
 		this.isOpen = true;
 		this.isMobile = null;
 
@@ -149,7 +150,34 @@ class TOCSticky {
 
 		// Handle scroll for active link highlighting
 		this.setupScrollTracking();
+
+		// Trak reading progress
+		window.addEventListener("scroll", () => this.updateProgressBar());
+        this.updateProgressBar();
 	}
+
+	/**
+     * Calculate and update reading progress bar percentage
+     */
+    updateProgressBar() {
+        if (!this.progressBar) return;
+
+        const contentEntry = document.querySelector(".post__mainEntry");
+        if (!contentEntry) return;
+
+        const rect = contentEntry.getBoundingClientRect();
+        const contentHeight = rect.height;
+        const windowHeight = window.innerHeight;
+
+        // Calculate how far the user has scrolled into contentEntry
+        const scrolled = windowHeight - rect.top;
+        const total = contentHeight;
+
+        let progress = (scrolled / total) * 100;
+        progress = Math.max(0, Math.min(100, progress)); // Clamp between 0% and 100%
+
+        this.progressBar.style.width = `${progress}%`;
+    }
 
 	/**
 	 * Determine initial state based on screen size
@@ -419,6 +447,15 @@ class TOCWrapper {
 		nav.appendChild(tocList);
 
 		wrapper.appendChild(nav);
+
+		const progressContainer = document.createElement("div");
+		progressContainer.className = "toc-progress-container";
+
+		const progressBar = document.createElement("div");
+		progressBar.className = "toc-progress-bar";
+
+		progressContainer.appendChild(progressBar);
+		wrapper.appendChild(progressContainer);
 
 		return wrapper;
 	}
