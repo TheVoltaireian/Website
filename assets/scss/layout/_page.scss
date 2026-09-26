@@ -713,6 +713,11 @@ html[data-page="post"] {
                     p:first-of-type {
                         margin-top: 0 !important;
                     }
+
+                    h2, h3, h4, h5, h6 {
+                        border-bottom: var(--border-subtle);
+                        padding-block-end: 0.25em;
+                    }
                 }
             }
         }

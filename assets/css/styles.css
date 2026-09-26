@@ -1737,6 +1737,10 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent img 
 html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:first-of-type {
   margin-top: 0 !important;
 }
+html[data-page=post] body .post__wrapper main.post__main .post__mainContent h2, html[data-page=post] body .post__wrapper main.post__main .post__mainContent h3, html[data-page=post] body .post__wrapper main.post__main .post__mainContent h4, html[data-page=post] body .post__wrapper main.post__main .post__mainContent h5, html[data-page=post] body .post__wrapper main.post__main .post__mainContent h6 {
+  border-bottom: var(--border-subtle);
+  padding-block-end: 0.25em;
+}
 
 .toc-wrapper {
   display: flex;
