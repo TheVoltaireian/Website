@@ -160,24 +160,30 @@ class TOCSticky {
      * Calculate and update reading progress bar percentage
      */
     updateProgressBar() {
-        if (!this.progressBar) return;
+		if (!this.progressBar) return;
 
-        const contentEntry = document.querySelector(".post__mainEntry");
-        if (!contentEntry) return;
+		const contentEntry = document.querySelector(".post__mainEntry");
+		if (!contentEntry) return;
 
-        const rect = contentEntry.getBoundingClientRect();
-        const contentHeight = rect.height;
-        const windowHeight = window.innerHeight;
+		const rect = contentEntry.getBoundingClientRect();
+		const windowHeight = window.innerHeight;
 
-        // Calculate how far the user has scrolled into contentEntry
-        const scrolled = windowHeight - rect.top;
-        const total = contentHeight;
+		// How far down the page the top of content has scrolled past the top of the screen
+		const scrolled = -rect.top;
+		
+		// Total scrollable height inside the article before reaching the bottom
+		const maxScroll = rect.height - windowHeight;
 
-        let progress = (scrolled / total) * 100;
-        progress = Math.max(0, Math.min(100, progress)); // Clamp between 0% and 100%
+		if (maxScroll <= 0) {
+			this.progressBar.style.width = "100%";
+			return;
+		}
 
-        this.progressBar.style.width = `${progress}%`;
-    }
+		let progress = (scrolled / maxScroll) * 100;
+		progress = Math.max(0, Math.min(100, progress)); // Clamp between 0% and 100%
+
+		this.progressBar.style.width = `${progress}%`;
+	}
 
 	/**
 	 * Determine initial state based on screen size
