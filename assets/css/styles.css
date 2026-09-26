@@ -731,9 +731,8 @@ html[data-page=home] header {
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  min-height: var(--heaader-height);
-  margin: var(--space-lg);
-  padding: var(--space-xxxl) var(--space-xxxl);
+  min-height: var(--header-height);
+  padding: var(--space-xxxl);
   text-align: left;
   animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
@@ -749,7 +748,6 @@ html[data-page=home] header {
 }
 @media screen and (max-width: 767px) {
   html[data-page=home] header {
-    margin: var(--space-sm);
     padding: var(--space-md) var(--space-xs);
   }
 }
@@ -883,19 +881,16 @@ html[data-page=blog] header hr {
 }
 
 main {
-  margin: var(--space-lg);
-  padding: var(--space-xxxl) var(--space-xxxl);
+  padding: var(--space-xxxl);
 }
 @media screen and (max-width: 992px) {
   main {
-    margin: var(--space-md);
-    padding: var(--space-xl) var(--space-xl);
+    padding: var(--space-xl);
   }
 }
 @media screen and (max-width: 767px) {
   main {
-    margin: var(--space-sm);
-    padding: var(--space-md) var(--space-md);
+    padding: var(--space-md);
   }
 }
 
