@@ -1140,6 +1140,7 @@ html[data-page=home] main .projects .projects__wikis .projects__header h2 {
 html[data-page=home] main .projects .projects__wikis .projects__header p {
   margin-block: 0;
   font-size: var(--font-size-large);
+  font-family: var(--font-family-primary);
 }
 html[data-page=home] main .projects .projects__wikis .projects__header--hidden {
   opacity: 0;
@@ -1301,6 +1302,7 @@ html[data-page=home] main .blog .blog__container .blog__header h2 {
 html[data-page=home] main .blog .blog__container .blog__header p {
   margin-block: 0;
   font-size: var(--font-size-large);
+  font-family: var(--font-family-primary);
 }
 html[data-page=home] main .blog .blog__container .blog__header p .divider {
   color: var(--color-placeholder);
