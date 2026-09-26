@@ -676,6 +676,8 @@ html[data-page="post"] {
                 margin: 0;
                 padding: 0;
 
+                background: var(--color-surface-1);
+
                 .post__mainContent {
                     min-width: 0;
                     max-width: 100%;
@@ -833,7 +835,7 @@ html[data-page="post"] {
         display: grid;
         gap: var(--space-md);
         grid-template-areas: "content toc";
-        grid-template-columns: minmax(0, 1300px) 300px;
+        grid-template-columns: minmax(0, 1500px) 300px;
     } 
 
     body.toc-enabled .post__mainInner {

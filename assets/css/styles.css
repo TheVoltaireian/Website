@@ -1710,6 +1710,7 @@ html[data-page=post] body .post__wrapper main.post__main {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: var(--color-surface-1);
 }
 html[data-page=post] body .post__wrapper main.post__main .post__mainContent {
   min-width: 0;
@@ -1859,7 +1860,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent p:fi
     display: grid;
     gap: var(--space-md);
     grid-template-areas: "content toc";
-    grid-template-columns: minmax(0, 1300px) 300px;
+    grid-template-columns: minmax(0, 1500px) 300px;
   }
   body.toc-enabled .post__mainInner {
     grid-area: content;
