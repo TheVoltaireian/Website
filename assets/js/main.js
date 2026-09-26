@@ -41,42 +41,41 @@ document.querySelectorAll('.projects__cardHead').forEach(head => {
     resizeObserver.observe(head);
 });
 
-// mouse anim (via: https://github.com/whoscripting/whoscripting.github.io/blob/master/landing/landing.js)
+// mouse anim (via: https://github.com/whoscripting/whoscripting.github.io/blob/master/landing/landing.js / MODIFIED)
+const h1Element = document.querySelector("#WildVoltaireian");
+
 let mouseX = 0;
 let mouseY = 0;
 
 let lerpedX = 0;
 let lerpedY = 0;
 
-const h1Element = document.querySelector("#WildVoltaireian");
-const h1Rect = h1Element.getBoundingClientRect();
+if (h1Element) {
+    document.addEventListener("mousemove", (event) => {
+        const rect = h1Element.getBoundingClientRect();
 
-document.addEventListener("mousemove", e => {
-    const elementCenterX = h1Rect.left + h1Rect.width / 2;
-    const elementCenterY = h1Rect.top + h1Rect.height / 2;
-    
-    const distX = (e.clientX - elementCenterX) / h1Rect.width * 20;
-    const distY = (e.clientY - elementCenterY) / h1Rect.height * 20;
-    
-    mouseX = Math.max(-10, Math.min(10, distX));
-    mouseY = Math.max(-10, Math.min(10, distY));
-});
+        const elementCenterX = rect.left + rect.width / 2;
+        const elementCenterY = rect.top + rect.height / 2;
 
-const tweets = document.querySelectorAll("#WildVoltaireian");
+        const relativeX = (event.clientX - elementCenterX) / rect.width;
+        const relativeY = (event.clientY - elementCenterY) / rect.height;
 
-function update() {
-    lerpedX += (mouseX - lerpedX) * 0.05;
-    lerpedY += (mouseY - lerpedY) * 0.05;
-
-    tweets.forEach(tweet => {
-        tweet.style.transform =
-            `translate(${lerpedX}px, ${lerpedY}px) rotate(${lerpedX * 0.15}deg)`;
+        mouseX = Math.max(-10, Math.min(10, relativeX * 10));
+        mouseY = Math.max(-10, Math.min(10, relativeY * 10));
     });
 
-    requestAnimationFrame(update);
-}
+    function update() {
+        lerpedX += (mouseX - lerpedX) * 0.05;
+        lerpedY += (mouseY - lerpedY) * 0.05;
 
-update();
+        h1Element.style.transform =
+            `translate(${lerpedX}px, ${lerpedY}px) rotate(${lerpedX * 0.15}deg)`;
+
+        requestAnimationFrame(update);
+    }
+
+    update();
+}
 
 // The following code is licensed under the MIT license (via: https://github.com/Roblox-Indie-Wikis/irwa-website/blob/main/assets/js/toc-init.js)
 
