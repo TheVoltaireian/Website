@@ -319,6 +319,12 @@ html[data-page="home"] {
                                 margin-block: var(--space-xxs) var(--space-sm);
                                 border-bottom: var(--border-base);
                                 line-height: 1;
+
+                                a {
+                                    @include hover {
+                                        font-weight: var(--font-weight-bold);
+                                    }
+                                }
                             }
 
                             .blog__postExcerpt {
@@ -458,6 +464,12 @@ html[data-page="blog"] {
                                 margin-block: var(--space-xxs) var(--space-sm);
                                 border-bottom: var(--border-base);
                                 line-height: 1;
+
+                                a {
+                                    @include hover {
+                                        font-weight: var(--font-weight-bold);
+                                    }
+                                }
                             }
 
                             .blog__postExcerpt {
