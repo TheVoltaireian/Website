@@ -1052,7 +1052,6 @@ footer .footer__subtitle .footer__subtitle-text a {
   text-decoration: none;
 }
 footer .footer__subtitle .footer__subtitle-text a:hover {
-  font-style: italic;
   font-weight: var(--font-weight-medium);
   color: var(--color-base);
   text-decoration: none;
