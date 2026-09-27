@@ -1152,9 +1152,18 @@ html[data-page="about"] {
             display: flex;
             flex-direction: row;
 
+            gap: var(--space-xl);
+
             .about__infobox {
                 display: flex;
                 flex-direction: column;
+                max-width: 400px;
+
+                gap: var(--space-lg);
+
+                img {
+                    border-radius: var(--border-radius-medium);
+                }
             }
         }
     }

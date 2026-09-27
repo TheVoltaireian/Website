@@ -2308,8 +2308,14 @@ html[data-page=about] main {
 html[data-page=about] main .about__introduction {
   display: flex;
   flex-direction: row;
+  gap: var(--space-xl);
 }
 html[data-page=about] main .about__introduction .about__infobox {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  gap: var(--space-lg);
+}
+html[data-page=about] main .about__introduction .about__infobox img {
+  border-radius: var(--border-radius-medium);
 }/*# sourceMappingURL=styles.css.map */
