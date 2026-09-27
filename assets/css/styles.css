@@ -1581,7 +1581,7 @@ html[data-page=home] main .blog .blog__container .blog__posts .blog__post .blog_
 html[data-page=projects] {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  --color-progressive-oklch__h: 149.29;
+  --color-progressive-oklch__h: 158.77;
 }
 html[data-page=projects] main .projects .projects__wikis {
   display: flex;
