@@ -1095,7 +1095,7 @@ nav.nav {
   width: 100%;
   min-height: var(--space-xxl);
   padding: var(--space-lg) var(--space-xxxl);
-  background: oklch(from var(--color-surface-0) l c h/0.9);
+  background: oklch(from var(--color-surface-1) l c h/var(--backdrop-opacity));
   backdrop-filter: var(--backdrop-filter-frosted-glass);
   border-bottom: var(--border-base);
   z-index: 1000000000000000000;
@@ -2012,7 +2012,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent h2, 
   }
   body.toc-enabled .toc-wrapper {
     width: 100%;
-    background: oklch(from var(--color-surface-2) l c h/0.75);
+    background: oklch(from var(--color-surface-2) l c h/var(--backdrop-opacity));
     backdrop-filter: var(--backdrop-filter-frosted-glass);
     border: var(--border-subtle);
     border-radius: var(--border-radius-medium);

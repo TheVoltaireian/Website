@@ -16,7 +16,7 @@ nav.nav {
     min-height: var(--space-xxl);
     padding: var(--space-lg) var(--space-xxxl);
 
-    background: oklch(from var(--color-surface-0) l c h / 0.9);
+    background: oklch(from var(--color-surface-1) l c h / var(--backdrop-opacity));
     backdrop-filter: var(--backdrop-filter-frosted-glass);
     border-bottom: var(--border-base);
     z-index: 999999999999999999;

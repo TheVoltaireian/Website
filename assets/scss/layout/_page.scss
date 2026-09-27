@@ -914,7 +914,7 @@ html[data-page="post"] {
     }
     body.toc-enabled .toc-wrapper {
         width: 100%;
-        background: oklch(from var(--color-surface-2) l c h / 0.75);
+        background: oklch(from var(--color-surface-2) l c h / var(--backdrop-opacity));
         backdrop-filter: var(--backdrop-filter-frosted-glass);
         border: var(--border-subtle);
         border-radius: var(--border-radius-medium);
