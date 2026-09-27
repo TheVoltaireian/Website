@@ -1139,3 +1139,23 @@ html[data-page="post"] {
         overflow: visible;
     } 
 }
+
+html[data-page="about"] {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    main {
+        display: flex;
+        flex-direction: column;
+
+        .about__introduction {
+            display: flex;
+            flex-direction: row;
+
+            .about__infobox {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

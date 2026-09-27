@@ -2296,4 +2296,20 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent h2, 
     max-height: none;
     overflow: visible;
   }
+}
+html[data-page=about] {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+html[data-page=about] main {
+  display: flex;
+  flex-direction: column;
+}
+html[data-page=about] main .about__introduction {
+  display: flex;
+  flex-direction: row;
+}
+html[data-page=about] main .about__introduction .about__infobox {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=styles.css.map */
