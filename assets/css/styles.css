@@ -928,7 +928,7 @@ footer .footer__wrapper hr {
   footer .footer__wrapper hr {
     display: block;
     width: 5%;
-    margin-block: var(--space-xs);
+    margin-block: var(--space-xs) var(--space-md);
   }
 }
 footer .footer__wrapper .footer__info .footer__wordmark {
@@ -938,7 +938,7 @@ footer .footer__wrapper .footer__info .footer__wordmark {
   min-width: 0;
   gap: var(--space-sm);
   align-items: center;
-  margin-bottom: var(--space-xxxs);
+  margin-bottom: var(--space-xxs);
 }
 @media screen and (max-width: 767px) {
   footer .footer__wrapper .footer__info .footer__wordmark {
@@ -1046,6 +1046,20 @@ footer .footer__subtitle {
 }
 footer .footer__subtitle .footer__subtitle-text {
   color: var(--color-placeholder);
+}
+footer .footer__subtitle .footer__subtitle-text a {
+  color: var(--color-placeholder);
+  text-decoration: none;
+}
+footer .footer__subtitle .footer__subtitle-text a:hover {
+  font-style: italic;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-base);
+  text-decoration: none;
+}
+footer .footer__subtitle .footer__subtitle-text a:active {
+  color: var(--color-base);
+  text-decoration: none;
 }
 footer .footer__subtitle .footer__subtitle-legal {
   color: var(--color-placeholder);
