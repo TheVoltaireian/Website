@@ -2343,9 +2343,16 @@ html[data-page=about] main .about__introduction .about__infobox .about__stats .a
   color: var(--color-base);
   font-weight: var(--font-weight-medium);
   font-family: var(--font-family-alternate);
+  text-align: right;
 }
 html[data-page=about] main .about__introduction .about__paragraph h1.about__title {
   text-transform: uppercase;
   font-family: var(--font-family-alternate);
   margin-block-start: 0;
+  line-height: revert;
+}
+html[data-page=about] main .about__introduction .about__paragraph h2.about__header {
+  text-transform: uppercase;
+  font-family: var(--font-family-alternate);
+  line-height: revert;
 }/*# sourceMappingURL=styles.css.map */

@@ -1192,6 +1192,7 @@ html[data-page="about"] {
                             color: var(--color-base);
                             font-weight: var(--font-weight-medium);
                             font-family: var(--font-family-alternate);
+                            text-align: right;
                         }
                     }
                 }
@@ -1201,6 +1202,12 @@ html[data-page="about"] {
                     text-transform: uppercase;
                     font-family: var(--font-family-alternate);
                     margin-block-start: 0;
+                    line-height: revert;
+                }
+                h2.about__header {
+                    text-transform: uppercase;
+                    font-family: var(--font-family-alternate);
+                    line-height: revert;
                 }
             }
         }
