@@ -728,7 +728,7 @@ html[data-page="post"] {
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: var(--space-xxl);
+    top: calc(var(--nav-height) + var(--space-xxl));
     max-height: calc(100vh - 80px);
     padding: 0;
     overflow: hidden;
