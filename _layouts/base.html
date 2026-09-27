@@ -33,6 +33,7 @@
         <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     </head>
     <body class="{{ page.body_class }}">
+        {% include nav.html %}
         {{ content }}
 
         <script defer src="{{ '/assets/js/main.js' | relative_url }}"></script>

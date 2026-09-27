@@ -1,0 +1,16 @@
+nav.nav {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+
+    min-height: var(--space-4xl);
+    padding: var(--space-xl);
+
+    background: oklch(from var(--color-surface-0) l c h / 0.9);
+    backdrop-filter: var(--backdrop-filter-frosted-glass);
+    border-bottom: var(--border-base);
+    z-index: 999999999999999999;
+
+    margin-bottom: calc(var(--nav-height) * -1);
+}
