@@ -945,13 +945,46 @@ footer .footer__wrapper .footer__info .footer__wordmark {
     justify-content: center;
   }
 }
-@media screen and (max-width: 479px) {
-  footer .footer__wrapper .footer__info .footer__wordmark .divider, footer .footer__wrapper .footer__info .footer__wordmark img {
-    display: none; /* Experimental */
+footer .footer__wrapper .footer__info .footer__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-sm);
+}
+footer .footer__wrapper .footer__info .footer__links a {
+  color: var(--color-base);
+  text-decoration: none;
+}
+footer .footer__wrapper .footer__info .footer__links a:hover {
+  color: var(--color-emphasized);
+  text-decoration: none;
+  font-weight: var(--font-weight-regular);
+}
+footer .footer__wrapper .footer__info .footer__links a:active {
+  color: var(--color-emphasized);
+  text-decoration: none;
+}
+footer .footer__wrapper .footer__info .footer__links a[aria-current=page] {
+  color: var(--color-emphasized);
+  -webkit-text-decoration: underline var(--color-emphasized);
+          text-decoration: underline var(--color-emphasized);
+  font-weight: var(--font-weight-bold);
+}
+footer .footer__wrapper .footer__info .footer__links a[aria-current=page]:hover {
+  color: var(--color-emphasized);
+}
+footer .footer__wrapper .footer__info .footer__links a[aria-current=page]:active {
+  color: var(--color-emphasized);
+}
+@media screen and (max-width: 767px) {
+  footer .footer__wrapper .footer__info .footer__links {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 }
-footer .footer__wrapper .footer__info .footer__wordmark .divider {
-  color: var(--color-inverted);
+footer .footer__wrapper .footer__info .footer__links .divider {
+  color: var(--color-base);
   font-size: var(--font-size-small);
   line-height: 1;
   -webkit-user-select: none;
@@ -959,69 +992,35 @@ footer .footer__wrapper .footer__info .footer__wordmark .divider {
           user-select: none;
   flex-shrink: 0;
 }
-footer .footer__wrapper .footer__info .footer__wordmark img {
-  border: none;
-  border-radius: 0;
-  width: 20px;
-  height: auto;
-}
-footer .footer__wrapper .footer__info .footer__tagline {
-  text-align: left;
-}
-@media screen and (max-width: 767px) {
-  footer .footer__wrapper .footer__info .footer__tagline {
-    text-align: center;
-  }
-}
-footer .footer__wrapper .footer__info .footer__tagline a {
-  color: var(--color-base);
-}
-footer .footer__wrapper .footer__info .footer__tagline a:hover {
-  color: var(--color-link--hover);
-}
-footer .footer__wrapper .footer__info .footer__tagline a:active {
-  color: var(--color-link--active);
-}
-footer .footer__wrapper .footer__links {
+footer .footer__wrapper .footer__socials {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--space-sm);
-}
-footer .footer__wrapper .footer__links a {
-  color: var(--color-base);
-  text-decoration: none;
-}
-footer .footer__wrapper .footer__links a:hover {
-  color: var(--color-emphasized);
-  text-decoration: none;
-  font-weight: var(--font-weight-regular);
-}
-footer .footer__wrapper .footer__links a:active {
-  color: var(--color-emphasized);
-  text-decoration: none;
-}
-footer .footer__wrapper .footer__links a[aria-current=page] {
-  color: var(--color-emphasized);
-  -webkit-text-decoration: underline var(--color-emphasized);
-          text-decoration: underline var(--color-emphasized);
-  font-weight: var(--font-weight-bold);
-}
-footer .footer__wrapper .footer__links a[aria-current=page]:hover {
-  color: var(--color-emphasized);
-}
-footer .footer__wrapper .footer__links a[aria-current=page]:active {
-  color: var(--color-emphasized);
+  gap: var(--space-xxs);
+  max-width: 100%;
+  justify-content: center;
 }
 @media screen and (max-width: 767px) {
-  footer .footer__wrapper .footer__links {
+  footer .footer__wrapper .footer__socials {
     flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
   }
 }
-footer .footer__wrapper .footer__links .divider {
-  color: var(--color-base);
+@media screen and (max-width: 389px) {
+  footer .footer__wrapper .footer__socials {
+    flex-direction: column;
+  }
+  footer .footer__wrapper .footer__socials .divider {
+    writing-mode: vertical-rl; /* Top-to-bottom, right-to-left */
+    text-orientation: mixed;
+  }
+}
+footer .footer__wrapper .footer__socials button {
+  height: 30px;
+  transition: var(--transition-hover--slow);
+  flex: 0 0 auto;
+}
+footer .footer__wrapper .footer__socials .divider {
+  color: var(--color-placeholder);
   font-size: var(--font-size-small);
   line-height: 1;
   -webkit-user-select: none;
@@ -1041,48 +1040,15 @@ footer .footer__subtitle {
     gap: var(--space-sm);
     text-align: center;
   }
-  footer .footer__subtitle .footer__subtitle-text {
+  footer .footer__subtitle .footer__subtitle-text, footer .footer__subtitle .footer__subtitle-legal {
     text-align: center;
   }
 }
 footer .footer__subtitle .footer__subtitle-text {
   color: var(--color-placeholder);
 }
-footer .footer__subtitle .footer__subtitle-socials {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: var(--space-xxs);
-  max-width: 100%;
-  justify-content: center;
-}
-@media screen and (max-width: 767px) {
-  footer .footer__subtitle .footer__subtitle-socials {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 389px) {
-  footer .footer__subtitle .footer__subtitle-socials {
-    flex-direction: column;
-  }
-  footer .footer__subtitle .footer__subtitle-socials .divider {
-    writing-mode: vertical-rl; /* Top-to-bottom, right-to-left */
-    text-orientation: mixed;
-  }
-}
-footer .footer__subtitle .footer__subtitle-socials button {
-  height: 30px;
-  transition: var(--transition-hover--slow);
-  flex: 0 0 auto;
-}
-footer .footer__subtitle .footer__subtitle-socials .divider {
+footer .footer__subtitle .footer__subtitle-legal {
   color: var(--color-placeholder);
-  font-size: var(--font-size-small);
-  line-height: 1;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  flex-shrink: 0;
 }
 
 html[data-page=home] nav.nav, html[data-page=blog] nav.nav {

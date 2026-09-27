@@ -4,44 +4,40 @@
         <div class="footer__info">
             <div class="footer__wordmark">
                 <span><span style="font-weight: var(--font-weight-bold);">wildvoltaireian</span>.xyz</span>
-                <span class="divider">|</span> 
-                <img src="{{ '/assets/images/svgs/WildVoltaireian - SVG/1-cropped.svg' | relative_url }}" alt="Logo of WildVoltaireian">
             </div>
-            <div class="footer__tagline">
-                Say hello to my world.
+            <div class="footer__links">
+                <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}aria-current="page"{% endif %}>Home</a>
+                <a href="{{ '/' | relative_url }}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+                <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/blog/' or page.url == '/blog/index.html' %}aria-current="page"{% endif %}>Blog</a>
+                <a href="{{ '/' | relative_url }}">About</a>
+                <a href="{{ '/' | relative_url }}">Contact</a>
             </div>
         </div>
         <hr>
-        <div class="footer__links">
-            <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}aria-current="page"{% endif %}>Home</a>
-            <a href="{{ '/' | relative_url }}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
-            <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/blog/' or page.url == '/blog/index.html' %}aria-current="page"{% endif %}>Blog</a>
-            <a href="{{ '/' | relative_url }}">About</a>
-            <a href="{{ '/' | relative_url }}">Contact</a>
-        </div>
-    </div>
-    <hr>
-    <div class="footer__subtitle">
-        <div class="footer__subtitle-text">© 2026 WildVoltaireian. All rights reserved.</div>
-        <div class="footer__subtitle-socials">
+        <div class="footer__socials">
             <a class="button button--secondary-2 button--social button--mail" href="https://mail.google.com/mail/?view=cm&fs=1&to=dostalyavoltaire@gmail.com&su=Subject%20Here&body=Body%20Here">
                 <img src="{{ '/assets/images/logos/Socials/MailMe.svg' | relative_url }}" alt="Mail icon">
-                <span class="footer__subtitle-socials--text">Email me</span>
+                <span class="footer__socials--text">Email me</span>
             </a>
             
             <span class="divider">|</span>
             <a class="button button--github button--social" href="https://github.com/TheVoltaireian/Website">
                 <img src="{{ '/assets/images/logos/Socials/Github.svg' | relative_url }}" alt="GitHub icon">
-                <span class="footer__subtitle-socials--text">GitHub Repository</span>
+                <span class="footer__socials--text">GitHub Repository</span>
             </a> 
             <a class="button button--x button--social" href="https://twitter.com/wildvoltaireian">
                 <img src="{{ '/assets/images/logos/Socials/Twitter.svg' | relative_url }}" alt="Twitter/X icon">
-                <span class="footer__subtitle-socials--text">@wildvoltaireian</span>
+                <span class="footer__socials--text">@wildvoltaireian</span>
             </a>
             <a class="button button--discord button--social" href="https://discord.com/users/815092835664920587">
                 <img src="{{ '/assets/images/logos/Socials/Discord.svg' | relative_url }}" alt="Discord icon">
-                <span class="footer__subtitle-socials--text">@wildvoltaireian</span>
+                <span class="footer__socials--text">@wildvoltaireian</span>
             </a>
         </div>
+    </div>
+    <hr>
+    <div class="footer__subtitle">
+        <div class="footer__subtitle-text">#beastmode</div>
+        <div class="footer__subtitle-legal">© 2026 WildVoltaireian. All rights reserved.</div>
     </div>
 </footer>
