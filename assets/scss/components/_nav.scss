@@ -97,6 +97,8 @@ nav.nav {
         .nav__links {
             padding-left: 0;
             border-left: none;
+            font-size: var(--font-size-small);
+            gap: var(--space-xs);
         }
     }
 }

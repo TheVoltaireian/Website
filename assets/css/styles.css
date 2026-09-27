@@ -1166,6 +1166,8 @@ nav.nav .nav__links a[aria-current=page]:active {
   nav.nav .nav__links {
     padding-left: 0;
     border-left: none;
+    font-size: var(--font-size-small);
+    gap: var(--space-xs);
   }
 }
 
