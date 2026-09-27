@@ -1792,6 +1792,16 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent h2, 
     opacity: 0;
   }
 }
+@media screen and (max-width: 767px) {
+  .toc-wrapper {
+    top: calc(var(--nav-height) + var(--space-xl));
+  }
+}
+@media screen and (max-width: 479px) {
+  .toc-wrapper {
+    top: calc(var(--nav-height) + var(--space-lg));
+  }
+}
 
 /* TOC Header */
 .toc-header {

@@ -739,6 +739,14 @@ html[data-page="post"] {
     @starting-style {
         opacity: 0;
     }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        top: calc(var(--nav-height) + var(--space-xl));
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+        top: calc(var(--nav-height) + var(--space-lg));
+    }
 }
 
 /* TOC Header */
