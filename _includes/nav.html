@@ -4,7 +4,7 @@
         <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}aria-current="page"{% endif %}>Home</a>
         <a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' or page.url == '/projects/index.html' %}aria-current="page"{% endif %}>Projects</a>
         <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/blog/' or page.url == '/blog/index.html' %}aria-current="page"{% endif %}>Blog</a>
-        <a href="{{ '/' | relative_url }}">About</a>
+        <a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' or page.url == '/about.html' %}aria-current="page"{% endif %}>About</a>
         <a href="{{ '/' | relative_url }}">Contact</a>
     </div>
 </nav>

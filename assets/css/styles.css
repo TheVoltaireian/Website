@@ -714,7 +714,7 @@ a.button--github:active {
 }
 body {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity var(--transition-hover--slow);
 }
 
 body.fade-in {
