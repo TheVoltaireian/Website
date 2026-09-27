@@ -1157,12 +1157,33 @@ html[data-page="about"] {
             .about__infobox {
                 display: flex;
                 flex-direction: column;
-                max-width: 400px;
+                max-width: 300px;
 
                 gap: var(--space-lg);
 
-                img {
+                img.about__image {
                     border-radius: var(--border-radius-medium);
+                }
+
+                .about__stats {
+                    display: flex;
+                    flex-direction: column;
+
+                    .about__statsRow {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        border-top: var(--border-subtle);
+
+                        .about__rowTitle {
+                            color: var(--color-subtle);
+                        }
+
+                        .about__rowDesc {
+                            color: var(--color-base);
+                        }
+                    }
                 }
             }
         }

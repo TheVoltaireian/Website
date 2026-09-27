@@ -2313,9 +2313,25 @@ html[data-page=about] main .about__introduction {
 html[data-page=about] main .about__introduction .about__infobox {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 300px;
   gap: var(--space-lg);
 }
-html[data-page=about] main .about__introduction .about__infobox img {
+html[data-page=about] main .about__introduction .about__infobox img.about__image {
   border-radius: var(--border-radius-medium);
+}
+html[data-page=about] main .about__introduction .about__infobox .about__stats {
+  display: flex;
+  flex-direction: column;
+}
+html[data-page=about] main .about__introduction .about__infobox .about__stats .about__statsRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: var(--border-subtle);
+}
+html[data-page=about] main .about__introduction .about__infobox .about__stats .about__statsRow .about__rowTitle {
+  color: var(--color-subtle);
+}
+html[data-page=about] main .about__introduction .about__infobox .about__stats .about__statsRow .about__rowDesc {
+  color: var(--color-base);
 }/*# sourceMappingURL=styles.css.map */
