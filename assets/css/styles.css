@@ -1099,6 +1099,10 @@ nav.nav {
   backdrop-filter: var(--backdrop-filter-frosted-glass);
   border-bottom: var(--border-base);
   z-index: 1000000000000000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 992px) {
   nav.nav {
@@ -1113,6 +1117,47 @@ nav.nav {
 nav.nav .nav__wordmark {
   font-size: var(--font-size-large);
   color: var(--color-emphasized);
+}
+nav.nav .nav__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-sm);
+  border-left: var(--border-subtle);
+  padding-left: var(--space-sm);
+  font-size: var(--font-size-medium);
+}
+nav.nav .nav__links a {
+  color: var(--color-base);
+  text-decoration: none;
+}
+nav.nav .nav__links a:hover {
+  color: var(--color-emphasized);
+  text-decoration: none;
+  font-weight: var(--font-weight-regular);
+}
+nav.nav .nav__links a:active {
+  color: var(--color-emphasized);
+  text-decoration: none;
+}
+nav.nav .nav__links a[aria-current=page] {
+  color: var(--color-emphasized);
+  -webkit-text-decoration: underline var(--color-emphasized);
+          text-decoration: underline var(--color-emphasized);
+  font-weight: var(--font-weight-bold);
+}
+nav.nav .nav__links a[aria-current=page]:hover {
+  color: var(--color-emphasized);
+}
+nav.nav .nav__links a[aria-current=page]:active {
+  color: var(--color-emphasized);
+}
+@media screen and (max-width: 767px) {
+  nav.nav .nav__links {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .tag {

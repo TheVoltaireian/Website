@@ -1,4 +1,5 @@
 @use "../abstracts/breakpoints" as *;
+@use "../abstracts/mixins" as *;
 
 html[data-page="home"], html[data-page="blog"] {
     margin-bottom: calc(var(--nav-height) * -1);
@@ -18,6 +19,11 @@ nav.nav {
     border-bottom: var(--border-base);
     z-index: 999999999999999999;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
     @media screen and (max-width: $breakpoint-sm) {
         padding: var(--space-lg) var(--space-xl);
     }
@@ -29,5 +35,54 @@ nav.nav {
     .nav__wordmark {
         font-size: var(--font-size-large);
         color: var(--color-emphasized);
+    }
+
+    .nav__links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        gap: var(--space-sm);
+
+        border-left: var(--border-subtle);
+        padding-left: var(--space-sm);
+
+        font-size: var(--font-size-medium);
+
+        a {
+            color: var(--color-base);
+            text-decoration: none;
+
+            @include hover {
+                color: var(--color-emphasized);
+                text-decoration: none;
+                font-weight: var(--font-weight-regular);
+            }
+
+            @include active {
+                color: var(--color-emphasized);
+                text-decoration: none;
+            }
+
+            &[aria-current="page"] {
+                color: var(--color-emphasized);
+                text-decoration: underline var(--color-emphasized);
+                font-weight: var(--font-weight-bold);
+
+                @include hover {
+                    color: var(--color-emphasized);
+                }
+
+                @include active {
+                    color: var(--color-emphasized);
+                }
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
     }
 }
