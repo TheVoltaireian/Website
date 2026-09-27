@@ -1114,9 +1114,16 @@ nav.nav .nav__wordmark {
 }
 nav.nav .nav__wordmark a {
   color: var(--color-emphasized);
+  text-decoration: none;
 }
 nav.nav .nav__wordmark a:hover {
+  color: var(--color-emphasized);
   font-weight: var(--font-weight-regular);
+  text-decoration: none;
+}
+nav.nav .nav__wordmark a:active {
+  color: var(--color-emphasized);
+  text-decoration: none;
 }
 nav.nav .nav__links {
   display: flex;

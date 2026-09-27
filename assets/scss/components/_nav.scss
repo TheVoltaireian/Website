@@ -38,9 +38,17 @@ nav.nav {
 
         a {
             color: var(--color-emphasized);
+            text-decoration: none;
 
             @include hover {
+                color: var(--color-emphasized);
                 font-weight: var(--font-weight-regular);
+                text-decoration: none;
+            }
+
+            @include active {
+                color: var(--color-emphasized);
+                text-decoration: none;
             }
         }
     }
