@@ -1090,12 +1090,15 @@ nav.nav {
   top: 0;
   width: 100%;
   min-height: var(--space-xxl);
-  padding: var(--space-xl) var(--space-xxxl);
+  padding: var(--space-lg) var(--space-xxxl);
   background: oklch(from var(--color-surface-0) l c h/0.9);
   backdrop-filter: var(--backdrop-filter-frosted-glass);
   border-bottom: var(--border-base);
   z-index: 1000000000000000000;
   margin-bottom: calc(var(--nav-height) * -1);
+}
+nav.nav nav__wordmark {
+  font-size: var(--font-size-large);
 }
 
 .tag {
