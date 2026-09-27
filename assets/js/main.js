@@ -542,6 +542,27 @@ if (document.readyState === 'loading') {
     initializeTOC();
 }
 
+// page transition 
+document.addEventListener("DOMContentLoaded", () => {
+	document.body.classList.add("fade-in");
+
+	const links = document.querySelectorAll("a");
+	links.forEach(link => {
+		link.addEventListener("click", event => {
+			const targetHref = link.getAttribute("href");
+
+			if (targetHref && !targetHref.startsWith("#") && !targetHref.startsWith("http")) {
+				event.preventDefault();
+				document.body.classList.remove("fade-in");
+
+				setTimeout(() => {
+					window.location.href = targetHref;
+				}, 500);
+			}
+		});
+	});
+});
+
 // easter egg xD
 console.log(String.raw`
  /$$      /$$ /$$ /$$       /$$ /$$    /$$          /$$   /$$               /$$                     /$$                    

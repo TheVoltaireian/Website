@@ -712,6 +712,15 @@ a.button--github:active {
     filter: none;
   }
 }
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
 html[data-page=home] body::before {
   content: "";
   position: absolute;
