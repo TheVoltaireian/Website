@@ -41,7 +41,7 @@ document.querySelectorAll('.projects__cardHead').forEach(head => {
     resizeObserver.observe(head);
 });
 
-// header height calculator
+// nav height calculator
 const navObserver = new ResizeObserver(entries => {
     for (const entry of entries) {
         const nav = entry.target.closest('.nav');
@@ -49,6 +49,10 @@ const navObserver = new ResizeObserver(entries => {
             nav.style.setProperty('--nav-height', `${entry.target.offsetHeight}px`);
         }
     }
+});
+
+document.querySelectorAll('.nav').forEach(nav => {
+    navObserver.observe(nav);
 });
 
 // mouse anim (via: https://github.com/whoscripting/whoscripting.github.io/blob/master/landing/landing.js / MODIFIED)
