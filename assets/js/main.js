@@ -44,10 +44,7 @@ document.querySelectorAll('.projects__cardHead').forEach(head => {
 // nav height calculator
 const navObserver = new ResizeObserver(entries => {
     for (const entry of entries) {
-        const nav = entry.target.closest('.nav');
-        if (nav) {
-            nav.style.setProperty('--nav-height', `${entry.target.offsetHeight}px`);
-        }
+        document.documentElement.style.setProperty('--nav-height', `${entry.target.offsetHeight}px`);
     }
 });
 
