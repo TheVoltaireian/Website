@@ -24,7 +24,7 @@ nav.nav {
 
     transition: var(--transition-hover--fast);
 
-    border: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 
     &.is-scrolled {
         background: oklch(from var(--color-surface-1) l c h / var(--backdrop-opacity));

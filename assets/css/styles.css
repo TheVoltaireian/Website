@@ -1101,7 +1101,7 @@ nav.nav {
   justify-content: space-between;
   align-items: center;
   transition: var(--transition-hover--fast);
-  border: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 nav.nav.is-scrolled {
   background: oklch(from var(--color-surface-1) l c h/var(--backdrop-opacity));
