@@ -14,6 +14,14 @@ nav.nav {
 
     margin-bottom: calc(var(--nav-height) * -1);
 
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: var(--space-lg) var(--space-xl);
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        padding: var(--space-md) var(--space-md);
+    }
+
     .nav__wordmark {
         font-size: var(--font-size-large);
         color: var(--color-emphasized);
