@@ -1,7 +1,7 @@
 @use "../abstracts/breakpoints" as *;
 @use "../abstracts/mixins" as *;
 
-html[data-page="home"], html[data-page="blog"] {
+html[data-page="home"], html[data-page="blog"], html[data-page="projects"] {
     nav.nav {
         margin-bottom: calc(var(--nav-height) * -1);
     }

@@ -189,3 +189,95 @@ html[data-page="blog"] {
         }
     }
 }
+
+html[data-page="projects"] {
+    body {
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0 0 auto;
+            width: 100%;
+            height: var(--header-height);
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+                url("../images/backgrounds/Ammonia/AmmoniaFront.png");
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: var(--backdrop-filter-blur);
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+            z-index: -1;
+            pointer-events: none;
+        }
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+
+        min-height: var(--header-height);
+        padding: var(--space-xxxl);
+
+        text-align: left;
+
+        animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            padding: var(--space-xl);
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            padding: var(--space-md);
+        }
+
+        h1 {
+            margin-block: 0;
+            line-height: initial;
+            font-size: var(--font-size-6x-large);
+            font-weight: var(--font-weight-bold);
+
+            @media screen and (max-width: $breakpoint-sm) {
+                text-wrap: wrap;
+                word-break: break-word;
+                overflow-wrap: anywhere;
+            }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                font-size: var(--font-size-5x-large)
+            }
+
+            @media screen and (max-width: $breakpoint-xxxs) {
+                font-size: var(--font-size-4x-large)
+            }
+
+            a {
+                cursor: text;
+
+                @include hover {
+                    font-weight: initial !important;
+                }
+            }
+        }
+
+        p {
+            margin-block: 0;
+            line-height: var(--line-height-small);
+            font-weight: var(--font-weight-medium);
+
+            &.sub {
+                color: var(--color-placeholder);
+                font-size: var(--font-size-small);
+                line-height: var(--line-height-medium);
+            }
+        }
+
+        hr {
+            margin-block: var(--space-sm);
+            margin-left: 0;
+            width: 3rem;
+        }
+    }
+}
