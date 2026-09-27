@@ -12,7 +12,7 @@
 }
 body {
     opacity: 0;
-    transition: opacity var(--transition-hover--slow);
+    transition: opacity var(--transition-hover--fast);
 }
 
 body.fade-in {

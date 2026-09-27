@@ -557,7 +557,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 				setTimeout(() => {
 					window.location.href = targetHref;
-				}, 350);
+				}, 250);
 			}
 		});
 	});
