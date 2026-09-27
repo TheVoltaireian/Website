@@ -1,3 +1,7 @@
+html[data-page="home"], html[data-page="blog"] {
+    margin-bottom: calc(var(--nav-height) * -1);
+} 
+
 nav.nav {
     position: sticky;
     top: 0;
@@ -11,8 +15,6 @@ nav.nav {
     backdrop-filter: var(--backdrop-filter-frosted-glass);
     border-bottom: var(--border-base);
     z-index: 999999999999999999;
-
-    margin-bottom: calc(var(--nav-height) * -1);
 
     @media screen and (max-width: $breakpoint-sm) {
         padding: var(--space-lg) var(--space-xl);
