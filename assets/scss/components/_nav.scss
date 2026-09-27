@@ -14,7 +14,8 @@ nav.nav {
 
     margin-bottom: calc(var(--nav-height) * -1);
 
-    nav__wordmark {
+    .nav__wordmark {
         font-size: var(--font-size-large);
+        color: var(--color-emphasized);
     }
 }

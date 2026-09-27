@@ -1097,8 +1097,9 @@ nav.nav {
   z-index: 1000000000000000000;
   margin-bottom: calc(var(--nav-height) * -1);
 }
-nav.nav nav__wordmark {
+nav.nav .nav__wordmark {
   font-size: var(--font-size-large);
+  color: var(--color-emphasized);
 }
 
 .tag {
