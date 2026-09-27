@@ -277,6 +277,7 @@ html[data-page="home"] {
 
                         @media screen and (max-width: $breakpoint-xs) {
                             flex-direction: column;
+                            gap: var(--space-md);
                         }
 
                         .blog__postImage {
