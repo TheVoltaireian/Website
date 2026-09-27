@@ -2327,9 +2327,12 @@ html[data-page=about] main .about__introduction .about__infobox .about__stats .a
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: var(--space-xs);
   border-top: var(--border-subtle);
   padding-block: var(--space-xs);
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-medium);
 }
 html[data-page=about] main .about__introduction .about__infobox .about__stats .about__statsRow .about__rowTitle {
   color: var(--color-subtle);
