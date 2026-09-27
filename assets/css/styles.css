@@ -1104,16 +1104,6 @@ nav.nav {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 992px) {
-  nav.nav {
-    padding: var(--space-lg) var(--space-xl);
-  }
-}
-@media screen and (max-width: 767px) {
-  nav.nav {
-    padding: var(--space-md) var(--space-md);
-  }
-}
 nav.nav .nav__wordmark {
   font-size: var(--font-size-large);
   color: var(--color-emphasized);
@@ -1157,6 +1147,21 @@ nav.nav .nav__links a[aria-current=page]:active {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  nav.nav {
+    padding: var(--space-lg) var(--space-xl);
+  }
+}
+@media screen and (max-width: 767px) {
+  nav.nav {
+    padding: var(--space-md) var(--space-md);
+    flex-direction: column;
+  }
+  nav.nav .nav__links {
+    padding-left: 0;
+    border-left: none;
   }
 }
 
