@@ -2,7 +2,9 @@
 @use "../abstracts/mixins" as *;
 
 html[data-page="home"], html[data-page="blog"] {
-    margin-bottom: calc(var(--nav-height) * -1);
+    nav.nav {
+        margin-bottom: calc(var(--nav-height) * -1);
+    }
 } 
 
 nav.nav {

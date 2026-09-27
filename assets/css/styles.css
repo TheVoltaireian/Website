@@ -1085,7 +1085,7 @@ footer .footer__subtitle .footer__subtitle-socials .divider {
   flex-shrink: 0;
 }
 
-html[data-page=home], html[data-page=blog] {
+html[data-page=home] nav.nav, html[data-page=blog] nav.nav {
   margin-bottom: calc(var(--nav-height) * -1);
 }
 
