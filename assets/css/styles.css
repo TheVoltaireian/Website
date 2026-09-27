@@ -1085,6 +1085,10 @@ footer .footer__subtitle .footer__subtitle-socials .divider {
   flex-shrink: 0;
 }
 
+html[data-page=home], html[data-page=blog] {
+  margin-bottom: calc(var(--nav-height) * -1);
+}
+
 nav.nav {
   position: sticky;
   top: 0;
@@ -1095,7 +1099,16 @@ nav.nav {
   backdrop-filter: var(--backdrop-filter-frosted-glass);
   border-bottom: var(--border-base);
   z-index: 1000000000000000000;
-  margin-bottom: calc(var(--nav-height) * -1);
+}
+@media screen and (max-width: 992px) {
+  nav.nav {
+    padding: var(--space-lg) var(--space-xl);
+  }
+}
+@media screen and (max-width: 767px) {
+  nav.nav {
+    padding: var(--space-md) var(--space-md);
+  }
 }
 nav.nav .nav__wordmark {
   font-size: var(--font-size-large);
@@ -1766,7 +1779,7 @@ html[data-page=post] body .post__wrapper main.post__main .post__mainContent h2, 
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: var(--space-xxl);
+  top: calc(var(--nav-height) + var(--space-xxl));
   max-height: calc(100vh - 80px);
   padding: 0;
   overflow: hidden;
