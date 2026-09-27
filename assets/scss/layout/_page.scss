@@ -507,8 +507,8 @@ html[data-page="post"] {
             border: var(--border-base);
             border-radius: var(--border-radius-large);
 
-            margin: var(--space-4xl);
-            padding: var(--space-4xl);
+            margin: var(--space-xxxl);
+            padding: var(--space-xxxl);
 
             @media screen and (max-width: $breakpoint-xs) {
                 margin: var(--space-xxl);
@@ -539,11 +539,11 @@ html[data-page="post"] {
 
                 font-family: var(--font-family-alternate);
 
-                margin-top: calc(var(--space-4xl) * -1);
-                padding-top: var(--space-4xl);
-                margin-inline: calc(var(--space-4xl) * -1);
-                padding-inline: var(--space-4xl);
-                padding-bottom: var(--space-4xl);
+                margin-top: calc(var(--space-xxxl) * -1);
+                padding-top: var(--space-xxxl);
+                margin-inline: calc(var(--space-xxxl) * -1);
+                padding-inline: var(--space-xxxl);
+                padding-bottom: var(--space-xxxl);
                 border-bottom: var(--border-base);
                 background: linear-gradient(45deg, var(--color-surface-0), var(--color-surface-3));
 
@@ -888,7 +888,7 @@ html[data-page="post"] {
         border: var(--border-subtle);
         border-right: none;
         border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
-        margin-right: calc(var(--space-4xl) * -1);
+        margin-right: calc(var(--space-xxxl) * -1);
     }
 
     body.toc-enabled .toc-wrapper .toc-header {
