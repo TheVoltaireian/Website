@@ -12,19 +12,23 @@ nav.nav {
     top: 0;
 
     width: 100%;
-
     min-height: var(--space-xxl);
     padding: var(--space-lg) var(--space-xxxl);
 
-    background: oklch(from var(--color-surface-1) l c h / var(--backdrop-opacity));
-    backdrop-filter: var(--backdrop-filter-frosted-glass);
-    border-bottom: var(--border-base);
     z-index: 999999999999999999;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    transition: var(--transition-hover--fast);
+
+    &.is-scrolled {
+        background: oklch(from var(--color-surface-1) l c h / var(--backdrop-opacity));
+        backdrop-filter: var(--backdrop-filter-frosted-glass);
+        border-bottom: var(--border-base);
+    }
 
     .nav__wordmark {
         font-size: var(--font-size-large);

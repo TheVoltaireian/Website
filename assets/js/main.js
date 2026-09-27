@@ -52,6 +52,20 @@ document.querySelectorAll('.nav').forEach(nav => {
     navObserver.observe(nav);
 });
 
+// nav scrolling
+const nav = document.querySelector('nav.nav');
+
+const handleScroll = () => {
+    if (window.scrollY > 1) {
+        nav.classList.add('is-scrolled');
+    } else {
+        nav.classList.remove('is-scrolled');
+    }
+};
+
+window.addEventListener('scroll', handleScroll, { passive: true });
+handleScroll();
+
 // mouse anim (via: https://github.com/whoscripting/whoscripting.github.io/blob/master/landing/landing.js / MODIFIED)
 const h1Element = document.querySelector("#WildVoltaireian");
 
