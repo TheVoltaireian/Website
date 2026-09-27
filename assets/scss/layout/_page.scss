@@ -1159,7 +1159,7 @@ html[data-page="about"] {
                 flex-direction: column;
                 max-width: 300px;
 
-                gap: var(--space-lg);
+                gap: var(--space-md);
 
                 img.about__image {
                     border-radius: var(--border-radius-medium);
@@ -1175,6 +1175,9 @@ html[data-page="about"] {
                         justify-content: space-between;
 
                         border-top: var(--border-subtle);
+                        padding-block: var(--space-xs);
+
+                        font-size: var(--font-size-large);
 
                         .about__rowTitle {
                             color: var(--color-subtle);
@@ -1182,6 +1185,7 @@ html[data-page="about"] {
 
                         .about__rowDesc {
                             color: var(--color-base);
+                            font-weight: var(--font-weight-medium);
                         }
                     }
                 }
