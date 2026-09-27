@@ -1112,6 +1112,12 @@ nav.nav .nav__wordmark {
   font-size: var(--font-size-large);
   color: var(--color-emphasized);
 }
+nav.nav .nav__wordmark a {
+  color: var(--color-emphasized);
+}
+nav.nav .nav__wordmark a:hover {
+  font-weight: var(--font-weight-regular);
+}
 nav.nav .nav__links {
   display: flex;
   flex-direction: row;

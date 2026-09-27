@@ -35,6 +35,14 @@ nav.nav {
     .nav__wordmark {
         font-size: var(--font-size-large);
         color: var(--color-emphasized);
+
+        a {
+            color: var(--color-emphasized);
+
+            @include hover {
+                font-weight: var(--font-weight-regular);
+            }
+        }
     }
 
     .nav__links {
