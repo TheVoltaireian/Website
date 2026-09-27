@@ -4,8 +4,8 @@ nav.nav {
 
     width: 100%;
 
-    min-height: var(--space-4xl);
-    padding: var(--space-xl);
+    min-height: var(--space-xxl);
+    padding: var(--space-xl) var(--space-xxxl);
 
     background: oklch(from var(--color-surface-0) l c h / 0.9);
     backdrop-filter: var(--backdrop-filter-frosted-glass);
