@@ -1168,6 +1168,7 @@ nav.nav.is-scrolled {
   background: oklch(from var(--color-surface-1) l c h/var(--backdrop-opacity));
   backdrop-filter: var(--backdrop-filter-frosted-glass);
   border-bottom: var(--border-base);
+  box-shadow: var(--box-shadow-large);
 }
 nav.nav .nav__wordmark {
   font-size: var(--font-size-large);
