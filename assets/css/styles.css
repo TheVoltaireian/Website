@@ -2336,8 +2336,16 @@ html[data-page=about] main .about__introduction .about__infobox .about__stats .a
 }
 html[data-page=about] main .about__introduction .about__infobox .about__stats .about__statsRow .about__rowTitle {
   color: var(--color-subtle);
+  text-transform: uppercase;
+  font-family: var(--font-family-alternate);
 }
 html[data-page=about] main .about__introduction .about__infobox .about__stats .about__statsRow .about__rowDesc {
   color: var(--color-base);
   font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-alternate);
+}
+html[data-page=about] main .about__introduction .about__paragraph h1.about__title {
+  text-transform: uppercase;
+  font-family: var(--font-family-alternate);
+  margin-block-start: 0;
 }/*# sourceMappingURL=styles.css.map */

@@ -1184,13 +1184,23 @@ html[data-page="about"] {
 
                         .about__rowTitle {
                             color: var(--color-subtle);
+                            text-transform: uppercase;
+                            font-family: var(--font-family-alternate);
                         }
 
                         .about__rowDesc {
                             color: var(--color-base);
                             font-weight: var(--font-weight-medium);
+                            font-family: var(--font-family-alternate);
                         }
                     }
+                }
+            }
+            .about__paragraph {
+                h1.about__title {
+                    text-transform: uppercase;
+                    font-family: var(--font-family-alternate);
+                    margin-block-start: 0;
                 }
             }
         }
