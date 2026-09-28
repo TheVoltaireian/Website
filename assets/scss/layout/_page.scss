@@ -1144,6 +1144,11 @@ html[data-page="about"] {
     display: grid;
     grid-template-rows: auto 1fr auto;
 
+    h1, h2, h3, h4, h5, h6 {
+        border-bottom: var(--border-subtle);
+        padding-block-end: 0.25em;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -1244,6 +1249,11 @@ html[data-page="contact"] {
     display: grid;
     grid-template-rows: auto 1fr auto;
 
+    h1, h2, h3, h4, h5, h6 {
+        border-bottom: var(--border-subtle);
+        padding-block-end: 0.25em;
+    }
+
     main {
         display: flex;
         flex-direction: row;
@@ -1260,6 +1270,13 @@ html[data-page="contact"] {
             box-shadow: var(--box-shadow-medium);
 
             padding: var(--space-xxxl);
+
+            h1.contact__mainTitle {
+                text-transform: uppercase;
+                font-family: var(--font-family-alternate);
+                margin-block-start: 0;
+                line-height: revert;
+            }
         }
     }
 }

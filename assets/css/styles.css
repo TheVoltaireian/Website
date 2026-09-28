@@ -2310,6 +2310,10 @@ html[data-page=about] {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+html[data-page=about] h1, html[data-page=about] h2, html[data-page=about] h3, html[data-page=about] h4, html[data-page=about] h5, html[data-page=about] h6 {
+  border-bottom: var(--border-subtle);
+  padding-block-end: 0.25em;
+}
 html[data-page=about] main {
   display: flex;
   flex-direction: column;
@@ -2393,6 +2397,10 @@ html[data-page=contact] {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+html[data-page=contact] h1, html[data-page=contact] h2, html[data-page=contact] h3, html[data-page=contact] h4, html[data-page=contact] h5, html[data-page=contact] h6 {
+  border-bottom: var(--border-subtle);
+  padding-block-end: 0.25em;
+}
 html[data-page=contact] main {
   display: flex;
   flex-direction: row;
@@ -2406,4 +2414,10 @@ html[data-page=contact] main .contact__main {
   border: var(--border-base);
   box-shadow: var(--box-shadow-medium);
   padding: var(--space-xxxl);
+}
+html[data-page=contact] main .contact__main h1.contact__mainTitle {
+  text-transform: uppercase;
+  font-family: var(--font-family-alternate);
+  margin-block-start: 0;
+  line-height: revert;
 }/*# sourceMappingURL=styles.css.map */
