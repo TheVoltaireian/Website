@@ -61,9 +61,12 @@ a.button {
     }
 
 	&--social {
-		@include mixins.button-text-on-hover;
         max-height: 30px;
 	}
+
+    &--text-on-hover {
+        @include mixins.button-text-on-hover;
+    }
 
 	&--x {
 		@include mixins.button-variant (

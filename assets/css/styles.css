@@ -626,36 +626,36 @@ a.button img {
   height: auto;
 }
 a.button--social {
+  max-height: 30px;
+}
+a.button--text-on-hover {
   overflow: hidden;
   gap: 0;
   padding: var(--space-xxs);
 }
-a.button--social span {
+a.button--text-on-hover span {
   max-width: 0;
   opacity: 0;
   white-space: nowrap;
   transition: max-width var(--transition-hover--slow), opacity var(--transition-hover--slow);
 }
-a.button--social:hover {
+a.button--text-on-hover:hover {
   gap: var(--space-xxs);
   padding: var(--space-xxs) var(--space-xs);
 }
-a.button--social:hover span {
+a.button--text-on-hover:hover span {
   opacity: 1;
   max-width: var(--social-label-width, 20ch);
 }
 @media screen and (max-width: 389px) {
-  a.button--social:hover {
+  a.button--text-on-hover:hover {
     gap: 0;
     padding: var(--space-xxs);
   }
-  a.button--social:hover span {
+  a.button--text-on-hover:hover span {
     opacity: 0;
     display: none;
   }
-}
-a.button--social {
-  max-height: 30px;
 }
 a.button--x {
   background: oklch(0% 0 0deg);
@@ -2408,7 +2408,7 @@ html[data-page=contact] main {
 html[data-page=contact] main .contact__main {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xxxl);
+  gap: var(--space-xl);
   background: var(--color-surface-1);
   border-radius: var(--border-radius-large);
   border: var(--border-base);
@@ -2420,4 +2420,10 @@ html[data-page=contact] main .contact__main h1.contact__mainTitle {
   font-family: var(--font-family-alternate);
   margin-block-start: 0;
   line-height: revert;
+}
+html[data-page=contact] main .contact__main .contact__mainContent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-xxxl);
 }/*# sourceMappingURL=styles.css.map */
