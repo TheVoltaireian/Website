@@ -1221,6 +1221,14 @@ html[data-page="about"] {
                     }
                 }
             }
+            @media screen and (max-width: $breakpoint-xs) {
+                flex-direction: column;
+                align-items: center;
+
+                .about__infobox {
+                    max-width: 100%;
+                }
+            }
         }
     }
 }

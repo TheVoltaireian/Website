@@ -2373,4 +2373,13 @@ html[data-page=about] main .about__introduction .about__paragraph p .sass {
 }
 html[data-page=about] main .about__introduction .about__paragraph p .javascript {
   color: rgb(241, 224, 90);
+}
+@media screen and (max-width: 767px) {
+  html[data-page=about] main .about__introduction {
+    flex-direction: column;
+    align-items: center;
+  }
+  html[data-page=about] main .about__introduction .about__infobox {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
