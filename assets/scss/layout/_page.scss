@@ -1289,6 +1289,24 @@ html[data-page="contact"] {
                     .button--mail {
                         padding: var(--space-xs) var(--space-xxxl);
                     }
+                    .contact__mainList {
+                        a {
+                            display: flex;
+                            flex-direction: row;
+                            gap: var(--space-xs);
+
+                            img {
+                                border: none;
+                                border-radius: 0;
+
+                                width: 20px;
+                                height: auto;
+                            }
+                            span {
+                                color: var(--color-base);
+                            }
+                        }
+                    }
                 }
             }
         }
