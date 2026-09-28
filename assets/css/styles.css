@@ -2380,6 +2380,6 @@ html[data-page=about] main .about__introduction .about__paragraph p .javascript 
     align-items: center;
   }
   html[data-page=about] main .about__introduction .about__infobox {
-    max-width: 100%;
+    max-width: 250px;
   }
 }/*# sourceMappingURL=styles.css.map */
