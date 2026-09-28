@@ -1284,6 +1284,12 @@ html[data-page="contact"] {
                 align-items: flex-start;
 
                 gap: var(--space-xxxl);
+
+                .contact__mainSocials {
+                    .button--mail {
+                        padding: var(--space-xs) var(--space-xxxl);
+                    }
+                }
             }
         }
     }
