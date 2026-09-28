@@ -2317,7 +2317,7 @@ html[data-page=about] main {
 html[data-page=about] main .about__introduction {
   display: flex;
   flex-direction: row;
-  gap: var(--space-xl);
+  gap: var(--space-xxl);
 }
 html[data-page=about] main .about__introduction .about__infobox {
   display: flex;
