@@ -1209,6 +1209,17 @@ html[data-page="about"] {
                     font-family: var(--font-family-alternate);
                     line-height: revert;
                 }
+                p {
+                    .html {
+                        color: rgb(227, 76, 38);
+                    }
+                    .sass {
+                        color: rgb(198, 83, 140);
+                    }
+                    .javascript {
+                        color: rgb(241, 224, 90);
+                    }
+                }
             }
         }
     }

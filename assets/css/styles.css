@@ -2364,4 +2364,13 @@ html[data-page=about] main .about__introduction .about__paragraph h2.about__head
   text-transform: uppercase;
   font-family: var(--font-family-alternate);
   line-height: revert;
+}
+html[data-page=about] main .about__introduction .about__paragraph p .html {
+  color: rgb(227, 76, 38);
+}
+html[data-page=about] main .about__introduction .about__paragraph p .sass {
+  color: rgb(198, 83, 140);
+}
+html[data-page=about] main .about__introduction .about__paragraph p .javascript {
+  color: rgb(241, 224, 90);
 }/*# sourceMappingURL=styles.css.map */
