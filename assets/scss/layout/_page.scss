@@ -1152,7 +1152,14 @@ html[data-page="about"] {
             display: flex;
             flex-direction: row;
 
-            gap: var(--space-xxl);
+            gap: var(--space-xxxl);
+
+            background: var(--color-surface-1);
+            border-radius: var(--border-radius-large);
+            border: var(--border-base);
+            box-shadow: var(--box-shadow-medium);
+
+            padding: var(--space-xxxl);
 
             .about__infobox {
                 display: flex;
@@ -1229,6 +1236,30 @@ html[data-page="about"] {
                     max-width: 250px;
                 }
             }
+        }
+    }
+}
+
+html[data-page="contact"] {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    main {
+        display: flex;
+        flex-direction: row;
+
+        .contact__main {
+            display: flex;
+            flex-direction: column;
+
+            gap: var(--space-xxxl);
+
+            background: var(--color-surface-1);
+            border-radius: var(--border-radius-large);
+            border: var(--border-base);
+            box-shadow: var(--box-shadow-medium);
+
+            padding: var(--space-xxxl);
         }
     }
 }

@@ -2317,7 +2317,12 @@ html[data-page=about] main {
 html[data-page=about] main .about__introduction {
   display: flex;
   flex-direction: row;
-  gap: var(--space-xxl);
+  gap: var(--space-xxxl);
+  background: var(--color-surface-1);
+  border-radius: var(--border-radius-large);
+  border: var(--border-base);
+  box-shadow: var(--box-shadow-medium);
+  padding: var(--space-xxxl);
 }
 html[data-page=about] main .about__introduction .about__infobox {
   display: flex;
@@ -2382,4 +2387,23 @@ html[data-page=about] main .about__introduction .about__paragraph p .javascript 
   html[data-page=about] main .about__introduction .about__infobox {
     max-width: 250px;
   }
+}
+
+html[data-page=contact] {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+html[data-page=contact] main {
+  display: flex;
+  flex-direction: row;
+}
+html[data-page=contact] main .contact__main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxxl);
+  background: var(--color-surface-1);
+  border-radius: var(--border-radius-large);
+  border: var(--border-base);
+  box-shadow: var(--box-shadow-medium);
+  padding: var(--space-xxxl);
 }/*# sourceMappingURL=styles.css.map */
