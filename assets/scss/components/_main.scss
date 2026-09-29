@@ -1,5 +1,5 @@
 @use "../abstracts/breakpoints" as *;
-main {
+main:not(.post__main) {
     background: var(--color-surface-0);
     padding-block: var(--space-xxxl);
     padding-inline: var(--space-xxl);
