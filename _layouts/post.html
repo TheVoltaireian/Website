@@ -4,7 +4,7 @@ layout: base
 
 <div class="post__wrapper">
     <header class="post__header">
-        <nav class="post__breadcrumbs">
+        <nav aria-label="Post navigation" class="post__breadcrumbs">
             <a href="{{ '/' | relative_url }}">Home</a> <span aria-hidden="true" class="divider">|</span> <a href="{{ '/blog/' | relative_url }}">Blog</a> <span aria-hidden="true" class="divider">|</span> <span class="post__name" style="font-weight: var(--font-weight-bold)"><span style="font-weight: var(--font-weight-regular); color: var(--color-subtle);">Post:</span> {{ page.title }}</span>
         </nav>
         <h1>{{ page.title }}</h1>
