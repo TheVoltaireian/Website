@@ -48,10 +48,6 @@ html[data-page="home"] {
             padding-inline: var(--space-xl);
         }
 
-        @media screen and (max-width: $breakpoint-xs) {
-            padding-inline: var(--space-lg);
-        }
-
         h1 {
             margin-block: 0;
             line-height: initial;
@@ -142,10 +138,6 @@ html[data-page="blog"] {
             padding-inline: var(--space-xl);
         }
 
-        @media screen and (max-width: $breakpoint-xs) {
-            padding-inline: var(--space-lg);
-        }
-
         h1 {
             margin-block: 0;
             line-height: initial;
@@ -234,10 +226,6 @@ html[data-page="projects"] {
 
         @media screen and (max-width: $breakpoint-sm) {
             padding-inline: var(--space-xl);
-        }
-
-        @media screen and (max-width: $breakpoint-xs) {
-            padding-inline: var(--space-lg);
         }
 
         h1 {

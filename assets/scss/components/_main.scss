@@ -9,8 +9,4 @@ main {
     @media screen and (max-width: $breakpoint-sm) {
         padding-inline: var(--space-xl);
     }
-
-    @media screen and (max-width: $breakpoint-xs) {
-        padding: var(--space-lg);
-    }
 }
