@@ -1319,8 +1319,14 @@ html[data-page="contact"] {
                                 font-family: var(--font-family-alternate);
                                 font-size: var(--font-size-xx-large);
                                 color: var(--color-emphasized);
+                                width: max-content;
                                 max-width: 100%;
                                 overflow-wrap: anywhere;
+
+                                @media screen and (max-width: $breakpoint-xs) {
+                                    width: 100%;
+                                    font-size: var(--font-size-x-large);
+                                }
 
                                 img {
                                     border: none;
@@ -1355,8 +1361,13 @@ html[data-page="contact"] {
                                 text-decoration: none;
                                 align-items: center;
                                 font-family: var(--font-family-alternate);
+                                width: max-content;
                                 max-width: 100%;
                                 overflow-wrap: anywhere;
+
+                                @media screen and (max-width: $breakpoint-xs) {
+                                    width: 100%;
+                                }
 
                                 img {
                                     border: none;
