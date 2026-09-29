@@ -1273,6 +1273,10 @@ html[data-page="contact"] {
 
             width: 100%;
 
+            @media screen and (max-width: $breakpoint-xs) {
+                width: auto;
+            }
+
             h1.contact__mainTitle {
                 text-transform: uppercase;
                 font-family: var(--font-family-alternate);
@@ -1371,6 +1375,10 @@ html[data-page="contact"] {
                         grid-template-columns: repeat(2, minmax(0, 1fr));
                         gap: var(--space-sm);
                         margin-bottom: var(--space-sm);
+
+                        @media screen and (max-width: $breakpoint-xs) {
+                            grid-template-columns: repeat(1, minmax(0, 1fr));
+                        }
                     }
 
                     .form__group {
