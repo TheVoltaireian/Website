@@ -2393,7 +2393,8 @@ html[data-page=about] main .about__introduction .about__paragraph p .javascript 
   }
 }
 
-html[data-page=contact] {
+html[data-page=contact] body {
+  min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
