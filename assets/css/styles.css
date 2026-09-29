@@ -2489,30 +2489,35 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
   gap: var(--space-md);
   margin-bottom: var(--space-md);
 }
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group label {
   font-family: var(--font-family-alternate);
   color: var(--color-placeholder);
   text-transform: uppercase;
 }
-html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group input {
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group input, html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group textarea {
   background-color: var(--color-surface-2);
   border: var(--border-interactive);
   border-radius: var(--border-radius-medium);
   padding: var(--space-sm);
 }
-html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group input::-moz-placeholder {
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group input::-moz-placeholder, html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group textarea::-moz-placeholder {
   color: var(--color-placeholder);
   font-family: var(--font-family-alternate);
 }
-html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group input::placeholder {
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group input::placeholder, html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group textarea::placeholder {
   color: var(--color-placeholder);
   font-family: var(--font-family-alternate);
 }
-html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group:hover input {
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group:hover input, html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group:hover textarea {
   background-color: var(--color-surface-2--hover);
   border: var(--border-interactive--hover);
 }
-html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group:active input {
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group:active input, html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group:active textarea {
   background-color: var(--color-surface-2--active);
   border: var(--border-interactive--active);
 }

@@ -1365,12 +1365,15 @@ html[data-page="contact"] {
                         margin-bottom: var(--space-md);
                     }
                     .form__group {
+                        display: flex;
+                        flex-direction: column;
+                        gap: var(--space-xs);
                         label {
                             font-family: var(--font-family-alternate);
                             color: var(--color-placeholder);
                             text-transform: uppercase;
                         }
-                        input {
+                        input, textarea {
                             background-color: var(--color-surface-2);
                             border: var(--border-interactive);
                             border-radius: var(--border-radius-medium);
@@ -1382,13 +1385,13 @@ html[data-page="contact"] {
                             }
                         }
                         @include hover {
-                            input {
+                            input, textarea {
                                 background-color: var(--color-surface-2--hover);
                                 border: var(--border-interactive--hover);
                             }
                         }
                         @include active {
-                            input {
+                            input, textarea {
                                 background-color: var(--color-surface-2--active);
                                 border: var(--border-interactive--active);
                             }
