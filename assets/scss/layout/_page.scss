@@ -1287,33 +1287,67 @@ html[data-page="contact"] {
 
                 .contact__mainSocials {
 
-                    .button--mail {
-                        width: max-content;
+                    p {
+                        margin-block-start: 0;
                     }
 
                     .contact__mainList {
+                        list-style-type: none;
+                        padding-left: 0px;
+                        margin-block: 0;
+
                         li {
-                            margin-bottom: var(--space-sm);
-                            
-                            &::marker {
-                                display: none;
-                            }
+                            margin-bottom: var(--space-xxs);
 
                             a {
                                 display: flex;
                                 flex-direction: row;
                                 gap: var(--space-xs);
-
                                 text-decoration: none;
+                                align-items: center;
+                                font-family: var(--font-family-alternate);
+                                font-size: var(--font-size-x-large);
+                                color: var(--color-emphasized);
 
                                 img {
                                     border: none;
                                     border-radius: 0;
 
-                                    width: 28px;
-                                    height: auto;
+                                    width: 18px;
+                                    height: 18px;
                                 }
-                                
+
+                                span {
+                                    color: var(--color-base);
+                                }
+                            }
+                        }
+                    }
+
+                    .contact__secondaryList {
+                        list-style-type: none;
+                        padding-left: 0px;
+                        margin-block: 0;
+
+                        li {
+                            margin-bottom: var(--space-xxs);
+
+                            a {
+                                display: flex;
+                                flex-direction: row;
+                                gap: var(--space-xs);
+                                text-decoration: none;
+                                align-items: center;
+                                font-family: var(--font-family-alternate);
+
+                                img {
+                                    border: none;
+                                    border-radius: 0;
+
+                                    width: 18px;
+                                    height: 18px;
+                                }
+
                                 span {
                                     color: var(--color-base);
                                 }

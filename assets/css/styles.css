@@ -2427,28 +2427,58 @@ html[data-page=contact] main .contact__main .contact__mainContent {
   align-items: flex-start;
   gap: var(--space-xxxl);
 }
-html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .button--mail {
-  width: -moz-max-content;
-  width: max-content;
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials p {
+  margin-block-start: 0;
+}
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-block: 0;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li {
-  margin-bottom: var(--space-sm);
-}
-html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li::marker {
-  display: none;
+  margin-bottom: var(--space-xxs);
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a {
   display: flex;
   flex-direction: row;
   gap: var(--space-xs);
   text-decoration: none;
+  align-items: center;
+  font-family: var(--font-family-alternate);
+  font-size: var(--font-size-x-large);
+  color: var(--color-emphasized);
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a img {
   border: none;
   border-radius: 0;
-  width: 28px;
-  height: auto;
+  width: 18px;
+  height: 18px;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a span {
+  color: var(--color-base);
+}
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__secondaryList {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-block: 0;
+}
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__secondaryList li {
+  margin-bottom: var(--space-xxs);
+}
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__secondaryList li a {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-xs);
+  text-decoration: none;
+  align-items: center;
+  font-family: var(--font-family-alternate);
+}
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__secondaryList li a img {
+  border: none;
+  border-radius: 0;
+  width: 18px;
+  height: 18px;
+}
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__secondaryList li a span {
   color: var(--color-base);
 }/*# sourceMappingURL=styles.css.map */
