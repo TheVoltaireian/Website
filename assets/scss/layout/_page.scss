@@ -1294,7 +1294,8 @@ html[data-page="contact"] {
                     .contact__mainList {
                         list-style-type: none;
                         padding-left: 0px;
-                        margin-block: 0;
+                        margin-block-start: 0;
+                        margin-block-end: var(--space-sm);
 
                         li {
                             margin-bottom: var(--space-xxs);
@@ -1313,12 +1314,12 @@ html[data-page="contact"] {
                                     border: none;
                                     border-radius: 0;
 
-                                    width: 18px;
-                                    height: 18px;
+                                    width: 22px;
+                                    height: 22px;
                                 }
 
                                 span {
-                                    color: var(--color-base);
+                                    color: var(--color-emphasized);
                                 }
                             }
                         }
