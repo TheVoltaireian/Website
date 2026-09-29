@@ -1286,9 +1286,11 @@ html[data-page="contact"] {
                 gap: var(--space-xxxl);
 
                 .contact__mainSocials {
+
                     .button--mail {
-                        padding: var(--space-xs) var(--space-xxxl);
+                        width: max-content;
                     }
+
                     .contact__mainList {
                         li {
                             margin-bottom: var(--space-sm);
@@ -1311,6 +1313,7 @@ html[data-page="contact"] {
                                     width: 28px;
                                     height: auto;
                                 }
+                                
                                 span {
                                     color: var(--color-base);
                                 }

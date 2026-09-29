@@ -2428,7 +2428,8 @@ html[data-page=contact] main .contact__main .contact__mainContent {
   gap: var(--space-xxxl);
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .button--mail {
-  padding: var(--space-xs) var(--space-xxxl);
+  width: -moz-max-content;
+  width: max-content;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li {
   margin-bottom: var(--space-sm);
