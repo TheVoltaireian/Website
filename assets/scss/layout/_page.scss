@@ -1290,20 +1290,30 @@ html[data-page="contact"] {
                         padding: var(--space-xs) var(--space-xxxl);
                     }
                     .contact__mainList {
-                        a {
-                            display: flex;
-                            flex-direction: row;
-                            gap: var(--space-xs);
-
-                            img {
-                                border: none;
-                                border-radius: 0;
-
-                                width: 20px;
-                                height: auto;
+                        li {
+                            margin-bottom: var(--space-sm);
+                            
+                            &::marker {
+                                display: none;
                             }
-                            span {
-                                color: var(--color-base);
+
+                            a {
+                                display: flex;
+                                flex-direction: row;
+                                gap: var(--space-xs);
+
+                                text-decoration: none;
+
+                                img {
+                                    border: none;
+                                    border-radius: 0;
+
+                                    width: 28px;
+                                    height: auto;
+                                }
+                                span {
+                                    color: var(--color-base);
+                                }
                             }
                         }
                     }

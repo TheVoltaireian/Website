@@ -2430,17 +2430,24 @@ html[data-page=contact] main .contact__main .contact__mainContent {
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .button--mail {
   padding: var(--space-xs) var(--space-xxxl);
 }
-html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList a {
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li {
+  margin-bottom: var(--space-sm);
+}
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li::marker {
+  display: none;
+}
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a {
   display: flex;
   flex-direction: row;
   gap: var(--space-xs);
+  text-decoration: none;
 }
-html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList a img {
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a img {
   border: none;
   border-radius: 0;
-  width: 20px;
+  width: 28px;
   height: auto;
 }
-html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList a span {
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a span {
   color: var(--color-base);
 }/*# sourceMappingURL=styles.css.map */
