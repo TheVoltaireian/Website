@@ -2492,6 +2492,9 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__secondaryList li a span {
   color: var(--color-base);
 }
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm {
+  width: 100%;
+}
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__groups {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

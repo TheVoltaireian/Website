@@ -1364,12 +1364,15 @@ html[data-page="contact"] {
                     }
                 }
                 .contact__mainForm {
+                    width: 100%;
+
                     .form__groups {
                         display: grid;
                         grid-template-columns: repeat(2, minmax(0, 1fr));
                         gap: var(--space-sm);
                         margin-bottom: var(--space-sm);
                     }
+                    
                     .form__group {
                         display: flex;
                         flex-direction: column;
