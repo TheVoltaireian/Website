@@ -10,11 +10,7 @@
         filter: none;
     }
 }
-body {
-    opacity: 0;
-    transition: opacity var(--transition-hover--fast);
-}
 
-body.fade-in {
-    opacity: 1;
+@view-transition {
+	navigation: auto;
 }

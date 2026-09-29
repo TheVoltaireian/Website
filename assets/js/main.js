@@ -542,27 +542,6 @@ if (document.readyState === 'loading') {
     initializeTOC();
 }
 
-// page transition 
-document.addEventListener("DOMContentLoaded", () => {
-	document.body.classList.add("fade-in");
-
-	const links = document.querySelectorAll("a");
-	links.forEach(link => {
-		link.addEventListener("click", event => {
-			const targetHref = link.getAttribute("href");
-
-			if (targetHref && !targetHref.startsWith("#") && !targetHref.startsWith("http")) {
-				event.preventDefault();
-				document.body.classList.remove("fade-in");
-
-				setTimeout(() => {
-					window.location.href = targetHref;
-				}, 250);
-			}
-		});
-	});
-});
-
 // form js 
 const form = document.getElementById('contact__mainForm');
 const result = document.getElementById('form__result');
