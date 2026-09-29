@@ -563,6 +563,43 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
+// form js 
+const form = document.getElementById('contact__mainForm');
+const result = document.getElementById('form__result');
+const submitBtn = document.getElementById('submit-btn');
+
+form.addEventListener('submit', function(e) {
+	e.preventDefault();
+
+	submitBtn.disabled = true;
+	result.textContent = "Sending...";
+
+	const formData = new FormData(form);
+
+	fetch('https://api.web3forms.com/submit', {
+		method: 'POST',
+		body: formData
+	})
+	.then(async (response) => {
+		let json = await response.json();
+		if (response.status == 200) {
+			result.style.color = "green";
+			result.textContent = "Thank you! Your message has been sent.";
+			form.reset(); // Clear form fields
+		} else {
+			result.style.color = "red";
+			result.textContent = json.message || "Something went wrong!";
+		}
+	})
+	.catch(error => {
+		result.style.color = "red";
+		result.textContent = "Something went wrong. Please try again.";
+	})
+	.finally(() => {
+		submitBtn.disabled = false;
+	});
+});
+
 // easter egg xD
 console.log(String.raw`
  /$$      /$$ /$$ /$$       /$$ /$$    /$$          /$$   /$$               /$$                     /$$                    

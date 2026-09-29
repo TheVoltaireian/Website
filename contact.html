@@ -33,18 +33,20 @@ permalink: /contact/
                     </li>
                 </ul>
             </div>
-            <form id="contact__mainForm" class="contct__mainForm">
+            <form id="contact__mainForm" class="contact__mainForm">
                 <!-- Hidden Access Key -->
                 <input type="hidden" name="access_key" value="14dddd94-2431-41b5-937f-b9020e1b033d">
 
-                <div class="form__group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Doe" required>
-                </div>
+                <div class="form__groups">
+                    <div class="form__group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
 
-                <div class="form__group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                    </div>
                 </div>
 
                 <div class="form__group">
@@ -54,7 +56,7 @@ permalink: /contact/
 
                 <button type="submit" id="submit-btn" class="button button--primary">Send Message</button>
                 
-                <div id="result" style="margin-top: var(--space-md);"></div>
+                <div id="form__result" style="margin-top: var(--space-md);"></div>
             </form>
         </div>
     </div>
