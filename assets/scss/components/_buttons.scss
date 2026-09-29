@@ -1,6 +1,6 @@
 @use "../abstracts/mixins" as mixins;
 
-a.button {
+a.button, button.button {
     @include mixins.button-base;
     @include mixins.focus-ring;
 

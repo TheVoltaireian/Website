@@ -542,7 +542,7 @@ a:active {
   color: #8be9fd;
 }
 
-a.button {
+a.button, button.button {
   border-radius: var(--border-radius-base) !important;
   display: flex;
   min-width: 0;
@@ -556,146 +556,146 @@ a.button {
   transition: var(--transition-hover--slow);
   text-decoration: none !important;
 }
-a.button:focus-visible {
+a.button:focus-visible, button.button:focus-visible {
   outline: 2px solid var(--color-progressive);
   outline-offset: 2px;
   border-radius: var(--border-radius-base);
 }
-a.button--primary {
+a.button--primary, button.button--primary {
   background: var(--background-color-progressive);
   color: var(--color-inverted);
   border: var(--border-interactive);
 }
-a.button--primary:hover {
+a.button--primary:hover, button.button--primary:hover {
   background: var(--background-color-progressive--hover);
   color: var(--color-inverted);
   border: var(--border-interactive--hover);
 }
-a.button--primary:active {
+a.button--primary:active, button.button--primary:active {
   background: var(--background-color-progressive--active);
   border: var(--border-interactive--active);
 }
-a.button.secondary-1 {
+a.button.secondary-1, button.button.secondary-1 {
   border: var(--border-progressive) !important;
   background: transparent;
   color: var(--color-progressive);
   border: var(--border-interactive);
 }
-a.button.secondary-1:hover {
+a.button.secondary-1:hover, button.button.secondary-1:hover {
   background: transparent;
   color: var(--color-inverted);
   border: var(--border-interactive--hover);
 }
-a.button.secondary-1:active {
+a.button.secondary-1:active, button.button.secondary-1:active {
   background: transparent;
   border: var(--border-interactive--active);
 }
-a.button.secondary-1:hover {
+a.button.secondary-1:hover, button.button.secondary-1:hover {
   color: var(--color-progressive--hover) !important;
   border: var(--border-progressive--hover) !important;
 }
-a.button.secondary-1:active {
+a.button.secondary-1:active, button.button.secondary-1:active {
   color: var(--color-progressive--active) !important;
   border: var(--border-progressive--active) !important;
 }
-a.button--secondary-2 {
+a.button--secondary-2, button.button--secondary-2 {
   background: var(--color-surface-2);
   color: var(--color-emphasized);
   border: var(--border-interactive);
 }
-a.button--secondary-2:hover {
+a.button--secondary-2:hover, button.button--secondary-2:hover {
   background: var(--color-surface-2--hover);
   color: var(--color-inverted);
   border: var(--border-interactive--hover);
 }
-a.button--secondary-2:active {
+a.button--secondary-2:active, button.button--secondary-2:active {
   background: var(--color-surface-2--active);
   border: var(--border-interactive--active);
 }
-a.button--secondary-2:hover {
+a.button--secondary-2:hover, button.button--secondary-2:hover {
   border: var(--border-interactive--hover) !important;
   color: var(--color-inverted) !important;
 }
-a.button--secondary-2:active {
+a.button--secondary-2:active, button.button--secondary-2:active {
   border: var(--border-interactive--active) !important;
 }
-a.button img {
+a.button img, button.button img {
   border: none;
   border-radius: 0;
   width: 20px;
   height: auto;
 }
-a.button--social {
+a.button--social, button.button--social {
   max-height: 30px;
 }
-a.button--text-on-hover {
+a.button--text-on-hover, button.button--text-on-hover {
   overflow: hidden;
   gap: 0;
   padding: var(--space-xxs);
 }
-a.button--text-on-hover span {
+a.button--text-on-hover span, button.button--text-on-hover span {
   max-width: 0;
   opacity: 0;
   white-space: nowrap;
   transition: max-width var(--transition-hover--slow), opacity var(--transition-hover--slow);
 }
-a.button--text-on-hover:hover {
+a.button--text-on-hover:hover, button.button--text-on-hover:hover {
   gap: var(--space-xxs);
   padding: var(--space-xxs) var(--space-xs);
 }
-a.button--text-on-hover:hover span {
+a.button--text-on-hover:hover span, button.button--text-on-hover:hover span {
   opacity: 1;
   max-width: var(--social-label-width, 20ch);
 }
 @media screen and (max-width: 389px) {
-  a.button--text-on-hover:hover {
+  a.button--text-on-hover:hover, button.button--text-on-hover:hover {
     gap: 0;
     padding: var(--space-xxs);
   }
-  a.button--text-on-hover:hover span {
+  a.button--text-on-hover:hover span, button.button--text-on-hover:hover span {
     opacity: 0;
     display: none;
   }
 }
-a.button--x {
+a.button--x, button.button--x {
   background: oklch(0% 0 0deg);
   color: var(--color-emphasized);
   border: var(--border-interactive);
 }
-a.button--x:hover {
+a.button--x:hover, button.button--x:hover {
   background: oklch(calc(0% + var(--delta-lightness-hover-state)) 0 0);
   color: var(--color-inverted);
   border: var(--border-interactive--hover);
 }
-a.button--x:active {
+a.button--x:active, button.button--x:active {
   background: oklch(0% 0 0deg);
   border: var(--border-interactive--active);
 }
-a.button--discord {
+a.button--discord, button.button--discord {
   background: oklch(57.74% 0.2091 273.85deg);
   color: var(--color-emphasized);
   border: var(--border-interactive);
 }
-a.button--discord:hover {
+a.button--discord:hover, button.button--discord:hover {
   background: oklch(calc(57.74% + var(--delta-lightness-hover-state)) 0.2091 273.85);
   color: var(--color-inverted);
   border: var(--border-interactive--hover);
 }
-a.button--discord:active {
+a.button--discord:active, button.button--discord:active {
   background: oklch(calc(57.74% + var(--delta-lightness-active-state)) 0.2091 273.85);
   border: var(--border-interactive--active);
 }
-a.button--github {
+a.button--github, button.button--github {
   background: oklch(70.1% 0.2127 145.72deg);
   color: var(--color-emphasized);
   border: var(--border-interactive);
 }
-a.button--github:hover {
+a.button--github:hover, button.button--github:hover {
   background: oklch(calc(70.1% + var(--delta-lightness-hover-state)) 0.2127 145.72);
   color: var(--color-inverted);
   border: var(--border-interactive--hover);
 }
-a.button--github:active {
+a.button--github:active, button.button--github:active {
   background: oklch(calc(70.1% + var(--delta-lightness-active-state)) 0.2127 145.72);
   border: var(--border-interactive--active);
 }
@@ -2413,7 +2413,7 @@ html[data-page=contact] main .contact__main {
   border-radius: var(--border-radius-large);
   border: var(--border-base);
   box-shadow: var(--box-shadow-medium);
-  padding: var(--space-xxxl);
+  padding: var(--space-xl);
 }
 html[data-page=contact] main .contact__main h1.contact__mainTitle {
   text-transform: uppercase;
