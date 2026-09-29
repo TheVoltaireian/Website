@@ -31,7 +31,10 @@ html[data-page="home"] {
         position: relative;
 
         min-height: var(--header-height);
-        padding: var(--space-xxxl);
+        padding-block: var(--space-xxxl);
+        padding-inline: var(--space-xxl);
+        max-width: var(--page-width);
+        margin: auto;
 
         text-align: left;
 
@@ -42,11 +45,11 @@ html[data-page="home"] {
         }
 
         @media screen and (max-width: $breakpoint-sm) {
-            padding: var(--space-xl);
+            padding-inline: var(--space-xl);
         }
 
         @media screen and (max-width: $breakpoint-xs) {
-            padding: var(--space-md);
+            padding-inline: var(--space-lg);
         }
 
         h1 {
@@ -127,18 +130,21 @@ html[data-page="blog"] {
         position: relative;
 
         min-height: var(--header-height);
-        padding: var(--space-xxxl);
+        padding-block: var(--space-xxxl);
+        padding-inline: var(--space-xxl);
+        max-width: var(--page-width);
+        margin: auto;
 
         text-align: left;
 
         animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 
         @media screen and (max-width: $breakpoint-sm) {
-            padding: var(--space-xl);
+            padding-inline: var(--space-xl);
         }
 
         @media screen and (max-width: $breakpoint-xs) {
-            padding: var(--space-md);
+            padding-inline: var(--space-lg);
         }
 
         h1 {
@@ -219,18 +225,21 @@ html[data-page="projects"] {
         position: relative;
 
         min-height: var(--header-height);
-        padding: var(--space-xxxl);
+        padding-block: var(--space-xxxl);
+        padding-inline: var(--space-xxl);
+        max-width: var(--page-width);
+        margin: auto;
 
         text-align: left;
 
         animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 
         @media screen and (max-width: $breakpoint-sm) {
-            padding: var(--space-xl);
+            padding-inline: var(--space-xl);
         }
 
         @media screen and (max-width: $breakpoint-xs) {
-            padding: var(--space-md);
+            padding-inline: var(--space-lg);
         }
 
         h1 {
