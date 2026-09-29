@@ -1141,8 +1141,11 @@ html[data-page="post"] {
 }
 
 html[data-page="about"] {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
 
     h1, h2, h3, h4, h5, h6 {
         border-bottom: var(--border-subtle);
