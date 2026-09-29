@@ -1367,18 +1367,21 @@ html[data-page="contact"] {
                     .form__groups {
                         display: grid;
                         grid-template-columns: repeat(2, minmax(0, 1fr));
-                        gap: var(--space-md);
-                        margin-bottom: var(--space-md);
+                        gap: var(--space-sm);
+                        margin-bottom: var(--space-sm);
                     }
                     .form__group {
                         display: flex;
                         flex-direction: column;
-                        gap: var(--space-xs);
+                        gap: var(--space-xxxs);
+
                         label {
                             font-family: var(--font-family-alternate);
                             color: var(--color-placeholder);
                             text-transform: uppercase;
+                            font-size: var(--font-size-small);
                         }
+
                         input, textarea {
                             background-color: var(--color-surface-2);
                             border: var(--border-interactive);
@@ -1390,12 +1393,14 @@ html[data-page="contact"] {
                                 font-family: var(--font-family-alternate);
                             }
                         }
+
                         @include hover {
                             input, textarea {
                                 background-color: var(--color-surface-2--hover);
                                 border: var(--border-interactive--hover);
                             }
                         }
+
                         @include active {
                             input, textarea {
                                 background-color: var(--color-surface-2--active);
@@ -1403,8 +1408,10 @@ html[data-page="contact"] {
                             }
                         }
                     }
-                    button {
-                        margin-top: var(--space-md);
+                    hr {
+                        margin-block: var(--space-md);
+                        border: 0;
+                        border-top: var(--border-base);
                     }
                 }
             }

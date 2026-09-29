@@ -2495,18 +2495,19 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__groups {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-md);
-  margin-bottom: var(--space-md);
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: var(--space-xxxs);
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group label {
   font-family: var(--font-family-alternate);
   color: var(--color-placeholder);
   text-transform: uppercase;
+  font-size: var(--font-size-small);
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group input, html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm .form__group textarea {
   background-color: var(--color-surface-2);
@@ -2530,6 +2531,8 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
   background-color: var(--color-surface-2--active);
   border: var(--border-interactive--active);
 }
-html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm button {
-  margin-top: var(--space-md);
+html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm hr {
+  margin-block: var(--space-md);
+  border: 0;
+  border-top: var(--border-base);
 }/*# sourceMappingURL=styles.css.map */
