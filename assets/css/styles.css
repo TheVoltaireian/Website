@@ -2428,6 +2428,11 @@ html[data-page=contact] main .contact__main .contact__mainContent {
   align-items: flex-start;
   gap: var(--space-xxxl);
 }
+@media screen and (max-width: 767px) {
+  html[data-page=contact] main .contact__main .contact__mainContent {
+    flex-direction: column;
+  }
+}
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials p {
   margin-block-start: 0;
 }

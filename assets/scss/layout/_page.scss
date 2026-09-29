@@ -1287,6 +1287,10 @@ html[data-page="contact"] {
 
                 gap: var(--space-xxxl);
 
+                @media screen and (max-width: $breakpoint-xs) {
+                    flex-direction: column;
+                }
+
                 .contact__mainSocials {
 
                     p {
