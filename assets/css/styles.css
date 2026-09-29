@@ -2433,8 +2433,7 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList {
   list-style-type: none;
   padding-left: 0px;
-  margin-block-start: 0;
-  margin-block-end: var(--space-sm);
+  margin-block: var(--space-xl);
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li {
   margin-bottom: var(--space-xxs);
@@ -2446,14 +2445,14 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
   text-decoration: none;
   align-items: center;
   font-family: var(--font-family-alternate);
-  font-size: var(--font-size-x-large);
+  font-size: var(--font-size-xx-large);
   color: var(--color-emphasized);
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a img {
   border: none;
   border-radius: 0;
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a span {
   color: var(--color-emphasized);
