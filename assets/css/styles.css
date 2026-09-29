@@ -2453,6 +2453,8 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
   font-family: var(--font-family-alternate);
   font-size: var(--font-size-xx-large);
   color: var(--color-emphasized);
+  width: -moz-max-content;
+  width: max-content;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a img {
   border: none;
@@ -2478,6 +2480,8 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
   text-decoration: none;
   align-items: center;
   font-family: var(--font-family-alternate);
+  width: -moz-max-content;
+  width: max-content;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__secondaryList li a img {
   border: none;

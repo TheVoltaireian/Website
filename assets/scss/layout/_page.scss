@@ -1314,6 +1314,7 @@ html[data-page="contact"] {
                                 font-family: var(--font-family-alternate);
                                 font-size: var(--font-size-xx-large);
                                 color: var(--color-emphasized);
+                                width: max-content;
 
                                 img {
                                     border: none;
@@ -1345,6 +1346,7 @@ html[data-page="contact"] {
                                 text-decoration: none;
                                 align-items: center;
                                 font-family: var(--font-family-alternate);
+                                width: max-content;
 
                                 img {
                                     border: none;
