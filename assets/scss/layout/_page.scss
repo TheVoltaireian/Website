@@ -46,6 +46,14 @@ html[data-page="home"] {
                         font-size: var(--font-size-medium);
                         font-family: var(--font-family-primary);
                         color: var(--color-subtle);
+
+                        .divider {
+                            color: var(--color-placeholder);
+                        }
+
+                        a {
+                            color: var(--color-base);
+                        }
                     }
 
                     @include view-on-scroll;
