@@ -2422,6 +2422,7 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li {
   margin-bottom: var(--space-xxs);
+  word-wrap: break-word;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a {
   display: flex;
@@ -2433,6 +2434,8 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
   font-size: var(--font-size-xx-large);
   color: var(--color-emphasized);
   width: max-content;
+  text-wrap: wrap;
+  word-wrap: break-word;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a img {
   border: none;
@@ -2450,6 +2453,7 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__secondaryList li {
   margin-bottom: var(--space-xxs);
+  word-wrap: break-word;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__secondaryList li a {
   display: flex;
@@ -2459,6 +2463,8 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
   align-items: center;
   font-family: var(--font-family-alternate);
   width: max-content;
+  text-wrap: wrap;
+  word-wrap: break-word;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__secondaryList li a img {
   border: none;
