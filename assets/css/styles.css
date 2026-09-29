@@ -2535,7 +2535,7 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
   border: var(--border-interactive--active);
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainForm hr {
-  margin-block: var(--space-md);
+  margin-block: var(--space-lg);
   border: 0;
   border-top: var(--border-base);
 }/*# sourceMappingURL=styles.css.map */
