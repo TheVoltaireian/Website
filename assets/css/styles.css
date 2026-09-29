@@ -2459,16 +2459,15 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
   font-family: var(--font-family-alternate);
   font-size: var(--font-size-xx-large);
   color: var(--color-emphasized);
-  width: -moz-max-content;
-  width: max-content;
-  text-wrap: wrap;
-  word-wrap: break-word;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a img {
   border: none;
   border-radius: 0;
   width: 26px;
   height: 26px;
+  aspect-ratio: 1/1;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__mainList li a span {
   color: var(--color-emphasized);
@@ -2489,16 +2488,15 @@ html[data-page=contact] main .contact__main .contact__mainContent .contact__main
   text-decoration: none;
   align-items: center;
   font-family: var(--font-family-alternate);
-  width: -moz-max-content;
-  width: max-content;
-  text-wrap: wrap;
-  word-wrap: break-word;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__secondaryList li a img {
   border: none;
   border-radius: 0;
   width: 18px;
   height: 18px;
+  aspect-ratio: 1/1;
 }
 html[data-page=contact] main .contact__main .contact__mainContent .contact__mainSocials .contact__secondaryList li a span {
   color: var(--color-base);
