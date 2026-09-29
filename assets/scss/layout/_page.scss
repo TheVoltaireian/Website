@@ -1273,10 +1273,6 @@ html[data-page="contact"] {
 
             width: 100%;
 
-            @media screen and (max-width: $breakpoint-xs) {
-                width: auto;
-            }
-
             h1.contact__mainTitle {
                 text-transform: uppercase;
                 font-family: var(--font-family-alternate);
@@ -1291,7 +1287,7 @@ html[data-page="contact"] {
 
                 gap: var(--space-xxxl);
 
-                @media screen and (max-width: $breakpoint-xs) {
+                @media screen and (max-width: $breakpoint-sm) {
                     flex-direction: column;
                 }
 
@@ -1320,11 +1316,12 @@ html[data-page="contact"] {
                                 font-size: var(--font-size-xx-large);
                                 color: var(--color-emphasized);
                                 width: max-content;
-                                max-width: 100%;
+                                max-width: max-content;
                                 overflow-wrap: anywhere;
 
                                 @media screen and (max-width: $breakpoint-xs) {
                                     width: 100%;
+                                    max-width: 100%;
                                     font-size: var(--font-size-x-large);
                                 }
 
