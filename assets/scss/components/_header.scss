@@ -38,8 +38,6 @@ html[data-page="home"] {
 
         text-align: left;
 
-        animation: heroFadeIn 350ms cubic-bezier(0.2, 0, 0, 1) forwards;
-
         @media (prefers-reduced-motion: reduce) {
             animation: none;
         }
@@ -133,8 +131,6 @@ html[data-page="blog"] {
 
         text-align: left;
 
-        animation: heroFadeIn 350ms cubic-bezier(0.2, 0, 0, 1) forwards;
-
         @media screen and (max-width: $breakpoint-sm) {
             padding-inline: var(--space-xl);
         }
@@ -223,8 +219,6 @@ html[data-page="projects"] {
         margin: auto;
 
         text-align: left;
-
-        animation: heroFadeIn 350ms cubic-bezier(0.2, 0, 0, 1) forwards;
 
         @media screen and (max-width: $breakpoint-sm) {
             padding-inline: var(--space-xl);
