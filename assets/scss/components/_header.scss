@@ -23,7 +23,7 @@ html[data-page="home"] {
         }
     }
 
-    header {
+    header.header {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -118,7 +118,7 @@ html[data-page="blog"] {
         }
     }
 
-    header {
+    header.header {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -209,7 +209,7 @@ html[data-page="projects"] {
         }
     }
 
-    header {
+    header.header {
         display: flex;
         flex-direction: column;
         justify-content: center;
