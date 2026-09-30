@@ -36,9 +36,9 @@ a.button, button.button {
 
     &--secondary-2 {
 		@include mixins.button-variant (
-			var(--color-surface-2),
-            var(--color-surface-2--hover),
-            var(--color-surface-2--active),
+			transparent,
+            transparent,
+            transparent,
             var(--color-emphasized)
 		);
 

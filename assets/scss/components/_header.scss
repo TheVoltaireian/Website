@@ -36,7 +36,7 @@ html[data-page="home"] {
         max-width: var(--page-width);
         margin: auto;
 
-        text-align: center;
+        text-align: left;
 
         animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 
@@ -90,7 +90,7 @@ html[data-page="home"] {
         }
 
         hr {
-            margin-block: var(--space-sm);
+            margin-block: var(--space-md) var(--space-lg);
             width: 3rem;
         }
     }
@@ -121,7 +121,7 @@ html[data-page="blog"] {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         position: relative;
 
         min-height: var(--header-height);
@@ -130,7 +130,7 @@ html[data-page="blog"] {
         max-width: var(--page-width);
         margin: auto;
 
-        text-align: center;
+        text-align: left;
 
         animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 
@@ -180,7 +180,7 @@ html[data-page="blog"] {
         }
 
         hr {
-            margin-block: var(--space-sm);
+            margin-block: var(--space-md) var(--space-lg);
             width: 3rem;
         }
     }
@@ -211,7 +211,7 @@ html[data-page="projects"] {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         position: relative;
 
         min-height: var(--header-height);
@@ -220,7 +220,7 @@ html[data-page="projects"] {
         max-width: var(--page-width);
         margin: auto;
 
-        text-align: center;
+        text-align: left;
 
         animation: heroFadeIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 
@@ -270,7 +270,7 @@ html[data-page="projects"] {
         }
 
         hr {
-            margin-block: var(--space-sm);
+            margin-block: var(--space-md) var(--space-lg);
             width: 3rem;
         }
     }
