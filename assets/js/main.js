@@ -1,3 +1,47 @@
+// theme init
+function setTheme(theme) {
+    const isLight = theme === 'light';
+    
+    if (isLight) {
+        document.documentElement.classList.add('theme-light');
+    } else {
+        document.documentElement.classList.remove('theme-light');
+    }
+    
+    const toggleBtn = document.getElementById('theme-toggle');
+    if (toggleBtn) {
+        toggleBtn.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+    }
+}
+
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else {
+        const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        setTheme(prefersLight ? 'light' : 'dark');
+    }
+}
+
+initTheme();
+
+function toggleTheme() {
+    const isLight = document.documentElement.classList.contains('theme-light');
+    const newTheme = isLight ? 'dark' : 'light';
+    
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+}
+
+window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+    const savedTheme = localStorage.getItem('theme');
+    if (!savedTheme) {
+        setTheme(e.matches ? 'light' : 'dark');
+    }
+});
+
 // card animations
 document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries, observer) => {

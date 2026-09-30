@@ -1,10 +1,16 @@
 <nav aria-label="Main navigation" class="nav">
     <div class="nav__wordmark"><a href="{{ '/' | relative_url }}"><span style="font-weight: var(--font-weight-bold);">wildvoltaireian</span>.xyz</a></div>
-    <div class="nav__links">
-        <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}aria-current="page"{% endif %}>Home</a>
-        <a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' or page.url == '/projects/index.html' %}aria-current="page"{% endif %}>Projects</a>
-        <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/blog/' or page.url == '/blog/index.html' %}aria-current="page"{% endif %}>Blog</a>
-        <a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' or page.url == '/about.html' %}aria-current="page"{% endif %}>About</a>
-        <a href="{{ '/contact/' | relative_url }}" {% if page.url == '/contact/' or page.url == '/contact.html' %}aria-current="page"{% endif %}>Contact</a>
+    <div class="nav__actions">
+        <div class="nav__links">
+            <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}aria-current="page"{% endif %}>Home</a>
+            <a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' or page.url == '/projects/index.html' %}aria-current="page"{% endif %}>Projects</a>
+            <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/blog/' or page.url == '/blog/index.html' %}aria-current="page"{% endif %}>Blog</a>
+            <a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' or page.url == '/about.html' %}aria-current="page"{% endif %}>About</a>
+            <a href="{{ '/contact/' | relative_url }}" {% if page.url == '/contact/' or page.url == '/contact.html' %}aria-current="page"{% endif %}>Contact</a>
+        </div>
+
+        <button id="theme-toggle" class="nav__theme-toggle button button--secondary-2" type="button" aria-label="Toggle theme" onclick="toggleTheme()">
+            <span class="theme-toggle-icon" aria-hidden="true"></span>
+        </button>
     </div>
 </nav>
