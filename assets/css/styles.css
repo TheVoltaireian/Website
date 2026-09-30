@@ -736,7 +736,7 @@ html[data-page=home] header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   min-height: var(--header-height);
   padding-block: var(--space-xxxl);
