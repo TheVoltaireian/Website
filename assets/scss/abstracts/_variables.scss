@@ -97,6 +97,11 @@
     --border-color-progressive--hover: var(--color-progressive--hover);
     --border-color-progressive--active: var(--color-progressive--active);
 
+	/* Backdrop Filters */
+	--backdrop-filter-blur: blur(2px);
+    --backdrop-filter-frosted-glass: blur(8px) saturate(140%);
+    --backdrop-opacity: 0.65;
+
     /* Transitions & Misc */
     --transition-timing-function-ease: cubic-bezier(0.2, 0, 0, 1);
     --transition-timing-function-ease-in: cubic-bezier(0.3, 0, 0.8, 0.15);
