@@ -38,6 +38,8 @@ html[data-page="home"] {
 
         text-align: left;
 
+        @include view-on-scroll;
+
         @media (prefers-reduced-motion: reduce) {
             animation: none;
         }
@@ -131,6 +133,8 @@ html[data-page="blog"] {
 
         text-align: left;
 
+        @include view-on-scroll;
+
         @media screen and (max-width: $breakpoint-sm) {
             padding-inline: var(--space-xl);
         }
@@ -219,6 +223,8 @@ html[data-page="projects"] {
         margin: auto;
 
         text-align: left;
+
+        @include view-on-scroll;
 
         @media screen and (max-width: $breakpoint-sm) {
             padding-inline: var(--space-xl);
