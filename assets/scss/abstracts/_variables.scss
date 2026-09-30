@@ -3,7 +3,7 @@
 
 /* ==========================================================================
 	1. SHARED DESIGN TOKENS (Theme Agnostic)
-	========================================================================== */
+   	========================================================================== */
 :root {
     /* Fonts */
     --font-family-primary: 'Figtree', sans-serif;
@@ -97,8 +97,8 @@
     --border-color-progressive--hover: var(--color-progressive--hover);
     --border-color-progressive--active: var(--color-progressive--active);
 
-	/* Backdrop Filters */
-	--backdrop-filter-blur: blur(2px);
+    /* Backdrop */
+    --backdrop-filter-blur: blur(2px);
     --backdrop-filter-frosted-glass: blur(8px) saturate(140%);
     --backdrop-opacity: 0.65;
 
@@ -121,53 +121,9 @@
 }
 
 /* ==========================================================================
-	2. LIGHT THEME VALUES (Default)
-	========================================================================== */
+	2. DARK THEME VALUES (Default)
+   	========================================================================== */
 :root {
-    color-scheme: light;
-
-    /* Base Modifiers */
-    --delta-lightness-state-base: 4%;
-    --delta-lightness-hover-state: calc(var(--delta-lightness-state-base) * 1);
-    --delta-lightness-active-state: calc(var(--delta-lightness-state-base) * -1);
-    --delta-lightness-surface-base: 2%;
-
-    /* Primary OKLCH parameters */
-    --color-progressive-oklch__l: 55%;
-    --color-progressive-oklch__c: 0.1679;
-    --color-progressive-oklch__h: 262.29;
-
-    --color-surface-0-oklch__l: 98%;
-    --color-surface-0-oklch__c: 0.005;
-
-    --color-emphasized-oklch__l: 15%;
-    --color-emphasized-oklch__c: 0.03;
-    --color-base-oklch__l: 25%;
-    --color-base-oklch__c: 0.02;
-    --color-subtle-oklch__l: 45%;
-    --color-subtle-oklch__c: 0.02;
-    --color-placeholder-oklch__l: 60%;
-    --color-placeholder-oklch__c: 0.01;
-    --color-disabled-oklch__l: 75%;
-    --color-disabled-oklch__c: 0.005;
-
-    --border-color-base: rgb(0 0 0 / 0.12);
-    --border-color-subtle: rgb(0 0 0 / 0.06);
-    --border-color-muted: rgb(0 0 0 / 0.03);
-    --border-color-interactive: rgb(0 0 0 / 0.15);
-    --border-color-interactive--hover: rgb(0 0 0 / 0.3);
-    --border-color-interactive--active: rgb(0 0 0 / 0.45);
-    --border-color-disabled: rgb(0 0 0 / 0.05);
-    --border-color-inverted: #000;
-
-    --shadow-opacity: 0.12;
-    --background-color-progressive-subtle: oklch(0.95 0.02 262.29);
-}
-
-/* ==========================================================================
-	3. DARK THEME VALUES
-	========================================================================== */
-:root.theme-dark {
     color-scheme: dark;
 
     /* Base Modifiers */
@@ -209,9 +165,53 @@
 }
 
 /* ==========================================================================
-	4. DYNAMIC COMPUTED VALUES (Must apply globally)
+	3. LIGHT THEME OVERRIDES
    	========================================================================== */
-:root, :root.theme-dark {
+:root.theme-light {
+    color-scheme: light;
+
+    /* Base Modifiers */
+    --delta-lightness-state-base: 4%;
+    --delta-lightness-hover-state: calc(var(--delta-lightness-state-base) * 1);
+    --delta-lightness-active-state: calc(var(--delta-lightness-state-base) * -1);
+    --delta-lightness-surface-base: 2%;
+
+    /* Primary OKLCH parameters */
+    --color-progressive-oklch__l: 55%;
+    --color-progressive-oklch__c: 0.1679;
+    --color-progressive-oklch__h: 262.29;
+
+    --color-surface-0-oklch__l: 98%;
+    --color-surface-0-oklch__c: 0.005;
+
+    --color-emphasized-oklch__l: 15%;
+    --color-emphasized-oklch__c: 0.03;
+    --color-base-oklch__l: 25%;
+    --color-base-oklch__c: 0.02;
+    --color-subtle-oklch__l: 45%;
+    --color-subtle-oklch__c: 0.02;
+    --color-placeholder-oklch__l: 60%;
+    --color-placeholder-oklch__c: 0.01;
+    --color-disabled-oklch__l: 75%;
+    --color-disabled-oklch__c: 0.005;
+
+    --border-color-base: rgb(0 0 0 / 0.12);
+    --border-color-subtle: rgb(0 0 0 / 0.06);
+    --border-color-muted: rgb(0 0 0 / 0.03);
+    --border-color-interactive: rgb(0 0 0 / 0.15);
+    --border-color-interactive--hover: rgb(0 0 0 / 0.3);
+    --border-color-interactive--active: rgb(0 0 0 / 0.45);
+    --border-color-disabled: rgb(0 0 0 / 0.05);
+    --border-color-inverted: #000;
+
+    --shadow-opacity: 0.12;
+    --background-color-progressive-subtle: oklch(0.95 0.02 262.29);
+}
+
+/* ==========================================================================
+	4. DYNAMIC COMPUTED VALUES (Must target both selectors)
+   	========================================================================== */
+:root, :root.theme-light {
     /* Calculated Surfaces */
     --color-surface-1-oklch__l: calc(var(--color-surface-0-oklch__l) + var(--delta-lightness-surface-base));
     --color-surface-1-oklch__c: 0.015;
