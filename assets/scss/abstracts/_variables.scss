@@ -1,14 +1,15 @@
 @use "../abstracts/breakpoints" as *;
 @use "../abstracts/tokens" as *;
 
+/* ==========================================================================
+	1. SHARED DESIGN TOKENS (Theme Agnostic)
+	========================================================================== */
 :root {
-    /* My theme site is largely based on the MediaWiki skin "Citizen", hence why a lot of the variables are from that skin. */
-
     /* Fonts */
     --font-family-primary: 'Figtree', sans-serif;
-	--font-family-alternate: 'Space Grotesk', sans-serif;
-	--font-family-serif: 'Playfair Display', serif;
-	--font-family-monospace: 'Geist Mono', monospace;
+    --font-family-alternate: 'Space Grotesk', sans-serif;
+    --font-family-serif: 'Playfair Display', serif;
+    --font-family-monospace: 'Geist Mono', monospace;
 
     /* Font weights */
     --font-weight-base: #{$font-weight-base};
@@ -22,179 +23,227 @@
 
     /* Font sizes */
     --font-size-base: #{$font-size-base};
-    --font-size-x-small: calc(0.75 * var( --font-size-base ));
-    --font-size-small: calc(0.875 * var( --font-size-base ));
-    --font-size-medium: var( --font-size-base );
-    --font-size-large: calc(1.125 * var( --font-size-base ));
-    --font-size-x-large: calc(1.25 * var( --font-size-base ));
-    --font-size-xx-large: calc(1.5 * var( --font-size-base ));
-    --font-size-xxx-large: calc(1.75 * var( --font-size-base ));
-    --font-size-4x-large: calc(2 * var( --font-size-base ));
-    --font-size-5x-large: calc(2.5 * var( --font-size-base ));
-    --font-size-6x-large: calc(3 * var( --font-size-base ));
+    --font-size-x-small: calc(0.75 * var(--font-size-base));
+    --font-size-small: calc(0.875 * var(--font-size-base));
+    --font-size-medium: var(--font-size-base);
+    --font-size-large: calc(1.125 * var(--font-size-base));
+    --font-size-x-large: calc(1.25 * var(--font-size-base));
+    --font-size-xx-large: calc(1.5 * var(--font-size-base));
+    --font-size-xxx-large: calc(1.75 * var(--font-size-base));
+    --font-size-4x-large: calc(2 * var(--font-size-base));
+    --font-size-5x-large: calc(2.5 * var(--font-size-base));
+    --font-size-6x-large: calc(3 * var(--font-size-base));
 
     /* Line heights */
     --line-height-xx-small: 1.125rem;
     --line-height-x-small: 1.25rem;
-	--line-height-small: 1.375rem;
-	--line-height-medium: 1.625rem;
-	--line-height-large: 1.75rem;
-	--line-height-x-large: 1.875rem;
-	--line-height-xx-large: 2.125rem;
-	--line-height-xxx-large: 2.375rem;
+    --line-height-small: 1.375rem;
+    --line-height-medium: 1.625rem;
+    --line-height-large: 1.75rem;
+    --line-height-x-large: 1.875rem;
+    --line-height-xx-large: 2.125rem;
+    --line-height-xxx-large: 2.375rem;
 
     /* Spacings */
     --space-unit: #{$space-unit};
-	--space-xxxs: calc( 0.125 * var( --space-unit ) );
-	--space-xxs: calc( 0.25 * var( --space-unit ) );
-	--space-xs: calc( 0.5 * var( --space-unit ) );
-	--space-sm: calc( 0.75 * var( --space-unit ) );
-	--space-md: var( --space-unit );
-	--space-lg: calc( 1.25 * var( --space-unit ) );
-	--space-xl: calc( 1.5 * var( --space-unit ) );
-	--space-xxl: calc( 2 * var( --space-unit ) );
-	--space-xxxl: calc( 3 * var( --space-unit ) );
-	--space-4xl: calc( 4 * var( --space-unit ) );
+    --space-xxxs: calc(0.125 * var(--space-unit));
+    --space-xxs: calc(0.25 * var(--space-unit));
+    --space-xs: calc(0.5 * var(--space-unit));
+    --space-sm: calc(0.75 * var(--space-unit));
+    --space-md: var(--space-unit);
+    --space-lg: calc(1.25 * var(--space-unit));
+    --space-xl: calc(1.5 * var(--space-unit));
+    --space-xxl: calc(2 * var(--space-unit));
+    --space-xxxl: calc(3 * var(--space-unit));
+    --space-4xl: calc(4 * var(--space-unit));
 
-    /* Border / Border radius */
+    /* Borders Setup */
     --border-width-base: 1px;
-	--border-width-thick: 2px;
+    --border-width-thick: 2px;
 
     --border-style-solid: solid;
     --border-style-dashed: dashed;
     --border-style-inset: inset;
 
-    --border-color-progressive: var( --color-progressive );
-	--border-color-progressive--hover: var( --color-progressive--hover );
-	--border-color-progressive--active: var( --color-progressive--active );
-    --border-color-base: rgb( 255 255 255 / 0.1 );
-	--border-color-subtle: rgb( 255 255 255 / 0.05 );
-	--border-color-muted: rgb( 255 255 255 / 0.03 );
-	--border-color-interactive: rgb( 255 255 255 / 0.1 );
-    --border-color-interactive--hover: rgb(255 255 255 / 0.2);
-    --border-color-interactive--active: rgb(255 255 255 / 0.3);
-	--border-color-disabled: rgb( 255 255 255 / 0.025 );
-	--border-color-inverted: #fff;
-
-    --border-base: var( --border-width-base ) var( --border-style-solid ) var( --border-color-base );
-	--border-subtle: var( --border-width-base ) var( --border-style-solid ) var( --border-color-subtle );
-    --border-muted: var( --border-width-base ) var( --border-style-solid ) var( --border-color-muted );
-    --border-interactive: var( --border-width-base ) var( --border-style-solid ) var( --border-color-interactive );
-    --border-interactive--hover: var( --border-width-base ) var( --border-style-solid ) var( --border-color-interactive--hover );
-    --border-interactive--active: var( --border-width-base ) var( --border-style-solid ) var( --border-color-interactive--active );
-    --border-disabled: var( --border-width-base ) var( --border-style-solid ) var( --border-color-disabled );
-    --border-inverted: var( --border-width-base ) var( --border-style-solid ) var( --border-color-inverted );
-    --border-progressive: var( --border-width-base ) var( --border-style-solid ) var( --border-color-progressive );
-    --border-progressive--hover: var( --border-width-base ) var( --border-style-solid ) var( --border-color-progressive--hover );
-    --border-progressive--active: var( --border-width-base ) var( --border-style-solid ) var( --border-color-progressive--active );
+    --border-base: var(--border-width-base) var(--border-style-solid) var(--border-color-base);
+    --border-subtle: var(--border-width-base) var(--border-style-solid) var(--border-color-subtle);
+    --border-muted: var(--border-width-base) var(--border-style-solid) var(--border-color-muted);
+    --border-interactive: var(--border-width-base) var(--border-style-solid) var(--border-color-interactive);
+    --border-interactive--hover: var(--border-width-base) var(--border-style-solid) var(--border-color-interactive--hover);
+    --border-interactive--active: var(--border-width-base) var(--border-style-solid) var(--border-color-interactive--active);
+    --border-disabled: var(--border-width-base) var(--border-style-solid) var(--border-color-disabled);
+    --border-inverted: var(--border-width-base) var(--border-style-solid) var(--border-color-inverted);
+    --border-progressive: var(--border-width-base) var(--border-style-solid) var(--border-color-progressive);
+    --border-progressive--hover: var(--border-width-base) var(--border-style-solid) var(--border-color-progressive--hover);
+    --border-progressive--active: var(--border-width-base) var(--border-style-solid) var(--border-color-progressive--active);
 
     --border-radius-base: #{$border-radius-base};
-    --border-radius-medium: calc( 2 * var( --border-radius-base ) );
-    --border-radius-large: calc( 3 * var( --border-radius-base ) );
-    --border-radius-x-large: calc( 4 * var( --border-radius-base ) );
+    --border-radius-medium: calc(2 * var(--border-radius-base));
+    --border-radius-large: calc(3 * var(--border-radius-base));
+    --border-radius-x-large: calc(4 * var(--border-radius-base));
     --border-radius-pill: 9999px;
     --border-radius-circle: 50%;
 
-    /* Colors */
-    /* Hover and active states are calculated by a modifier of the lightness value (e.g. hover: +2%, active: -2%) */
-	--delta-lightness-state-base: 4%;
-	--delta-lightness-hover-state: calc( var( --delta-lightness-state-base ) * 1 );
-	--delta-lightness-active-state: calc( var( --delta-lightness-state-base ) * -1 );
-	--delta-lightness-surface-base: 2%;
+    /* Functional References */
+    --color-link: var(--color-progressive);
+    --color-link--hover: var(--color-progressive--hover);
+    --color-link--active: var(--color-progressive--active);
 
-	/* Progressive color */
-	--color-progressive-oklch__l: 60%;
-	--color-progressive-oklch__c: 0.1679;
-	--color-progressive-oklch__h: 262.29;
+    --background-color-progressive: var(--color-progressive);
+    --background-color-progressive--hover: var(--color-progressive--hover);
+    --background-color-progressive--active: var(--color-progressive--active);
 
-	/* Surface color */
-	--color-surface-0-oklch__l: 10%;
-	--color-surface-0-oklch__c: 0.01;
-	--color-surface-1-oklch__l: calc( var( --color-surface-0-oklch__l ) + var( --delta-lightness-surface-base ) );
-	--color-surface-1-oklch__c: 0.015;
-	--color-surface-2-oklch__l: calc( var( --color-surface-0-oklch__l ) + ( var( --delta-lightness-surface-base ) * 2 ) );
-	--color-surface-2-oklch__c: 0.02;
-	--color-surface-3-oklch__l: calc( var( --color-surface-0-oklch__l ) + ( var( --delta-lightness-surface-base ) * 3 ) );
-	--color-surface-3-oklch__c: 0.03;
-	--color-surface-4-oklch__l: calc( var( --color-surface-0-oklch__l ) + ( var( --delta-lightness-surface-base ) * 4 ) );
-	--color-surface-4-oklch__c: 0.04;
+    --border-color-progressive: var(--color-progressive);
+    --border-color-progressive--hover: var(--color-progressive--hover);
+    --border-color-progressive--active: var(--color-progressive--active);
 
-	--color-surface-0: oklch( var( --color-surface-0-oklch__l ) var( --color-surface-0-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-surface-1: oklch( var( --color-surface-1-oklch__l ) var( --color-surface-1-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-surface-1--hover: oklch( calc( var( --color-surface-1-oklch__l ) + var( --delta-lightness-hover-state ) ) var( --color-surface-1-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-surface-1--active: oklch( calc( var( --color-surface-1-oklch__l ) + var( --delta-lightness-active-state ) ) var( --color-surface-1-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-surface-2: oklch( var( --color-surface-2-oklch__l ) var( --color-surface-2-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-surface-2--hover: oklch( calc( var( --color-surface-2-oklch__l ) + var( --delta-lightness-hover-state ) ) var( --color-surface-2-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-surface-2--active: oklch( calc( var( --color-surface-2-oklch__l ) + var( --delta-lightness-active-state ) ) var( --color-surface-2-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-surface-3: oklch( var( --color-surface-3-oklch__l ) var( --color-surface-3-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-surface-4: oklch( var( --color-surface-4-oklch__l ) var( --color-surface-4-oklch__c ) var( --color-progressive-oklch__h ) );
+    /* Transitions & Misc */
+    --transition-timing-function-ease: cubic-bezier(0.2, 0, 0, 1);
+    --transition-timing-function-ease-in: cubic-bezier(0.3, 0, 0.8, 0.15);
+    --transition-timing-function-ease-out: cubic-bezier(0.05, 0.7, 0.1, 1);
 
-    --background-color-progressive: var( --color-progressive );
-	--background-color-progressive--hover: var( --color-progressive--hover );
-	--background-color-progressive--active: var( --color-progressive--active );
-	--background-color-progressive-subtle: oklch(0.172 0.0334 262.29);
+    --transition-duration-base: 100ms;
+    --transition-duration-medium: 250ms;
+    --transition-duration-large: 350ms;
 
-    /* Text color */
-    --color-emphasized-oklch__l: 93%;
-	--color-emphasized-oklch__c: 0.03;
-	--color-base-oklch__l: 80%;
-	--color-base-oklch__c: 0.05;
-	--color-subtle-oklch__l: 70%;
-	--color-subtle-oklch__c: 0.07;
-	--color-placeholder-oklch__l: 60%;
-	--color-placeholder-oklch__c: 0.03;
-	--color-disabled-oklch__l: 50%;
-	--color-disabled-oklch__c: 0.01;
-
-    --color-progressive: oklch( var( --color-progressive-oklch__l ) var( --color-progressive-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-progressive--hover: oklch( calc( var( --color-progressive-oklch__l ) + var( --delta-lightness-hover-state ) ) var( --color-progressive-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-progressive--active: oklch( calc( var( --color-progressive-oklch__l ) + var( --delta-lightness-active-state ) ) var( --color-progressive-oklch__c ) var( --color-progressive-oklch__h ) );
-
-    --color-base: oklch( var( --color-base-oklch__l ) var( --color-base-oklch__c ) var( --color-progressive-oklch__h ) );
-    --color-base--hover: oklch( calc( var( --color-base-oklch__l ) + var( --delta-lightness-hover-state ) ) var( --color-base-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-emphasized: oklch( var( --color-emphasized-oklch__l ) var( --color-emphasized-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-subtle: oklch( var( --color-subtle-oklch__l ) var( --color-subtle-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-placeholder: oklch( var( --color-placeholder-oklch__l ) var( --color-placeholder-oklch__c ) var( --color-progressive-oklch__h ) );
-	--color-disabled: oklch( var( --color-disabled-oklch__l ) var( --color-disabled-oklch__c ) var( --color-progressive-oklch__h ) );
-    --color-inverted: #fff;
-
-    --color-link: var( --color-progressive );
-	--color-link--hover: var( --color-progressive--hover );
-	--color-link--active: var( --color-progressive--active );
-
-    /* Box shadows */
-    --shadow-opacity: 0.44;
-
-    --box-shadow-color-alpha-base: oklch( 6% 0.01 var( --color-progressive-oklch__h ) / var( --shadow-opacity ) );
-
-    --box-shadow-border: var( --border-color-base ) 0 0 0 1px;
-    --box-shadow-small: 0 0 0 1px var( --border-color-base );
-	--box-shadow-medium: 0 0.5px 0.6px var( --box-shadow-color-alpha-base ), 0 1.6px 1.8px -0.8px var( --box-shadow-color-alpha-base ), 0 4px 4.5px -1.7px var( --box-shadow-color-alpha-base ), 0 9.8px 11px -2.5px var( --box-shadow-color-alpha-base );
-	--box-shadow-large: 0 0.5px 0.6px var( --box-shadow-color-alpha-base ), 0 2.8px 3.1px -0.4px var( --box-shadow-color-alpha-base ), 0 5.3px 6px -0.7px var( --box-shadow-color-alpha-base ), 0 8.7px 9.8px -1.1px var( --box-shadow-color-alpha-base ), 0 13.9px 15.6px -1.4px var( --box-shadow-color-alpha-base ), 0 21.8px 24.5px -1.8px var( --box-shadow-color-alpha-base );
-
-    /* Backdrop */
-    --backdrop-filter-blur: blur( 2px );
-	--backdrop-filter-frosted-glass: blur( 8px ) saturate( 140% );
-    --backdrop-opacity: 0.65;
-
-    /* Transitions */
-    --transition-timing-function-ease: cubic-bezier( 0.2, 0, 0, 1 );
-	--transition-timing-function-ease-in: cubic-bezier( 0.3, 0, 0.8, 0.15 );
-	--transition-timing-function-ease-out: cubic-bezier( 0.05, 0.7, 0.1, 1 );
-
-	--transition-duration-base: 100ms;
-	--transition-duration-medium: 250ms;
-	--transition-duration-large: 350ms;
-
-	--transition-hover--slow: #{$transition-hover--slow};
+    --transition-hover--slow: #{$transition-hover--slow};
     --transition-hover--fast: #{$transition-hover--fast};
-	--transition-menu: #{$transition-menu};
+    --transition-menu: #{$transition-menu};
 
-	/* Random variables */
-	--header-height: 60vh;
-	--social-label-width: 16ch;
-	--page-width: 1250px;
+    --header-height: 60vh;
+    --social-label-width: 16ch;
+    --page-width: 1250px;
+}
 
-	/* Color scheme */
-	color-scheme: dark;
+/* ==========================================================================
+	2. LIGHT THEME VALUES (Default)
+	========================================================================== */
+:root {
+    color-scheme: light;
+
+    /* Base Modifiers */
+    --delta-lightness-state-base: 4%;
+    --delta-lightness-hover-state: calc(var(--delta-lightness-state-base) * 1);
+    --delta-lightness-active-state: calc(var(--delta-lightness-state-base) * -1);
+    --delta-lightness-surface-base: 2%;
+
+    /* Primary OKLCH parameters */
+    --color-progressive-oklch__l: 55%;
+    --color-progressive-oklch__c: 0.1679;
+    --color-progressive-oklch__h: 262.29;
+
+    --color-surface-0-oklch__l: 98%;
+    --color-surface-0-oklch__c: 0.005;
+
+    --color-emphasized-oklch__l: 15%;
+    --color-emphasized-oklch__c: 0.03;
+    --color-base-oklch__l: 25%;
+    --color-base-oklch__c: 0.02;
+    --color-subtle-oklch__l: 45%;
+    --color-subtle-oklch__c: 0.02;
+    --color-placeholder-oklch__l: 60%;
+    --color-placeholder-oklch__c: 0.01;
+    --color-disabled-oklch__l: 75%;
+    --color-disabled-oklch__c: 0.005;
+
+    --border-color-base: rgb(0 0 0 / 0.12);
+    --border-color-subtle: rgb(0 0 0 / 0.06);
+    --border-color-muted: rgb(0 0 0 / 0.03);
+    --border-color-interactive: rgb(0 0 0 / 0.15);
+    --border-color-interactive--hover: rgb(0 0 0 / 0.3);
+    --border-color-interactive--active: rgb(0 0 0 / 0.45);
+    --border-color-disabled: rgb(0 0 0 / 0.05);
+    --border-color-inverted: #000;
+
+    --shadow-opacity: 0.12;
+    --background-color-progressive-subtle: oklch(0.95 0.02 262.29);
+}
+
+/* ==========================================================================
+	3. DARK THEME VALUES
+	========================================================================== */
+:root.theme-dark {
+    color-scheme: dark;
+
+    /* Base Modifiers */
+    --delta-lightness-state-base: 4%;
+    --delta-lightness-hover-state: calc(var(--delta-lightness-state-base) * 1);
+    --delta-lightness-active-state: calc(var(--delta-lightness-state-base) * -1);
+    --delta-lightness-surface-base: 2%;
+
+    /* Primary OKLCH parameters */
+    --color-progressive-oklch__l: 60%;
+    --color-progressive-oklch__c: 0.1679;
+    --color-progressive-oklch__h: 262.29;
+
+    --color-surface-0-oklch__l: 10%;
+    --color-surface-0-oklch__c: 0.01;
+
+    --color-emphasized-oklch__l: 93%;
+    --color-emphasized-oklch__c: 0.03;
+    --color-base-oklch__l: 80%;
+    --color-base-oklch__c: 0.05;
+    --color-subtle-oklch__l: 70%;
+    --color-subtle-oklch__c: 0.07;
+    --color-placeholder-oklch__l: 60%;
+    --color-placeholder-oklch__c: 0.03;
+    --color-disabled-oklch__l: 50%;
+    --color-disabled-oklch__c: 0.01;
+
+    --border-color-base: rgb(255 255 255 / 0.1);
+    --border-color-subtle: rgb(255 255 255 / 0.05);
+    --border-color-muted: rgb(255 255 255 / 0.03);
+    --border-color-interactive: rgb(255 255 255 / 0.1);
+    --border-color-interactive--hover: rgb(255 255 255 / 0.2);
+    --border-color-interactive--active: rgb(255 255 255 / 0.3);
+    --border-color-disabled: rgb(255 255 255 / 0.025);
+    --border-color-inverted: #fff;
+
+    --shadow-opacity: 0.44;
+    --background-color-progressive-subtle: oklch(0.172 0.0334 262.29);
+}
+
+/* ==========================================================================
+	4. DYNAMIC COMPUTED VALUES (Must apply globally)
+   	========================================================================== */
+:root, :root.theme-dark {
+    /* Calculated Surfaces */
+    --color-surface-1-oklch__l: calc(var(--color-surface-0-oklch__l) + var(--delta-lightness-surface-base));
+    --color-surface-1-oklch__c: 0.015;
+    --color-surface-2-oklch__l: calc(var(--color-surface-0-oklch__l) + (var(--delta-lightness-surface-base) * 2));
+    --color-surface-2-oklch__c: 0.02;
+    --color-surface-3-oklch__l: calc(var(--color-surface-0-oklch__l) + (var(--delta-lightness-surface-base) * 3));
+    --color-surface-3-oklch__c: 0.03;
+    --color-surface-4-oklch__l: calc(var(--color-surface-0-oklch__l) + (var(--delta-lightness-surface-base) * 4));
+    --color-surface-4-oklch__c: 0.04;
+
+    --color-surface-0: oklch(var(--color-surface-0-oklch__l) var(--color-surface-0-oklch__c) var(--color-progressive-oklch__h));
+    --color-surface-1: oklch(var(--color-surface-1-oklch__l) var(--color-surface-1-oklch__c) var(--color-progressive-oklch__h));
+    --color-surface-1--hover: oklch(calc(var(--color-surface-1-oklch__l) + var(--delta-lightness-hover-state)) var(--color-surface-1-oklch__c) var(--color-progressive-oklch__h));
+    --color-surface-1--active: oklch(calc(var(--color-surface-1-oklch__l) + var(--delta-lightness-active-state)) var(--color-surface-1-oklch__c) var(--color-progressive-oklch__h));
+    --color-surface-2: oklch(var(--color-surface-2-oklch__l) var(--color-surface-2-oklch__c) var(--color-progressive-oklch__h));
+    --color-surface-2--hover: oklch(calc(var(--color-surface-2-oklch__l) + var(--delta-lightness-hover-state)) var(--color-surface-2-oklch__c) var(--color-progressive-oklch__h));
+    --color-surface-2--active: oklch(calc(var(--color-surface-2-oklch__l) + var(--delta-lightness-active-state)) var(--color-surface-2-oklch__c) var(--color-progressive-oklch__h));
+    --color-surface-3: oklch(var(--color-surface-3-oklch__l) var(--color-surface-3-oklch__c) var(--color-progressive-oklch__h));
+    --color-surface-4: oklch(var(--color-surface-4-oklch__l) var(--color-surface-4-oklch__c) var(--color-progressive-oklch__h));
+
+    /* Calculated Colors */
+    --color-progressive: oklch(var(--color-progressive-oklch__l) var(--color-progressive-oklch__c) var(--color-progressive-oklch__h));
+    --color-progressive--hover: oklch(calc(var(--color-progressive-oklch__l) + var(--delta-lightness-hover-state)) var(--color-progressive-oklch__c) var(--color-progressive-oklch__h));
+    --color-progressive--active: oklch(calc(var(--color-progressive-oklch__l) + var(--delta-lightness-active-state)) var(--color-progressive-oklch__c) var(--color-progressive-oklch__h));
+
+    --color-base: oklch(var(--color-base-oklch__l) var(--color-base-oklch__c) var(--color-progressive-oklch__h));
+    --color-base--hover: oklch(calc(var(--color-base-oklch__l) + var(--delta-lightness-hover-state)) var(--color-base-oklch__c) var(--color-progressive-oklch__h));
+    --color-emphasized: oklch(var(--color-emphasized-oklch__l) var(--color-emphasized-oklch__c) var(--color-progressive-oklch__h));
+    --color-subtle: oklch(var(--color-subtle-oklch__l) var(--color-subtle-oklch__c) var(--color-progressive-oklch__h));
+    --color-placeholder: oklch(var(--color-placeholder-oklch__l) var(--color-placeholder-oklch__c) var(--color-progressive-oklch__h));
+    --color-disabled: oklch(var(--color-disabled-oklch__l) var(--color-disabled-oklch__c) var(--color-progressive-oklch__h));
+    --color-inverted: var(--border-color-inverted);
+
+    /* Calculated Shadows */
+    --box-shadow-color-alpha-base: oklch(6% 0.01 var(--color-progressive-oklch__h) / var(--shadow-opacity));
+    --box-shadow-border: var(--border-color-base) 0 0 0 1px;
+    --box-shadow-small: 0 0 0 1px var(--border-color-base);
+    --box-shadow-medium: 0 0.5px 0.6px var(--box-shadow-color-alpha-base), 0 1.6px 1.8px -0.8px var(--box-shadow-color-alpha-base), 0 4px 4.5px -1.7px var(--box-shadow-color-alpha-base), 0 9.8px 11px -2.5px var(--box-shadow-color-alpha-base);
+    --box-shadow-large: 0 0.5px 0.6px var(--box-shadow-color-alpha-base), 0 2.8px 3.1px -0.4px var(--box-shadow-color-alpha-base), 0 5.3px 6px -0.7px var(--box-shadow-color-alpha-base), 0 8.7px 9.8px -1.1px var(--box-shadow-color-alpha-base), 0 13.9px 15.6px -1.4px var(--box-shadow-color-alpha-base), 0 21.8px 24.5px -1.8px var(--box-shadow-color-alpha-base);
 }
