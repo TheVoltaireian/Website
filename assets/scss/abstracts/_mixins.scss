@@ -17,14 +17,14 @@
     &--hidden {
         opacity: 0;
         filter: blur(5px);
-        transform: translateY(-5%);
+        transform: translateY(20%);
         transition: var(--transition-hover--slow);
     }
 
     &--visible {
         opacity: 1;
         filter: blur(0);
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
