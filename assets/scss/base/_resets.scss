@@ -2,6 +2,8 @@
     box-sizing: border-box; 
 	-webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+
+    transition: var(--transition-hover--slow);
 }
 
 html, body {
