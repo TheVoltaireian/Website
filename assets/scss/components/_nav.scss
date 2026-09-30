@@ -68,8 +68,8 @@ nav.nav {
 
         gap: var(--space-sm);
 
-        border-left: var(--border-subtle);
-        padding-left: var(--space-sm);
+        border-right: var(--border-subtle);
+        padding-right: var(--space-sm);
 
         font-size: var(--font-size-medium);
 
@@ -111,13 +111,8 @@ nav.nav {
     }
 
     .theme-toggle-icon::before {
-        content: "🌙";
         font-size: var(--font-size-small);
         line-height: 1;
-    }
-
-    :root.theme-light nav.nav .nav__theme-toggle .theme-toggle-icon::before {
-        content: "☀️";
     }
 
     @media screen and (max-width: $breakpoint-sm) {

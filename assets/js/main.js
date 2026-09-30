@@ -11,6 +11,11 @@ function setTheme(theme) {
     const toggleBtn = document.getElementById('theme-toggle');
     if (toggleBtn) {
         toggleBtn.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+        
+        const iconEl = toggleBtn.querySelector('.theme-toggle-icon');
+        if (iconEl) {
+            iconEl.textContent = isLight ? '☀️' : '🌙';
+        }
     }
 }
 
