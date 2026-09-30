@@ -17,8 +17,8 @@
     &--hidden {
         opacity: 0;
         filter: blur(5px);
-        transform: translateX(-100%);
-        transition: all 750ms;
+        transform: translateY(-100%);
+        transition: var(--transition-hover--slow);
     }
 
     &--visible {
