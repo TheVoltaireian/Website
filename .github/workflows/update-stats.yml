@@ -1,0 +1,58 @@
+name: Update Wiki Stats
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch Stats and Update assets/json/stats.json
+        run: |
+          node -e '
+          const fs = require("fs");
+
+          const wikis = [
+            { name: "zvh", apiUrl: "https://zombies-vs-humans.wiki/api.php" },
+            { name: "flee", apiUrl: "https://10playerflee.wiki/api.php" },
+            { name: "forsaken", apiUrl: "https://forsaken.wiki/api.php" }
+          ];
+
+          async function main() {
+            const result = {};
+            for (const wiki of wikis) {
+              try {
+                const res = await fetch(`${wiki.apiUrl}?action=query&meta=siteinfo&siprop=statistics&format=json`);
+                const data = await res.json();
+                result[wiki.name] = data.query.statistics;
+              } catch (e) {
+                console.error("Failed to fetch " + wiki.name, e);
+              }
+            }
+            // Ensure directory exists and write JSON file
+            fs.mkdirSync("assets/json", { recursive: true });
+            fs.writeFileSync("assets/json/stats.json", JSON.stringify(result, null, 4));
+          }
+
+          main();
+          '
+
+      - name: Commit and push updated stats
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/json/stats.json
+          git commit -m "Update wiki statistics [skip ci]" || exit 0
+          git push
