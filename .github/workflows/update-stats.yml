@@ -30,5 +30,52 @@ jobs:
             { name: "forsaken", apiUrl: "https://forsaken.wiki/api.php" }
           ];
 
-          async function main()This error happens when your Node.js code calls `response.json()` on an HTTP response that returned **HTML** instead of JSON (indicated by the `<!DOCTYPE...` token).
-          const data = await response.json();
+          async function main() {
+            const result = {};
+            for (const wiki of wikis) {
+              try {
+                const url = `${wiki.apiUrl}?action=query&meta=siteinfo&siprop=statistics&format=json`;
+                console.log(`Fetching ${wiki.name} from ${url}...`);
+
+                const res = await fetch(url, {
+                  headers: {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) GitHubActionBot/1.0",
+                    "Accept": "application/json"
+                  }
+                });
+
+                if (!res.ok) {
+                  const errText = await res.text();
+                  throw new Error(`HTTP ${res.status}: ${errText.slice(0, 100)}`);
+                }
+
+                const contentType = res.headers.get("content-type");
+                if (!contentType || !contentType.includes("application/json")) {
+                  const rawBody = await res.text();
+                  throw new Error(`Expected JSON but got ${contentType}. Body preview: ${rawBody.slice(0, 100)}`);
+                }
+
+                const data = await res.json();
+                if (data?.query?.statistics) {
+                  result[wiki.name] = data.query.statistics;
+                }
+              } catch (e) {
+                console.error("Failed to fetch " + wiki.name + ":", e.message);
+              }
+            }
+
+            console.log("Final output:", JSON.stringify(result));
+            fs.mkdirSync("assets/json", { recursive: true });
+            fs.writeFileSync("assets/json/stats.json", JSON.stringify(result, null, 4));
+          }
+
+          main();
+          '
+
+      - name: Commit and push updated stats
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/json/stats.json
+          git commit -m "Update wiki statistics [skip ci]" || exit 0
+          git push
