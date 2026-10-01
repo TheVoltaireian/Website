@@ -3,8 +3,12 @@ async function loadAllWikiStats() {
         const response = await fetch('/assets/json/stats.json');
         if (!response.ok) throw new Error("Could not load /assets/json/stats.json");
 
-        const data = await response.json();
+        const text = await response.text();
+        if (!text.trim()) {
+            throw new Error("stats.json is empty. Waiting for GitHub Action to populate it.");
+        }
 
+        const data = JSON.parse(text);
         const prefixes = ['zvh', 'flee', 'forsaken'];
 
         prefixes.forEach(prefix => {
