@@ -2,7 +2,7 @@ name: Update Wiki Stats
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -30,29 +30,5 @@ jobs:
             { name: "forsaken", apiUrl: "https://forsaken.wiki/api.php" }
           ];
 
-          async function main() {
-            const result = {};
-            for (const wiki of wikis) {
-              try {
-                const res = await fetch(`${wiki.apiUrl}?action=query&meta=siteinfo&siprop=statistics&format=json`);
-                const data = await res.json();
-                result[wiki.name] = data.query.statistics;
-              } catch (e) {
-                console.error("Failed to fetch " + wiki.name, e);
-              }
-            }
-            // Ensure directory exists and write JSON file
-            fs.mkdirSync("assets/json", { recursive: true });
-            fs.writeFileSync("assets/json/stats.json", JSON.stringify(result, null, 4));
-          }
-
-          main();
-          '
-
-      - name: Commit and push updated stats
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/json/stats.json
-          git commit -m "Update wiki statistics [skip ci]" || exit 0
-          git push
+          async function main()This error happens when your Node.js code calls `response.json()` on an HTTP response that returned **HTML** instead of JSON (indicated by the `<!DOCTYPE...` token).
+          const data = await response.json();
