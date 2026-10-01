@@ -16,45 +16,20 @@ const wikis = [
     }
 ];
 
-function fetchWikiStatsJSONP(apiUrl) {
-    return new Promise((resolve, reject) => {
-        const callbackName = "wiki_cb_" + Math.random().toString(36).substring(2, 9);
-        const script = document.createElement("script");
+async function fetchWikiStats(wiki) {
+    const targetUrl = `${wiki.apiUrl}?action=query&meta=siteinfo&siprop=statistics&format=json`;
+    const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`;
 
-        const timeout = setTimeout(() => {
-            cleanup();
-            reject(new Error("Request timed out"));
-        }, 10000);
-
-        function cleanup() {
-            clearTimeout(timeout);
-            delete window[callbackName];
-            if (script.parentNode) {
-                script.parentNode.removeChild(script);
-            }
+    try {
+        const response = await fetch(proxyUrl);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
         }
 
-        window[callbackName] = function(data) {
-            cleanup();
-            resolve(data);
-        };
-
-        script.onerror = function() {
-            cleanup();
-            reject(new Error("Failed to load script (network error)"));
-        };
-
-        script.src = `${apiUrl}?action=query&meta=siteinfo&siprop=statistics&format=json&callback=${callbackName}`;
-        document.body.appendChild(script);
-    });
-}
-
-async function fetchWikiStats(wiki) {
-    try {
-        const data = await fetchWikiStatsJSONP(wiki.apiUrl);
+        const data = await response.json();
         
         if (!data || !data.query || !data.query.statistics) {
-            throw new Error("Invalid API response format");
+            throw new Error("Invalid response structure");
         }
 
         const stats = data.query.statistics;
