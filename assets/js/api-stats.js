@@ -18,7 +18,8 @@ const wikis = [
 
 async function fetchWikiStats(wiki) {
     const targetUrl = `${wiki.apiUrl}?action=query&meta=siteinfo&siprop=statistics&format=json`;
-    const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`;
+    // Using AllOrigins raw proxy
+    const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`;
 
     try {
         const response = await fetch(proxyUrl);
