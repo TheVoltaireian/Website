@@ -39,8 +39,8 @@ jobs:
 
                 const res = await fetch(url, {
                   headers: {
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) GitHubActionBot/1.0",
-                    "Accept": "application/json"
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+                    "Accept": "application/json, text/plain, */*"
                   }
                 });
 
@@ -49,15 +49,10 @@ jobs:
                   throw new Error(`HTTP ${res.status}: ${errText.slice(0, 100)}`);
                 }
 
-                const contentType = res.headers.get("content-type");
-                if (!contentType || !contentType.includes("application/json")) {
-                  const rawBody = await res.text();
-                  throw new Error(`Expected JSON but got ${contentType}. Body preview: ${rawBody.slice(0, 100)}`);
-                }
-
                 const data = await res.json();
                 if (data?.query?.statistics) {
                   result[wiki.name] = data.query.statistics;
+                  console.log(`Successfully fetched stats for ${wiki.name}`);
                 }
               } catch (e) {
                 console.error("Failed to fetch " + wiki.name + ":", e.message);
