@@ -68,12 +68,16 @@ html[data-page="home"] {
                         display: flex;
                         flex-direction: row;
                         gap: var(--space-sm);
+                        align-items: center;
+
+                        &--featured {
+                            grid-column: 1 / span 3;
+                        }
 
                         .works__cardDescription {
                             flex: 1;
                             display: flex;
                             flex-direction: column;
-                            justify-content: space-between;
                             gap: var(--space-sm);
                             line-height: var(--line-height-small);
                             
@@ -102,6 +106,7 @@ html[data-page="home"] {
                                     font-weight: var(--font-weight-bold);
                                     margin-block: 0 var(--space-xxs);
                                     line-height: 1;
+                                    font-size: var(--font-size-xx-large);
                                 }
                             }
 
@@ -109,18 +114,21 @@ html[data-page="home"] {
                                 display: flex;
                                 flex-direction: row;
                                 gap: var(--space-xs);
-                                padding-top: var(--space-sm);
-                                border-top: var(--border-base);
+                                padding-top: var(--space-md);
 
                                 @media screen and (max-width: $breakpoint-xxxs) {
                                     flex-direction: column;
                                 }
 
                                 a.button {
-                                    width: 100%;
                                     font-weight: var(--font-weight-bold);
                                     text-align: center;
                                     justify-content: center;
+
+                                    &--secondary-1 {
+                                        font-weight: var(--font-weight-medium);
+                                        cursor: default;
+                                    }
                                 }
                             }
                         }
@@ -130,6 +138,8 @@ html[data-page="home"] {
                             img {
                                 width: 100%;
                                 height: auto;
+                                border: 0;
+                                border-radius: 0;
                             }
                         }
                     }
