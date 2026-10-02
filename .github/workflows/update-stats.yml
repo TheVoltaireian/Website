@@ -19,45 +19,50 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Fetch Stats and Update assets/json/stats.json
+      - name: Install Puppeteer
+        run: npm install puppeteer
+
+      - name: Fetch Stats via Puppeteer and Update assets/json/stats.json
         run: |
           node -e '
+          const puppeteer = require("puppeteer");
           const fs = require("fs");
 
           const wikis = [
-            { name: "zvh", apiUrl: "https://zombies-vs-humans.miraheze.org/w/api.php" },
-            { name: "flee", apiUrl: "https://10playerflee.miraheze.org/w/api.php" },
-            { name: "forsaken", apiUrl: "https://forsaken.miraheze.org/w/api.php" }
+            { name: "zvh", url: "https://zombies-vs-humans.miraheze.org/w/api.php?action=query&meta=siteinfo&siprop=statistics&format=json" },
+            { name: "flee", url: "https://10playerflee.miraheze.org/w/api.php?action=query&meta=siteinfo&siprop=statistics&format=json" },
+            { name: "forsaken", url: "https://forsaken.miraheze.org/w/api.php?action=query&meta=siteinfo&siprop=statistics&format=json" }
           ];
 
           async function main() {
+            const browser = await puppeteer.launch({
+              headless: true,
+              args: ["--no-sandbox", "--disable-setuid-sandbox"]
+            });
+            const page = await browser.newPage();
+
+            await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36");
+
             const result = {};
+
             for (const wiki of wikis) {
               try {
-                const url = `${wiki.apiUrl}?action=query&meta=siteinfo&siprop=statistics&format=json`;
-                console.log(`Fetching ${wiki.name} from ${url}...`);
+                console.log(`Navigating to ${wiki.name}...`);
+                await page.goto(wiki.url, { waitUntil: "networkidle0" });
 
-                const res = await fetch(url, {
-                  headers: {
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                    "Accept": "application/json"
-                  }
-                });
+                const content = await page.evaluate(() => document.body.innerText);
+                const data = JSON.parse(content);
 
-                if (!res.ok) {
-                  const errText = await res.text();
-                  throw new Error(`HTTP ${res.status}: ${errText.slice(0, 100)}`);
-                }
-
-                const data = await res.json();
                 if (data?.query?.statistics) {
                   result[wiki.name] = data.query.statistics;
-                  console.log(`Successfully fetched ${wiki.name}!`);
+                  console.log(`Successfully fetched stats for ${wiki.name}`);
                 }
               } catch (e) {
                 console.error("Failed to fetch " + wiki.name + ":", e.message);
               }
             }
+
+            await browser.close();
 
             console.log("Final output:", JSON.stringify(result));
             fs.mkdirSync("assets/json", { recursive: true });
