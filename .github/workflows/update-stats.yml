@@ -25,9 +25,9 @@ jobs:
           const fs = require("fs");
 
           const wikis = [
-            { name: "zvh", apiUrl: "https://zombies-vs-humans.wiki/api.php" },
-            { name: "flee", apiUrl: "https://10playerflee.wiki/api.php" },
-            { name: "forsaken", apiUrl: "https://forsaken.wiki/api.php" }
+            { name: "zvh", apiUrl: "https://zombies-vs-humans.miraheze.org/w/api.php" },
+            { name: "flee", apiUrl: "https://10playerflee.miraheze.org/w/api.php" },
+            { name: "forsaken", apiUrl: "https://forsaken.miraheze.org/w/api.php" }
           ];
 
           async function main() {
@@ -40,7 +40,7 @@ jobs:
                 const res = await fetch(url, {
                   headers: {
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                    "Accept": "application/json, text/plain, */*"
+                    "Accept": "application/json"
                   }
                 });
 
@@ -52,7 +52,7 @@ jobs:
                 const data = await res.json();
                 if (data?.query?.statistics) {
                   result[wiki.name] = data.query.statistics;
-                  console.log(`Successfully fetched stats for ${wiki.name}`);
+                  console.log(`Successfully fetched ${wiki.name}!`);
                 }
               } catch (e) {
                 console.error("Failed to fetch " + wiki.name + ":", e.message);
