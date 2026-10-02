@@ -1,5 +1,15 @@
 {
-    "zvh": null,
+    "zvh": {
+        "pages": 1808,
+        "articles": 145,
+        "edits": 13729,
+        "images": 1139,
+        "users": 50,
+        "activeusers": 7,
+        "admins": 1,
+        "jobs": 0,
+        "cirrussearch-article-words": 86618
+    },
     "flee": {
         "pages": 658,
         "articles": 98,
@@ -11,5 +21,15 @@
         "jobs": 0,
         "cirrussearch-article-words": 16071
     },
-    "forsaken": null
+    "forsaken": {
+        "pages": 20759,
+        "articles": 1368,
+        "edits": 81473,
+        "images": 16951,
+        "users": 13263,
+        "activeusers": 132,
+        "admins": 10,
+        "jobs": 0,
+        "cirrussearch-article-words": 173129
+    }
 }
