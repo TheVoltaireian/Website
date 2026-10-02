@@ -1044,17 +1044,6 @@ footer.footer {
   height: max-content;
   padding: calc(var(--space-lg) + var(--space-md));
 }
-footer.footer--hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(10%);
-  transition: var(--transition-hover--slow);
-}
-footer.footer--visible {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
-}
 @media screen and (max-width: 767px) {
   footer.footer {
     padding: var(--space-xxl) var(--space-lg);
@@ -1227,17 +1216,6 @@ nav.nav {
   align-items: center;
   transition: var(--transition-hover--fast);
   border-bottom: 1px solid transparent;
-}
-nav.nav--hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(10%);
-  transition: var(--transition-hover--slow);
-}
-nav.nav--visible {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
 }
 nav.nav.is-scrolled {
   background: oklch(from var(--color-surface-1) l c h/var(--backdrop-opacity));
