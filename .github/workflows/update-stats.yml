@@ -19,54 +19,28 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Puppeteer
-        run: npm install puppeteer
-
-      - name: Fetch Stats via Puppeteer and Update assets/json/stats.json
+      - name: Fetch Stats from Cloudflare Worker
         run: |
           node -e '
-          const puppeteer = require("puppeteer");
           const fs = require("fs");
 
-          const wikis = [
-            { name: "zvh", url: "https://zombies-vs-humans.miraheze.org/w/api.php?action=query&meta=siteinfo&siprop=statistics&format=json" },
-            { name: "flee", url: "https://10playerflee.miraheze.org/w/api.php?action=query&meta=siteinfo&siprop=statistics&format=json" },
-            { name: "forsaken", url: "https://forsaken.miraheze.org/w/api.php?action=query&meta=siteinfo&siprop=statistics&format=json" }
-          ];
-
           async function main() {
-            const browser = await puppeteer.launch({
-              headless: true,
-              args: ["--no-sandbox", "--disable-setuid-sandbox"]
-            });
-            const page = await browser.newPage();
+            try {
+              // Paste your Cloudflare Worker URL below:
+              const WORKER_URL = "https://wiki-stats-proxy.dostaly.workers.dev";
+              
+              console.log("Fetching stats from proxy worker...");
+              const res = await fetch(WORKER_URL);
+              const data = await res.json();
 
-            await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36");
+              console.log("Received data:", JSON.stringify(data));
 
-            const result = {};
-
-            for (const wiki of wikis) {
-              try {
-                console.log(`Navigating to ${wiki.name}...`);
-                await page.goto(wiki.url, { waitUntil: "networkidle0" });
-
-                const content = await page.evaluate(() => document.body.innerText);
-                const data = JSON.parse(content);
-
-                if (data?.query?.statistics) {
-                  result[wiki.name] = data.query.statistics;
-                  console.log(`Successfully fetched stats for ${wiki.name}`);
-                }
-              } catch (e) {
-                console.error("Failed to fetch " + wiki.name + ":", e.message);
-              }
+              fs.mkdirSync("assets/json", { recursive: true });
+              fs.writeFileSync("assets/json/stats.json", JSON.stringify(data, null, 4));
+            } catch (e) {
+              console.error("Fetch failed:", e.message);
+              process.exit(1);
             }
-
-            await browser.close();
-
-            console.log("Final output:", JSON.stringify(result));
-            fs.mkdirSync("assets/json", { recursive: true });
-            fs.writeFileSync("assets/json/stats.json", JSON.stringify(result, null, 4));
           }
 
           main();
