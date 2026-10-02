@@ -11,8 +11,6 @@ footer.footer {
 
     padding: calc(var(--space-lg) + var(--space-md));
 
-    @include view-on-scroll;
-
     @media screen and (max-width: $breakpoint-xs) {
         padding: var(--space-xxl) var(--space-lg);
     }
