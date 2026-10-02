@@ -86,11 +86,6 @@ html[data-page="home"] {
                                 flex-direction: column;
                                 gap: var(--space-xxs);
 
-                                .works__cardFeatured {
-                                    font-size: var(--font-size-x-small);
-                                    color: var(--color-placeholder);
-                                }
-
                                 .works__cardTitle {
                                     font-weight: var(--font-weight-bold);
                                     margin-block: 0 var(--space-xxs);
