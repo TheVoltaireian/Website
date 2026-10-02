@@ -72,7 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
             '.projects__header--hidden, ' +
             '.blog__post--hidden, ' +
             '.blog__header--hidden, ' +
-			'.header--hidden'
+			'.header--hidden,' +
+			'.nav--hidden,' +
+			'.footer--hidden'
         )
         .forEach(element => observer.observe(element));
 });

@@ -2,7 +2,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-footer {
+footer.footer {
     background: var(--color-surface-1);
     border-top: var(--border-base);
 
@@ -10,6 +10,8 @@ footer {
     height: max-content;
 
     padding: calc(var(--space-lg) + var(--space-md));
+
+    @include view-on-scroll;
 
     @media screen and (max-width: $breakpoint-xs) {
         padding: var(--space-xxl) var(--space-lg);

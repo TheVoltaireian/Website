@@ -26,6 +26,8 @@ nav.nav {
 
     border-bottom: 1px solid transparent;
 
+    @include view-on-scroll;
+
     &.is-scrolled {
         background: oklch(from var(--color-surface-1) l c h / var(--backdrop-opacity));
         backdrop-filter: var(--backdrop-filter-frosted-glass);
