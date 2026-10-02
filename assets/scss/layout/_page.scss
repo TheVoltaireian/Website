@@ -1459,3 +1459,33 @@ html[data-page="contact"] {
         }
     }
 }
+
+
+html[data-page="privacy"], html[data-page="terms"] {
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        border-bottom: var(--border-subtle);
+        padding-block-end: 0.25em;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+
+        .privacy__policy {
+            background: var(--color-surface-1);
+            border-radius: var(--border-radius-large);
+            border: var(--border-base);
+            box-shadow: var(--box-shadow-medium);
+
+            padding: var(--space-xl);
+
+            width: 100%;
+        }
+    }
+}
