@@ -70,6 +70,8 @@ html[data-page="home"] {
                         gap: var(--space-xxxl);
                         align-items: center;
 
+                        @include view-on-scroll;
+
                         &--featured {
                             grid-column: 1 / span 3;
                         }
