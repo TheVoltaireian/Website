@@ -18,6 +18,125 @@ html[data-page="home"] {
         flex-direction: column;
         gap: var(--space-xxxl);
 
+        .works {
+            .works__wikis {
+                display: flex;
+                flex-direction: column;
+
+                gap: var(--space-sm);
+
+                .works__header {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0;
+                    padding-block: var(--space-sm);
+
+                    line-height: 1;
+
+                    gap: var(--space-xxs);
+
+                    font-family: var(--font-family-alternate);
+
+                    h2 {
+                        margin-block: 0;
+                        font-size: var(--font-size-xxx-large);
+                    }
+                    p {
+                        margin-block: 0;
+                        font-size: var(--font-size-medium);
+                        font-family: var(--font-family-primary);
+                        color: var(--color-subtle);
+
+                        .divider {
+                            color: var(--color-placeholder);
+                        }
+
+                        a {
+                            color: var(--color-base);
+                        }
+                    }
+
+                    @include view-on-scroll;
+                }
+                .works__cards {
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+                    gap: var(--space-sm);
+
+                    .works__card {
+                        display: flex;
+                        flex-direction: row;
+                        gap: var(--space-sm);
+
+                        .works__cardDescription {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            gap: var(--space-sm);
+                            line-height: var(--line-height-small);
+                            
+                            .works__cardHeader {
+                                display: flex;
+                                flex-direction: column;
+                                gap: var(--space-xxs);
+
+                                .works__cardFeatured {
+                                    font-size: var(--font-size-small);
+                                    color: var(--color-subtle);
+                                    display: flex;
+                                    align-items: center;
+                                    gap: var(--space-md);
+
+                                    &::after {
+                                        content: "";
+                                        height: 1px;
+                                        flex-grow: 1;
+                                        background: var(--border-color-base);
+                                        order: 2;
+                                    }
+                                }
+
+                                .works__cardTitle {
+                                    font-weight: var(--font-weight-bold);
+                                    margin-block: 0 var(--space-xxs);
+                                    line-height: 1;
+                                }
+                            }
+
+                            .works__cardButtons {
+                                display: flex;
+                                flex-direction: row;
+                                gap: var(--space-xs);
+                                padding-top: var(--space-sm);
+                                border-top: var(--border-base);
+
+                                @media screen and (max-width: $breakpoint-xxxs) {
+                                    flex-direction: column;
+                                }
+
+                                a.button {
+                                    width: 100%;
+                                    font-weight: var(--font-weight-bold);
+                                    text-align: center;
+                                    justify-content: center;
+                                }
+                            }
+                        }
+                        .works__cardImage {
+                            width: 50%;
+
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         .projects {
             .projects__wikis {
                 display: flex;
