@@ -1,31 +1,27 @@
-async function loadAllWikiStats() {
+document.addEventListener("DOMContentLoaded", async () => {
     try {
-        const response = await fetch('/assets/json/stats.json');
-        if (!response.ok) throw new Error("Could not load /assets/json/stats.json");
+        // Append timestamp query parameter to bypass browser caching
+        const res = await fetch(`/assets/json/stats.json?t=${Date.now()}`);
+        if (!res.ok) throw new Error("Could not load stats.json");
 
-        const text = await response.text();
-        if (!text.trim()) {
-            throw new Error("stats.json is empty. Waiting for GitHub Action to populate it.");
-        }
+        const data = await res.json();
+        console.log("Loaded JSON stats:", data);
 
-        const data = JSON.parse(text);
-        const prefixes = ['zvh', 'flee', 'forsaken'];
+        const wikis = ["zvh", "flee", "forsaken"];
 
-        prefixes.forEach(prefix => {
-            if (data[prefix]) {
-                const stats = data[prefix];
-                const articlesEl = document.getElementById(`${prefix}-articles`);
-                const editsEl = document.getElementById(`${prefix}-edits`);
-                const activeEl = document.getElementById(`${prefix}-active`);
+        wikis.forEach((wiki) => {
+            const stats = data[wiki];
+            if (stats) {
+                const articlesEl = document.getElementById(`${wiki}-articles`);
+                const editsEl = document.getElementById(`${wiki}-edits`);
+                const activeEl = document.getElementById(`${wiki}-active`);
 
-                if (articlesEl) articlesEl.textContent = stats.articles.toLocaleString();
-                if (editsEl) editsEl.textContent = stats.edits.toLocaleString();
-                if (activeEl) activeEl.textContent = stats.activeusers.toLocaleString();
+                if (articlesEl) articlesEl.innerText = (stats.articles ?? 0).toLocaleString();
+                if (editsEl) editsEl.innerText = (stats.edits ?? 0).toLocaleString();
+                if (activeEl) activeEl.innerText = (stats.activeusers ?? 0).toLocaleString();
             }
         });
-    } catch (error) {
-        console.error("Error loading cached wiki stats:", error);
+    } catch (err) {
+        console.error("Error populating wiki stats:", err);
     }
-}
-
-document.addEventListener("DOMContentLoaded", loadAllWikiStats);
+});
