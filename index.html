@@ -79,7 +79,7 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
             <h2>Blog</h2>
         </div>
         {% if site.posts.size > 0 %}
-            <ul class="articles__posts">
+            <ul class="articles__posts articles__posts--hidden">
                 {% for post in site.posts limit:3 %}
                     <li class="articles__post articles__post--hidden">
                         <a class="articles__postWrapper" href="{{ post.url | relative_url }}">

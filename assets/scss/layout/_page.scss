@@ -224,6 +224,8 @@ html[data-page="home"] {
                     border-radius: var(--border-radius-medium);
                     overflow: hidden;
 
+                    @include view-on-scroll;
+
                     li.articles__post {
                         @include view-on-scroll;
 
@@ -301,6 +303,15 @@ html[data-page="home"] {
                                 .articles__postTime {
                                     font-size: var(--font-size-small);
                                     color: var(--color-subtle);
+                                }
+                            }
+
+                            @media screen and (max-width: $breakpoint-xs) {
+                                flex-direction: column;
+                                align-items: flex-start;
+
+                                .articles__postInfoDivider {
+                                    display: none;
                                 }
                             }
                         }

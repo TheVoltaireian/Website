@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			'.works__header--hidden,' +
 			'.works__card--hidden,' +
 			'.articles__header--hidden,' +
+			'.articles__posts--hidden,' +
 			'.articles__post--hidden'
         )
         .forEach(element => observer.observe(element));
