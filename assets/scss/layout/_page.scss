@@ -533,6 +533,170 @@ html[data-page="projects"] {
     --color-progressive-oklch__h: 158.77;
 
     main {
+        .works {
+            .works__wikis {
+                display: flex;
+                flex-direction: column;
+
+                gap: var(--space-xxl);
+
+                .works__header {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0;
+                    padding-block: var(--space-sm);
+
+                    line-height: 1;
+
+                    gap: var(--space-xxs);
+
+                    font-family: var(--font-family-alternate);
+
+                    h2 {
+                        margin-block: 0;
+                        font-size: var(--font-size-xxx-large);
+                    }
+                    p {
+                        margin-block: 0;
+                        font-size: var(--font-size-medium);
+                        font-family: var(--font-family-primary);
+                        color: var(--color-subtle);
+
+                        .divider {
+                            color: var(--color-placeholder);
+                        }
+
+                        a {
+                            color: var(--color-base);
+                        }
+                    }
+
+                    @include view-on-scroll;
+                }
+                .works__cards {
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+                    gap: var(--space-xl);
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                    }
+
+                    @media screen and (max-width: $breakpoint-xs) {
+                        grid-template-columns: repeat(1, minmax(0, 1fr));
+                        gap: var(--space-xxl);
+                    }
+
+                    .works__card {
+                        display: flex;
+                        flex-direction: column;
+                        gap: var(--space-md);
+                        align-items: center;
+
+                        @include view-on-scroll;
+                        transition-delay: calc(var(--i, 1) * 50ms);
+
+                        .works__cardDescription {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            gap: var(--space-sm);
+                            line-height: var(--line-height-x-small);
+                            
+                            .works__cardHeader {
+                                display: flex;
+                                flex-direction: column;
+                                gap: var(--space-xxs);
+
+                                .works__cardTitle {
+                                    font-weight: var(--font-weight-bold);
+                                    margin-block: 0;
+                                    line-height: 1;
+                                    font-size: var(--font-size-xx-large);
+                                }
+
+                                .works__cardSubtitle {
+                                    font-size: var(--font-size-small);
+                                    color: var(--color-subtle);
+                                    display: flex;
+                                    align-items: center;
+                                    gap: var(--space-sm);
+
+                                    &::after {
+                                        content: "";
+                                        height: 1px;
+                                        flex-grow: 1;
+                                        background: var(--border-color-base);
+                                        order: 2;
+                                    }
+                                }
+                            }
+
+                            .works__cardButtons {
+                                display: flex;
+                                flex-direction: row;
+                                gap: var(--space-xs);
+                                padding-top: var(--space-md);
+
+                                @media screen and (max-width: $breakpoint-xxxs) {
+                                    flex-direction: column;
+                                }
+
+                                a.button {
+                                    font-weight: var(--font-weight-bold);
+                                    text-align: center;
+                                    justify-content: center;
+
+                                    &--secondary-1 {
+                                        font-weight: var(--font-weight-medium);
+                                        cursor: default;
+                                    }
+                                }
+                            }
+                        }
+                        .works__cardImage {
+                            width: 100%;
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            a {
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                    box-shadow: var(--box-shadow-medium);
+                                    border: var(--border-base);
+                                    border-radius: var(--border-radius-medium);
+                                }
+                            }
+                        }
+
+                        &--featured {
+                            grid-column: 1 / span 3;
+                            flex-direction: row;
+                            gap: var(--space-xxl);
+
+                            .works__cardImage {
+                                width: 60%;
+                            }
+
+                            @media screen and (max-width: $breakpoint-sm) {
+                                grid-column: 1 / span 1;
+                                flex-direction: column;
+                                gap: var(--space-md);
+
+                                .works__cardImage {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
         .projects {
             .projects__wikis {
                 display: flex;

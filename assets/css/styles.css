@@ -1832,6 +1832,166 @@ html[data-page=projects] {
   grid-template-rows: auto 1fr auto;
   --color-progressive-oklch__h: 158.77;
 }
+html[data-page=projects] main .works .works__wikis {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxl);
+}
+html[data-page=projects] main .works .works__wikis .works__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-block: var(--space-sm);
+  line-height: 1;
+  gap: var(--space-xxs);
+  font-family: var(--font-family-alternate);
+}
+html[data-page=projects] main .works .works__wikis .works__header h2 {
+  margin-block: 0;
+  font-size: var(--font-size-xxx-large);
+}
+html[data-page=projects] main .works .works__wikis .works__header p {
+  margin-block: 0;
+  font-size: var(--font-size-medium);
+  font-family: var(--font-family-primary);
+  color: var(--color-subtle);
+}
+html[data-page=projects] main .works .works__wikis .works__header p .divider {
+  color: var(--color-placeholder);
+}
+html[data-page=projects] main .works .works__wikis .works__header p a {
+  color: var(--color-base);
+}
+html[data-page=projects] main .works .works__wikis .works__header--hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(10%);
+  transition: var(--transition-hover--slow);
+}
+html[data-page=projects] main .works .works__wikis .works__header--visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+html[data-page=projects] main .works .works__wikis .works__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-xl);
+}
+@media screen and (max-width: 992px) {
+  html[data-page=projects] main .works .works__wikis .works__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 767px) {
+  html[data-page=projects] main .works .works__wikis .works__cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: var(--space-xxl);
+  }
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: center;
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card--hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(10%);
+  transition: var(--transition-hover--slow);
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card--visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card {
+  transition-delay: calc(var(--i, 1) * 50ms);
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card .works__cardDescription {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  line-height: var(--line-height-x-small);
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card .works__cardDescription .works__cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxs);
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card .works__cardDescription .works__cardHeader .works__cardTitle {
+  font-weight: var(--font-weight-bold);
+  margin-block: 0;
+  line-height: 1;
+  font-size: var(--font-size-xx-large);
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card .works__cardDescription .works__cardHeader .works__cardSubtitle {
+  font-size: var(--font-size-small);
+  color: var(--color-subtle);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card .works__cardDescription .works__cardHeader .works__cardSubtitle::after {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  background: var(--border-color-base);
+  order: 2;
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card .works__cardDescription .works__cardButtons {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-xs);
+  padding-top: var(--space-md);
+}
+@media screen and (max-width: 389px) {
+  html[data-page=projects] main .works .works__wikis .works__cards .works__card .works__cardDescription .works__cardButtons {
+    flex-direction: column;
+  }
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card .works__cardDescription .works__cardButtons a.button {
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  justify-content: center;
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card .works__cardDescription .works__cardButtons a.button--secondary-1 {
+  font-weight: var(--font-weight-medium);
+  cursor: default;
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card .works__cardImage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card .works__cardImage a img {
+  width: 100%;
+  height: auto;
+  box-shadow: var(--box-shadow-medium);
+  border: var(--border-base);
+  border-radius: var(--border-radius-medium);
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card--featured {
+  grid-column: 1/span 3;
+  flex-direction: row;
+  gap: var(--space-xxl);
+}
+html[data-page=projects] main .works .works__wikis .works__cards .works__card--featured .works__cardImage {
+  width: 60%;
+}
+@media screen and (max-width: 992px) {
+  html[data-page=projects] main .works .works__wikis .works__cards .works__card--featured {
+    grid-column: 1/span 1;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+  html[data-page=projects] main .works .works__wikis .works__cards .works__card--featured .works__cardImage {
+    width: 100%;
+  }
+}
 html[data-page=projects] main .projects .projects__wikis {
   display: flex;
   flex-direction: column;
