@@ -2,7 +2,7 @@
     display: inline-flex;
     align-items: center;
     padding: var(--space-xxs) var(--space-xs);
-    border: var(--border-subtle);
+    border: var(--border-base);
     border-radius: var(--border-radius-base);
     background-color: var(--color-surface-1);
     color: var(--color-emphasized);
@@ -14,7 +14,7 @@
     text-decoration: none;
 
     &--progressive {
-        border: var(--border-progressive);
+        border: var(--border-interactive);
         color: var(--color-progressive);
         background: var(--background-color-progressive-subtle);
     }
