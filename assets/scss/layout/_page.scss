@@ -16,14 +16,14 @@ html[data-page="home"] {
     main {
         display: flex;
         flex-direction: column;
-        gap: var(--space-4xl);
+        gap: var(--space-5xl);
 
         .works {
             .works__wikis {
                 display: flex;
                 flex-direction: column;
 
-                gap: var(--space-xl);
+                gap: var(--space-lg);
 
                 .works__header {
                     display: flex;
@@ -40,32 +40,15 @@ html[data-page="home"] {
                     span.header__subtitle {
                         font-size: var(--font-size-small);
                         font-weight: var(--font-weight-medium);
-                        color: var(--color-base);
+                        color: var(--color-subtle);
                         text-transform: uppercase;
                     }
 
                     h2 {
-                        margin-block: 0 var(--space-xs);
+                        margin-block: var(--space-xxs);
                         border-bottom: var(--border-base);
                         padding-bottom: var(--space-xs);
                         font-size: var(--font-size-xxx-large);
-                    }
-
-                    p {
-                        margin-block: 0;
-                        font-size: var(--font-size-large);
-                        font-family: var(--font-family-primary);
-                        color: var(--color-subtle);
-
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        gap: var(--space-xs);
-
-                        a {
-                            color: var(--color-base);
-                            font-weight: var(--font-weight-bold);
-                        }
                     }
 
                     @include view-on-scroll;
@@ -200,7 +183,7 @@ html[data-page="home"] {
                 display: flex;
                 flex-direction: column;
 
-                gap: var(--space-xl);
+                gap: var(--space-lg);
 
                 .blog__header {
                     display: flex;
@@ -217,32 +200,15 @@ html[data-page="home"] {
                     span.header__subtitle {
                         font-size: var(--font-size-small);
                         font-weight: var(--font-weight-medium);
-                        color: var(--color-base);
+                        color: var(--color-subtle);
                         text-transform: uppercase;
                     }
 
                     h2 {
-                        margin-block: 0 var(--space-xs);
+                        margin-block: var(--space-xxs);
                         border-bottom: var(--border-base);
                         padding-bottom: var(--space-xs);
                         font-size: var(--font-size-xxx-large);
-                    }
-
-                    p {
-                        margin-block: 0;
-                        font-size: var(--font-size-large);
-                        font-family: var(--font-family-primary);
-                        color: var(--color-subtle);
-
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        gap: var(--space-xs);
-
-                        a {
-                            color: var(--color-base);
-                            font-weight: var(--font-weight-bold);
-                        }
                     }
 
                     @include view-on-scroll;
