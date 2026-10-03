@@ -3,17 +3,20 @@
 
 html[data-page="home"], html[data-page="blog"], html[data-page="projects"] {
     nav.nav {
-        margin-bottom: calc(var(--nav-height) * -1 * 1.5);
+        margin-bottom: calc(var(--nav-height) * -1 * 1.25);
     }
 } 
 
 nav.nav {
     position: sticky;
-    top: 0;
+    top: var(--space-md);
 
-    width: 100%;
     min-height: var(--space-xxl);
-    padding: var(--space-lg) var(--space-xxxl);
+    width: 100%;
+    max-width: var(--page-width);
+
+    padding: var(--space-lg) var(--space-xxl);
+    margin-inline: auto;
 
     z-index: 999999999999999999;
 
@@ -24,12 +27,13 @@ nav.nav {
 
     transition: var(--transition-hover--fast);
 
-    border-bottom: 1px solid transparent;
+    border: 1px solid transparent;
 
     &.is-scrolled {
         background: oklch(from var(--color-surface-1) l c h / var(--backdrop-opacity));
         backdrop-filter: var(--backdrop-filter-frosted-glass);
-        border-bottom: var(--border-base);
+        border: var(--border-base);
+        border-radius: var(--border-radius-medium);
         box-shadow: var(--box-shadow-medium);
     }
 
