@@ -305,6 +305,107 @@ html[data-page="home"] {
                 }
             }
         }
+
+        .articles {
+            .articles__container {
+                display: flex;
+                flex-direction: column;
+
+                gap: var(--space-md);
+
+                .articles__header {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0;
+                    padding-block: var(--space-sm);
+
+                    line-height: 1;
+
+                    gap: var(--space-xxs);
+
+                    font-family: var(--font-family-alternate);
+
+                    span.header__subtitle {
+                        font-size: var(--font-size-small);
+                        font-weight: var(--font-weight-medium);
+                        color: var(--color-subtle);
+                        text-transform: uppercase;
+                    }
+
+                    h2 {
+                        margin-block: 0;
+                        border-bottom: var(--border-base);
+                        padding-bottom: var(--space-xs);
+                        font-size: var(--font-size-xxx-large);
+                    }
+
+                    @include view-on-scroll;
+                }
+
+                ul.articles__posts {
+                    list-style: none;
+
+                    li.articles__post {
+                        @include view-on-scroll;
+                        
+                        a.articles__postWrapper {
+                            padding: var(--space-md);
+                            gap: var(--space-sm);
+
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+
+                            h3.articles__postHeader {
+                                font-size: var(--font-size-x-large);
+                                font-weight: var(--font-weight-bold);
+                                margin-block: 0;
+                                line-height: 1;
+
+                                a {
+                                    color: var(--color-emphasized);
+                                }
+                            }
+
+                            span.articles__postInfoDivider {
+                                flex: 1;
+                                height: 1px;
+                                background-color: var(--border-color-base);
+                            }
+
+                            div.articles__postMetadata {
+                                display: flex;
+                                align-items: center;
+
+                                .articles__postTags {
+                                    display: flex;
+                                    gap: var(--space-xxs);
+                                }
+
+                                .articles__postPFP {
+                                    img {
+                                        width: 32px;
+                                        height: 32px;
+                                        border-radius: var(--border-radius-circle);
+                                    }
+                                }
+
+                                .articles__postMetadataDivider {
+                                    width: 1px;
+                                    height: 16px;
+                                    background-color: var(--border-color-base);
+                                }
+
+                                .articles__postTime {
+                                    font-size: var(--font-size-small);
+                                    color: var(--color-subtle);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

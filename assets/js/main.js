@@ -74,7 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
             '.blog__header--hidden, ' +
 			'.header--hidden,' +
 			'.works__header--hidden,' +
-			'.works__card--hidden'
+			'.works__card--hidden,' +
+			'.articles__header--hidden,' +
+			'.articles__post--hidden'
         )
         .forEach(element => observer.observe(element));
 });

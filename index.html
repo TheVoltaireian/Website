@@ -118,3 +118,50 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
         {% endif %}
     </div>
 </section>
+
+<section class="articles">
+    <div class="articles__container">
+        <div class="articles__header articles__header--hidden">
+            <span class="header__subtitle">Latest writings  — <a href="{{ '/blog/' | relative_url}}" style="color: var(--color-base); text-transform: none">All blog posts →</a></span>
+            <h2>Blog</h2>
+        </div>
+        {% if site.posts.size > 0 %}
+            <ul class="articles__posts">
+                {% for post in site.posts limit:3 %}
+                    <li class="articles__post articles__post--hidden">
+                        <a class="articles__postWrapper" href="{{ post.url | relative_url }}">
+                            <h3 class="articles__postHeader">
+                                <a href="{{ post.url | relative_url }}">
+                                    {{ post.title }}
+                                </a>
+                            </h3>
+
+                            <span class="articles__postInfoDivider"></span>
+
+                            <div class="articles__postMetadata">
+                                <div class="articles__postTags">
+                                    {% for tag in post.tags %}
+                                        <span class="tag">{{ tag }}</span>
+                                    {% endfor %}
+                                </div>
+                                <div class="articles__postPFP">
+                                    {% if post.pfp %}
+                                        <img src="{{ post.pfp | relative_url }}" alt="Profile picture of the author of {{ post.title }}">
+                                    {% else %}
+                                        <img src="{{ '/assets/images/logos/WildVoltaireian - Logo/1.png' | relative_url }}" alt="Profile picture of the author of {{ post.title }}">
+                                    {% endif %}
+                                </div>
+                                <span class="articles__postMetadataDivider"></span>
+                                <time class="articles__postTime" datetime="{{ post.date | date_to_xmlschema }}">
+                                    {{ post.date | date: "%B %-d, %Y" }}
+                                </time>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No posts yet.</p>
+        {% endif %}
+    </div>
+</section>
