@@ -575,7 +575,7 @@ html[data-page="projects"] {
                 }
                 .works__cards {
                     display: grid;
-                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    grid-template-columns: repeat(1, minmax(0, 1fr));
 
                     gap: var(--space-xl);
 
@@ -674,7 +674,6 @@ html[data-page="projects"] {
                         }
 
                         &--featured {
-                            grid-column: 1 / span 3;
                             flex-direction: row;
                             gap: var(--space-xxl);
 
@@ -683,7 +682,7 @@ html[data-page="projects"] {
                             }
 
                             @media screen and (max-width: $breakpoint-sm) {
-                                grid-column: 1 / span 1;
+                                grid-column: 1 / span 2;
                                 flex-direction: column;
                                 gap: var(--space-md);
 
@@ -691,12 +690,16 @@ html[data-page="projects"] {
                                     width: 100%;
                                 }
                             }
+
+                            @media screen and (max-width: $breakpoint-xs) {
+                                grid-column: 1 / span 1;
+                            }
                         }
                     }
                 }
             }
         }
-        
+
         .projects {
             .projects__wikis {
                 display: flex;
