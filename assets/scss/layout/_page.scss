@@ -65,11 +65,12 @@ html[data-page="home"] {
                     gap: var(--space-xl);
 
                     @media screen and (max-width: $breakpoint-sm) {
-                        grid-template-columns: repeat(2, minmax(0, 1fr))
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
                     }
 
                     @media screen and (max-width: $breakpoint-xs) {
                         grid-template-columns: repeat(1, minmax(0, 1fr));
+                        gap: var(--space-xxl);
                     }
 
                     .works__card {
