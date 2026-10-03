@@ -50,6 +50,7 @@ html[data-page="home"] {
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
+                        gap: var(--space-xs);
 
                         a {
                             color: var(--color-base);
