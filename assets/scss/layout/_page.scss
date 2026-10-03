@@ -64,6 +64,14 @@ html[data-page="home"] {
 
                     gap: var(--space-xl);
 
+                    @media screen and (max-width: $breakpoint-sm) {
+                        grid-template-columns: repeat(2, minmax(0, 1fr))
+                    }
+
+                    @media screen and (max-width: $breakpoint-xs) {
+                        grid-template-columns: repeat(1, minmax(0, 1fr));
+                    }
+
                     .works__card {
                         display: flex;
                         flex-direction: column;
@@ -156,6 +164,16 @@ html[data-page="home"] {
 
                             .works__cardImage {
                                 width: 60%;
+                            }
+
+                            @media screen and (max-width: $breakpoint-sm) {
+                                grid-column: 1 / span 1;
+                                flex-direction: column;
+                                gap: var(--space-md);
+
+                                .works__cardImage {
+                                    width: 100%;
+                                }
                             }
                         }
                     }
