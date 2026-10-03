@@ -62,7 +62,7 @@ html[data-page="home"] {
                     display: grid;
                     grid-template-columns: repeat(3, minmax(0, 1fr));
 
-                    gap: var(--space-sm);
+                    gap: var(--space-lg);
 
                     .works__card {
                         display: flex;
