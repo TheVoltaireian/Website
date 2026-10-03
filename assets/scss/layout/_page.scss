@@ -344,9 +344,15 @@ html[data-page="home"] {
 
                 ul.articles__posts {
                     list-style: none;
+                    margin-block: 0 !important;
+                    padding: 0 !important;
 
                     li.articles__post {
                         @include view-on-scroll;
+
+                        @include hover {
+                            background: var(--color-surface-2--hover);
+                        }
 
                         a.articles__postWrapper {
                             padding: var(--space-md);
@@ -356,7 +362,10 @@ html[data-page="home"] {
                             flex-direction: row;
                             align-items: center;
 
+                            text-decoration: none;
+
                             h3.articles__postHeader {
+                                font-family: var(--font-family-alternate);
                                 font-size: var(--font-size-x-large);
                                 font-weight: var(--font-weight-bold);
                                 margin-block: 0;
@@ -367,7 +376,7 @@ html[data-page="home"] {
                             span.articles__postInfoDivider {
                                 flex: 1;
                                 height: 1px;
-                                background-color: var(--border-color-base);
+                                background-color: var(--border-color-subtle);
                             }
 
                             div.articles__postMetadata {
@@ -377,19 +386,29 @@ html[data-page="home"] {
                                 .articles__postTags {
                                     display: flex;
                                     gap: var(--space-xxs);
+
+                                    .tag {
+                                        font-family: var(--font-family-alternate);
+                                        font-size: var(--font-size-x-small);
+                                        color: var(--color-base);
+                                    }
                                 }
 
                                 .articles__postPFP {
+                                    flex: 0 0 22px;
+                                    height: 22px;
+
                                     img {
-                                        width: 32px;
-                                        height: 32px;
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
                                         border-radius: var(--border-radius-circle);
                                     }
                                 }
 
                                 .articles__postMetadataDivider {
                                     width: 1px;
-                                    height: 16px;
+                                    height: 22px;
                                     background-color: var(--border-color-base);
                                 }
 
