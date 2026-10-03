@@ -45,7 +45,7 @@ html[data-page="home"] {
                     }
 
                     h2 {
-                        margin-block: var(--space-xs);
+                        margin-block: 0;
                         border-bottom: var(--border-base);
                         padding-bottom: var(--space-xs);
                         font-size: var(--font-size-xxx-large);
@@ -205,7 +205,7 @@ html[data-page="home"] {
                     }
 
                     h2 {
-                        margin-block: var(--space-xs);
+                        margin-block: 0;
                         border-bottom: var(--border-base);
                         padding-bottom: var(--space-xs);
                         font-size: var(--font-size-xxx-large);
