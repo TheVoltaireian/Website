@@ -3,7 +3,7 @@
 
 html[data-page="home"], html[data-page="blog"], html[data-page="projects"] {
     nav.nav {
-        margin-bottom: calc(var(--nav-height) * -1 / 2);
+        margin-bottom: calc(var(--nav-height) * -1 * 1.5);
     }
 } 
 
