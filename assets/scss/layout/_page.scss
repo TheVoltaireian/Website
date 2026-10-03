@@ -310,6 +310,7 @@ html[data-page="home"] {
                                 margin-block: var(--space-xxs) var(--space-sm);
                                 border-bottom: var(--border-base);
                                 line-height: 1;
+                                font-size: var(--font-size-xx-large);
 
                                 a {
                                     @include hover {
