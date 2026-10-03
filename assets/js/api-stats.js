@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const data = await res.json();
         console.log("Loaded JSON stats:", data);
 
-        const wikis = ["zvh", "flee", "forsaken"];
+        const wikis = ["zvh", "flee", "forsaken", "gbp"];
 
         wikis.forEach((wiki) => {
             const stats = data[wiki];
