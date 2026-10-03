@@ -46,6 +46,8 @@ html[data-page="home"] {
 
                     h2 {
                         margin-block: 0 var(--space-xs);
+                        border-bottom: var(--border-base);
+                        padding-bottom: var(--space-xs);
                         font-size: var(--font-size-xxx-large);
                     }
 
@@ -221,6 +223,8 @@ html[data-page="home"] {
 
                     h2 {
                         margin-block: 0 var(--space-xs);
+                        border-bottom: var(--border-base);
+                        padding-bottom: var(--space-xs);
                         font-size: var(--font-size-xxx-large);
                     }
 
