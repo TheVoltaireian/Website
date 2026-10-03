@@ -137,12 +137,14 @@ html[data-page="home"] {
                             align-items: center;
                             justify-content: center;
 
-                            img {
-                                width: 100%;
-                                height: auto;
-                                box-shadow: var(--box-shadow-medium);
-                                border: var(--border-base);
-                                border-radius: var(--border-radius-medium);
+                            a {
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                    box-shadow: var(--box-shadow-medium);
+                                    border: var(--border-base);
+                                    border-radius: var(--border-radius-medium);
+                                }
                             }
                         }
 
