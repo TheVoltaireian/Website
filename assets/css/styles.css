@@ -1383,7 +1383,7 @@ html[data-page=home] main .works .works__wikis .works__header span.header__subti
   text-transform: uppercase;
 }
 html[data-page=home] main .works .works__wikis .works__header h2 {
-  margin-block: var(--space-xxs);
+  margin-block: var(--space-xs);
   border-bottom: var(--border-base);
   padding-bottom: var(--space-xs);
   font-size: var(--font-size-xxx-large);
