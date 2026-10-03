@@ -1319,13 +1319,6 @@ html[data-page="about"] {
 
             gap: var(--space-xxxl);
 
-            background: var(--color-surface-1);
-            border-radius: var(--border-radius-large);
-            border: var(--border-base);
-            box-shadow: var(--box-shadow-medium);
-
-            padding: var(--space-xxxl);
-
             .about__infobox {
                 display: flex;
                 flex-direction: column;
@@ -1426,13 +1419,6 @@ html[data-page="contact"] {
             flex-direction: column;
 
             gap: var(--space-xl);
-
-            background: var(--color-surface-1);
-            border-radius: var(--border-radius-large);
-            border: var(--border-base);
-            box-shadow: var(--box-shadow-medium);
-
-            padding: var(--space-xl);
 
             width: 100%;
 
