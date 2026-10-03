@@ -75,6 +75,10 @@ html[data-page="home"] {
                         &--featured {
                             grid-column: 1 / span 2;
                             flex-direction: row;
+
+                            .works__cardImage {
+                                width: 100%;
+                            }
                         }
 
                         .works__cardDescription {

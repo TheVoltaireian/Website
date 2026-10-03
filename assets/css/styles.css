@@ -1425,6 +1425,9 @@ html[data-page=home] main .works .works__wikis .works__cards .works__card--featu
   grid-column: 1/span 2;
   flex-direction: row;
 }
+html[data-page=home] main .works .works__wikis .works__cards .works__card--featured .works__cardImage {
+  width: 100%;
+}
 html[data-page=home] main .works .works__wikis .works__cards .works__card .works__cardDescription {
   flex: 1;
   display: flex;
