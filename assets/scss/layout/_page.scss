@@ -271,6 +271,7 @@ html[data-page="home"] {
                                 .articles__postTags {
                                     display: flex;
                                     gap: var(--space-xxs);
+                                    flex-wrap: wrap;
 
                                     .tag {
                                         font-family: var(--font-family-alternate);
