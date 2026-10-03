@@ -72,16 +72,6 @@ html[data-page="home"] {
 
                         @include view-on-scroll;
 
-                        &--featured {
-                            grid-column: 1 / span 3;
-                            flex-direction: row;
-                            gap: var(--space-xxxl);
-
-                            .works__cardImage {
-                                width: 100%;
-                            }
-                        }
-
                         .works__cardDescription {
                             flex: 1;
                             display: flex;
@@ -141,7 +131,7 @@ html[data-page="home"] {
                             }
                         }
                         .works__cardImage {
-                            width: 55%;
+                            width: 100%;
 
                             display: flex;
                             align-items: center;
@@ -153,6 +143,16 @@ html[data-page="home"] {
                                 box-shadow: var(--box-shadow-medium);
                                 border: var(--border-base);
                                 border-radius: var(--border-radius-medium);
+                            }
+                        }
+
+                        &--featured {
+                            grid-column: 1 / span 3;
+                            flex-direction: row;
+                            gap: var(--space-xxxl);
+
+                            .works__cardImage {
+                                width: 55%;
                             }
                         }
                     }
