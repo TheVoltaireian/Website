@@ -347,11 +347,20 @@ html[data-page="home"] {
                     margin-block: 0 !important;
                     padding: 0 !important;
 
+                    background: var(--color-surface-2);
+                    border: var(--border-base);
+                    border-radius: var(--border-radius-medium);
+                    overflow: hidden;
+
                     li.articles__post {
                         @include view-on-scroll;
 
                         @include hover {
                             background: var(--color-surface-2--hover);
+                        }
+
+                        @include active {
+                            background: var(--color-surface-2--active);
                         }
 
                         a.articles__postWrapper {
@@ -382,6 +391,7 @@ html[data-page="home"] {
                             div.articles__postMetadata {
                                 display: flex;
                                 align-items: center;
+                                gap: var(--space-xs);
 
                                 .articles__postTags {
                                     display: flex;
@@ -409,7 +419,7 @@ html[data-page="home"] {
                                 .articles__postMetadataDivider {
                                     width: 1px;
                                     height: 22px;
-                                    background-color: var(--border-color-base);
+                                    background-color: var(--border-color-subtle);
                                 }
 
                                 .articles__postTime {
