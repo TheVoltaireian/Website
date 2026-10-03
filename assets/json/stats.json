@@ -31,5 +31,15 @@
         "admins": 10,
         "jobs": 0,
         "cirrussearch-article-words": 175038
+    },
+    "gbp": {
+        "pages": 11002,
+        "articles": 280,
+        "edits": 35650,
+        "images": 9998,
+        "users": 5892,
+        "activeusers": 12,
+        "admins": 9,
+        "jobs": 0
     }
 }
