@@ -87,7 +87,6 @@ a {
     @include hover {
         color: var(--color-link--hover);
         text-decoration: underline;
-        font-weight: var(--font-weight-semi-bold);
     }
 
     @include active {
