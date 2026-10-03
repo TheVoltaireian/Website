@@ -47,9 +47,9 @@ html[data-page="home"] {
                         font-family: var(--font-family-primary);
                         color: var(--color-subtle);
 
-                        .divider {
-                            color: var(--color-placeholder);
-                        }
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
 
                         a {
                             color: var(--color-base);
@@ -341,7 +341,7 @@ html[data-page="projects"] {
         display: flex;
         flex-direction: column;
         gap: var(--space-xxxl);
-        
+
         .works {
             .works__wikis {
                 display: flex;
