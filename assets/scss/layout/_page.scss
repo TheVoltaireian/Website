@@ -99,6 +99,11 @@ html[data-page="home"] {
                                     margin-block: 0;
                                     line-height: 1;
                                     font-size: var(--font-size-xx-large);
+                                }
+
+                                .works__cardSubtitle {
+                                    font-size: var(--font-size-small);
+                                    color: var(--color-subtle);
 
                                     display: flex;
                                     align-items: center;
@@ -111,11 +116,6 @@ html[data-page="home"] {
                                         background: var(--border-color-base);
                                         order: 2;
                                     }
-                                }
-
-                                .works__cardSubtitle {
-                                    font-size: var(--font-size-small);
-                                    color: var(--color-subtle);
                                 }
                             }
 
@@ -419,6 +419,11 @@ html[data-page="projects"] {
                                     margin-block: 0;
                                     line-height: 1;
                                     font-size: var(--font-size-xx-large);
+                                }
+
+                                .works__cardSubtitle {
+                                    font-size: var(--font-size-small);
+                                    color: var(--color-subtle);
 
                                     display: flex;
                                     align-items: center;
@@ -431,11 +436,6 @@ html[data-page="projects"] {
                                         background: var(--border-color-base);
                                         order: 2;
                                     }
-                                }
-
-                                .works__cardSubtitle {
-                                    font-size: var(--font-size-small);
-                                    color: var(--color-subtle);
                                 }
                             }
 
