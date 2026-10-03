@@ -23,7 +23,7 @@ html[data-page="home"] {
                 display: flex;
                 flex-direction: column;
 
-                gap: var(--space-4xl);
+                gap: var(--space-xxl);
 
                 .works__header {
                     display: flex;
@@ -60,20 +60,21 @@ html[data-page="home"] {
                 }
                 .works__cards {
                     display: grid;
-                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
 
                     gap: var(--space-sm);
 
                     .works__card {
                         display: flex;
-                        flex-direction: row;
+                        flex-direction: column;
                         gap: var(--space-xxxl);
                         align-items: center;
 
                         @include view-on-scroll;
 
                         &--featured {
-                            grid-column: 1 / span 3;
+                            grid-column: 1 / span 2;
+                            flex-direction: row;
                         }
 
                         .works__cardDescription {
