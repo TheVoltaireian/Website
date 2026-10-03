@@ -1983,17 +1983,11 @@ html[data-page=projects] main .works .works__wikis .works__cards .works__card--f
 }
 @media screen and (max-width: 992px) {
   html[data-page=projects] main .works .works__wikis .works__cards .works__card--featured {
-    grid-column: 1/span 2;
     flex-direction: column;
     gap: var(--space-md);
   }
   html[data-page=projects] main .works .works__wikis .works__cards .works__card--featured .works__cardImage {
     width: 100%;
-  }
-}
-@media screen and (max-width: 767px) {
-  html[data-page=projects] main .works .works__wikis .works__cards .works__card--featured {
-    grid-column: 1/span 1;
   }
 }
 html[data-page=projects] main .projects .projects__wikis {

@@ -682,7 +682,6 @@ html[data-page="projects"] {
                             }
 
                             @media screen and (max-width: $breakpoint-sm) {
-                                grid-column: 1 / span 2;
                                 flex-direction: column;
                                 gap: var(--space-md);
 
@@ -692,7 +691,6 @@ html[data-page="projects"] {
                             }
 
                             @media screen and (max-width: $breakpoint-xs) {
-                                grid-column: 1 / span 1;
                             }
                         }
                     }
