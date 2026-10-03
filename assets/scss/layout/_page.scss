@@ -273,6 +273,10 @@ html[data-page="home"] {
                                         font-family: var(--font-family-alternate);
                                         font-size: var(--font-size-x-small);
                                         color: var(--color-base);
+
+                                        &--progressive {
+                                            color: var(--color-progressive--hover);
+                                        }
                                     }
                                 }
 
