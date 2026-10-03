@@ -1421,6 +1421,9 @@ html[data-page=home] main .works .works__wikis .works__cards .works__card--visib
   filter: blur(0);
   transform: translateY(0);
 }
+html[data-page=home] main .works .works__wikis .works__cards .works__card {
+  transition-delay: calc(var(--i, 1) * 50ms);
+}
 html[data-page=home] main .works .works__wikis .works__cards .works__card .works__cardDescription {
   flex: 1;
   display: flex;

@@ -71,6 +71,7 @@ html[data-page="home"] {
                         align-items: center;
 
                         @include view-on-scroll;
+                        transition-delay: calc(var(--i, 1) * 50ms);
 
                         .works__cardDescription {
                             flex: 1;
