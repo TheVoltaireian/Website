@@ -338,6 +338,10 @@ html[data-page="projects"] {
     --color-progressive-oklch__h: 158.77;
 
     main {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xxxl);
+        
         .works {
             .works__wikis {
                 display: flex;
