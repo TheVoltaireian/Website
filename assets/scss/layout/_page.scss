@@ -38,13 +38,14 @@ html[data-page="home"] {
                     font-family: var(--font-family-alternate);
 
                     span.header__subtitle {
-                        font-size: var(--font-size-medium);
-                        color: var(--color-subtle);
+                        font-size: var(--font-size-small);
+                        font-weight: var(--font-weight-medium);
+                        color: var(--color-emphasized);
                         text-transform: uppercase;
                     }
 
                     h2 {
-                        margin-block: 0 var(--space-xs);
+                        margin-block: 0 var(--space-sm);
                         font-size: var(--font-size-xxx-large);
                     }
 
@@ -213,15 +214,16 @@ html[data-page="home"] {
 
                     span.header__subtitle {
                         font-size: var(--font-size-small);
-                        color: var(--color-subtle);
+                        font-weight: var(--font-weight-medium);
+                        color: var(--color-emphasized);
                         text-transform: uppercase;
                     }
 
                     h2 {
-                        margin-block: 0 var(--space-xs);
+                        margin-block: 0 var(--space-sm);
                         font-size: var(--font-size-xxx-large);
                     }
-                    
+
                     p {
                         margin-block: 0;
                         font-size: var(--font-size-medium);
