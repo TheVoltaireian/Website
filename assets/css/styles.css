@@ -1489,7 +1489,7 @@ html[data-page=home] main .works .works__wikis .works__cards .works__card .works
 html[data-page=home] main .works .works__wikis .works__cards .works__card--featured {
   grid-column: 1/span 3;
   flex-direction: row;
-  gap: var(--space-xxxl);
+  gap: var(--space-xxl);
 }
 html[data-page=home] main .works .works__wikis .works__cards .works__card--featured .works__cardImage {
   width: 60%;
