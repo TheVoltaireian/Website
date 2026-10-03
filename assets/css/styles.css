@@ -1387,6 +1387,7 @@ html[data-page=home] main .works .works__wikis .works__header p {
 }
 html[data-page=home] main .works .works__wikis .works__header p a {
   color: var(--color-base);
+  font-weight: var(--font-weight-bold);
 }
 html[data-page=home] main .works .works__wikis .works__header--hidden {
   opacity: 0;
