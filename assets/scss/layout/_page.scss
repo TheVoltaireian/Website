@@ -266,6 +266,7 @@ html[data-page="home"] {
                                 display: flex;
                                 align-items: center;
                                 gap: var(--space-xs);
+                                line-height: 1;
 
                                 .articles__postTags {
                                     display: flex;
@@ -309,6 +310,7 @@ html[data-page="home"] {
                             @media screen and (max-width: $breakpoint-xs) {
                                 flex-direction: column;
                                 align-items: flex-start;
+                                gap: var(--space-xs);
 
                                 .articles__postInfoDivider {
                                     display: none;
