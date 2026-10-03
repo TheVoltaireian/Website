@@ -23,6 +23,8 @@ layout: base
                                 {% assign tag_label = "Web Development" %}
                             {% when "personal" %}
                                 {% assign tag_label = "Personal" %}
+                            {% when "featured" %}
+                                {% assign tag_label = "Featured" %}
                         {% endcase %}
 
                         <span class="tag">{{ tag_label }}</span>

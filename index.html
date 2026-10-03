@@ -93,15 +93,19 @@ description: "Say hello to my world. Web developer, web designer, and wiki enthu
                                 <div class="articles__postTags">
                                     {% for tag in post.tags %}
                                         {% assign tag_label = tag %}
+                                        {% assign tag_class = "" %}
 
                                         {% case tag %}
                                             {% when "web-development" %}
                                                 {% assign tag_label = "Web Development" %}
                                             {% when "personal" %}
                                                 {% assign tag_label = "Personal" %}
+                                            {% when "featured" %}
+                                                {% assign tag_label = "Featured" %}
+                                                {% assign tag_class = " tag--progressive" %}
                                         {% endcase %}
 
-                                        <span class="tag">{{ tag_label }}</span>
+                                        <span class="tag {{ tag_class }}">{{ tag_label }}</span>
                                     {% endfor %}
                                 </div>
                                 <div class="articles__postPFP">

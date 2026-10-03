@@ -4,6 +4,7 @@ title: "That Time I Got Reincarnated as a Web Developer"
 page_id: post
 body_class: toc-enabled
 tags:
+  - featured
   - web-development
   - personal
 ---
