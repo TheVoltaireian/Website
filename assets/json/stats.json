@@ -11,9 +11,9 @@
         "cirrussearch-article-words": 86605
     },
     "flee": {
-        "pages": 906,
+        "pages": 907,
         "articles": 108,
-        "edits": 4027,
+        "edits": 4034,
         "images": 473,
         "users": 77,
         "activeusers": 3,
@@ -22,11 +22,11 @@
         "cirrussearch-article-words": 19257
     },
     "forsaken": {
-        "pages": 22473,
+        "pages": 22477,
         "articles": 1460,
-        "edits": 87729,
-        "images": 18469,
-        "users": 13967,
+        "edits": 87789,
+        "images": 18470,
+        "users": 13974,
         "activeusers": 137,
         "admins": 10,
         "jobs": 0,
@@ -35,7 +35,7 @@
     "gbp": {
         "pages": 11045,
         "articles": 281,
-        "edits": 35775,
+        "edits": 35777,
         "images": 10037,
         "users": 6076,
         "activeusers": 13,
