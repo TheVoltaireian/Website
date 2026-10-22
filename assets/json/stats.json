@@ -1,6 +1,45 @@
 {
-    "zvh": null,
-    "flee": null,
-    "forsaken": null,
-    "gbp": null
+    "zvh": {
+        "pages": 1808,
+        "articles": 145,
+        "edits": 13734,
+        "images": 1139,
+        "users": 56,
+        "activeusers": 3,
+        "admins": 1,
+        "jobs": 0,
+        "cirrussearch-article-words": 86605
+    },
+    "flee": {
+        "pages": 896,
+        "articles": 108,
+        "edits": 3974,
+        "images": 473,
+        "users": 77,
+        "activeusers": 3,
+        "admins": 7,
+        "jobs": 0,
+        "cirrussearch-article-words": 19257
+    },
+    "forsaken": {
+        "pages": 22435,
+        "articles": 1449,
+        "edits": 87491,
+        "images": 18444,
+        "users": 13953,
+        "activeusers": 129,
+        "admins": 10,
+        "jobs": 0,
+        "cirrussearch-article-words": 219031
+    },
+    "gbp": {
+        "pages": 11045,
+        "articles": 281,
+        "edits": 35773,
+        "images": 10037,
+        "users": 6068,
+        "activeusers": 14,
+        "admins": 9,
+        "jobs": 0
+    }
 }
