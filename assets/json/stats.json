@@ -2,7 +2,7 @@
     "zvh": {
         "pages": 1834,
         "articles": 152,
-        "edits": 13823,
+        "edits": 13824,
         "images": 1149,
         "users": 69,
         "activeusers": 7,
@@ -11,11 +11,11 @@
         "cirrussearch-article-words": 90072
     },
     "forsaken": {
-        "pages": 25803,
+        "pages": 25811,
         "articles": 1610,
-        "edits": 97386,
-        "images": 20282,
-        "users": 15076,
+        "edits": 97416,
+        "images": 20290,
+        "users": 15090,
         "activeusers": 156,
         "admins": 11,
         "jobs": 0,
@@ -24,9 +24,9 @@
     "gbp": {
         "pages": 11096,
         "articles": 288,
-        "edits": 36195,
+        "edits": 36206,
         "images": 10077,
-        "users": 6363,
+        "users": 6364,
         "activeusers": 12,
         "admins": 9,
         "jobs": 0
