@@ -13,21 +13,21 @@
     "forsaken": {
         "pages": 25813,
         "articles": 1611,
-        "edits": 97471,
+        "edits": 97613,
         "images": 20291,
-        "users": 15134,
-        "activeusers": 156,
+        "users": 15145,
+        "activeusers": 155,
         "admins": 11,
         "jobs": 0,
         "cirrussearch-article-words": 246190
     },
     "gbp": {
-        "pages": 11143,
-        "articles": 298,
-        "edits": 36314,
-        "images": 10114,
-        "users": 6375,
-        "activeusers": 12,
+        "pages": 11310,
+        "articles": 299,
+        "edits": 36542,
+        "images": 10280,
+        "users": 6394,
+        "activeusers": 13,
         "admins": 9,
         "jobs": 0
     }
