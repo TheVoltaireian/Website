@@ -8,25 +8,25 @@
         "activeusers": 8,
         "admins": 2,
         "jobs": 0,
-        "cirrussearch-article-words": 91951
+        "cirrussearch-article-words": 92165
     },
     "forsaken": {
         "pages": 25983,
         "articles": 1615,
-        "edits": 98264,
+        "edits": 98267,
         "images": 20448,
-        "users": 15337,
+        "users": 15345,
         "activeusers": 146,
         "admins": 11,
         "jobs": 0,
-        "cirrussearch-article-words": 246563
+        "cirrussearch-article-words": 246568
     },
     "gbp": {
-        "pages": 11851,
+        "pages": 11874,
         "articles": 305,
-        "edits": 38137,
-        "images": 10725,
-        "users": 6503,
+        "edits": 38196,
+        "images": 10748,
+        "users": 6509,
         "activeusers": 14,
         "admins": 9,
         "jobs": 0
